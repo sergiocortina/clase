@@ -58,5 +58,16 @@ presentacion/
 - Se agregó soporte para teclas comunes de controles: **PageDown/PageUp** ←, **F5** (siguiente, sin recargar), **Shift+F5** (inicio)
 - El control del usuario ya funciona sin necesidad de configuración adicional
 
+### Responsive móvil
+- Fix portrait: `justify-content:flex-start` + padding 2.5rem arriba, 3rem abajo
+- Fix landscape (max-height:500px): todos los elementos compactados, fullscreen visible
+- Botón fullscreen (`⛶`) visible en móvil
+
+### QR Code
+- Código QR en portada (esquina inferior derecha, fijo)
+- URL: `https://sergiocortina.github.io/clase/`
+- Usa API pública `api.qrserver.com`
+- Siempre visible, no requiere fade-in
+
 ### Pendiente
 - El visual companion (brainstorming) no funcionó en Windows (bash script incompatible)
