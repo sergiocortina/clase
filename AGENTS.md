@@ -48,5 +48,15 @@ presentacion/
 - `bar-group`, `bar-row`, `bar-track`, `bar-fill`, `bar-sub` — gráficas de barras
 - `cal-grid`, `cal-col`, `cal-items`, `cal-item` — grid de calendario
 
+### Repositorio GitHub
+- Repo: `https://github.com/sergiocortina/clase`
+- GitHub Pages: `https://sergiocortina.github.io/clase/`
+- Rama: `main`
+- Presentación 100% estática, sin dependencias
+
+### Control USB / Presentación remota
+- Se agregó soporte para teclas comunes de controles: **PageDown/PageUp** ←, **F5** (siguiente, sin recargar), **Shift+F5** (inicio)
+- El control del usuario ya funciona sin necesidad de configuración adicional
+
 ### Pendiente
 - El visual companion (brainstorming) no funcionó en Windows (bash script incompatible)
