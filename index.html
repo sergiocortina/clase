@@ -1033,8 +1033,8 @@
   <button class="bar-btn" onclick="toggleFullscreen()" title="Pantalla completa (F)">⛶</button>
   <button class="bar-btn" onclick="toggleContrast()" id="contrastBtn" title="Alto contraste (C)">☀</button>
   <button class="btn-small" onclick="goTo(0)" id="resetBtn" style="display:none;">🏠 Inicio</button>
-  <span id="keyDebug" style="font-size:0.5rem;color:rgba(255,255,255,0.15);margin-left:0.3rem;font-family:monospace"></span>
 </div>
+<div id="keyDebug" style="position:fixed;bottom:50%;left:50%;transform:translate(-50%,50%);background:rgba(0,0,0,0.9);border:2px solid #f59e0b;border-radius:12px;padding:1rem 2rem;color:#fff;font-size:1.2rem;font-family:monospace;z-index:999;display:none;text-align:center;pointer-events:none"></div>
 
 <div class="help-overlay" id="helpOverlay">
   <div class="help-box">
@@ -1193,7 +1193,11 @@
   }
 
   document.addEventListener('keydown', e => {
-    document.getElementById('keyDebug').textContent = `key:"${e.key}" code:"${e.code}" which:${e.which}`;
+    (function(kd){
+      kd.innerHTML = `<span style="color:#f59e0b">key:</span> "${e.key}"<br><span style="color:#60a5fa">code:</span> "${e.code}"<br><span style="color:#86efac">which:</span> ${e.which}`;
+      kd.style.display = 'block';
+      clearTimeout(kd._t); kd._t = setTimeout(() => kd.style.display = 'none', 3000);
+    })(document.getElementById('keyDebug'));
 
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
       if (helpOverlay.classList.contains('show')) return;
