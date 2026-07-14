@@ -1033,6 +1033,7 @@
   <button class="bar-btn" onclick="toggleFullscreen()" title="Pantalla completa (F)">⛶</button>
   <button class="bar-btn" onclick="toggleContrast()" id="contrastBtn" title="Alto contraste (C)">☀</button>
   <button class="btn-small" onclick="goTo(0)" id="resetBtn" style="display:none;">🏠 Inicio</button>
+  <span id="keyDebug" style="font-size:0.5rem;color:rgba(255,255,255,0.15);margin-left:0.3rem;font-family:monospace"></span>
 </div>
 
 <div class="help-overlay" id="helpOverlay">
@@ -1192,6 +1193,8 @@
   }
 
   document.addEventListener('keydown', e => {
+    document.getElementById('keyDebug').textContent = `key:"${e.key}" code:"${e.code}" which:${e.which}`;
+
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
       if (helpOverlay.classList.contains('show')) return;
       e.preventDefault(); go(1);
