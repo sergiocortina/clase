@@ -247,8 +247,17 @@
     <img src="qrcode_sergiocortina.github.io.png" alt="QR" style="width:clamp(180px,50vw,320px);height:clamp(180px,50vw,320px);border-radius:16px;border:2px solid rgba(255,255,255,0.06);display:block">
   </div>
 
-  <!-- SLIDE 2: PORTADA -->
+  <!-- SLIDE 2: TÍTULO DEL CURSO -->
   <div class="slide s-dark" data-slide=1>
+    <div class="slide-content">
+      <div class="fade-in" style="margin-bottom:0.5rem;"><span class="tag tag-gold">🏛️ Universidad Cristóbal Colón</span></div>
+      <div class="fade-in d1"><h1 style="font-size:clamp(2.2rem,5.5vw,4.5rem);">Marco Jurídico<br>de los Negocios</h1></div>
+      <div class="fade-in d3"><p class="small" style="margin-top:2rem;"><span style="color:#f59e0b;">→</span> Presiona la tecla derecha para avanzar</p></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: PORTADA UNIDAD -->
+  <div class="slide s-dark" data-slide=2>
     <div class="slide-content">
       <div class="fade-in"><span class="tag tag-gold">🏢 Unidad 6 · Cierre del Curso</span></div>
       <div class="fade-in d1"><h1>Compliance Empresarial<br>y Puesta en Operación</h1></div>
@@ -403,6 +412,15 @@
           <p class="small" style="margin:0;">SCIAN: <strong style="color:#fff;">722513</strong> · Giro: <strong style="color:#fff;">Servicios</strong> (preparación de alimentos) · Riesgo: <span class="pill pill-green">Bajo a medio</span> (depende del municipio)</p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- SLIDE — IMAGEN: USO DE SUELO -->
+  <div class="slide s-dark img-slide" data-slide=5>
+    <div class="fade-in"><span class="tag tag-green">🗺️ Imagen de referencia</span></div>
+    <div class="fade-in d1 img-slide">
+      <img src="img/uso de suelo.png" alt="Uso de suelo" style="max-width:85vw;max-height:70vh;">
+      <p class="img-caption"><strong>Uso de suelo</strong> — Clasificación de usos y destinos del suelo en centros de población.</p>
     </div>
   </div>
 
@@ -1083,7 +1101,7 @@
 </div>
 
 <script>
-  const total = 27;
+  const total = 29;
   const slides = document.getElementById('slides');
   const dotsContainer = document.getElementById('barDots');
   let current = 0, transitioning = false;
@@ -1091,8 +1109,8 @@
   let highContrast = false;
 
   const titles = [
-    'QR Acceso','Portada','Temario Completo','¿Qué es Compliance?','Hoja de Ruta','Clasificación SCIAN',
-    'Uso de Suelo','Uso de Suelo — Casos','SARE','SARE — Beneficios',
+    'QR Acceso','Título del Curso','Portada','Temario Completo','¿Qué es Compliance?','Hoja de Ruta','Clasificación SCIAN',
+    'Imagen: Uso de Suelo','Uso de Suelo','Uso de Suelo — Casos','SARE','SARE — Beneficios',
     'Gráfica: Beneficios SARE','Diagrama: Proceso SARE','SARE — Elementos',
     'SARE — Riesgos','PROSARE','Licencia de Funcionamiento',
     'Licencias de Construcción','Construcción — Riesgos','Constitución Legal',
