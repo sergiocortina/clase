@@ -1,3 +1,27 @@
+# PDFs y documentos
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.typ
+
+# Fuentes y legislación (no se suben)
+fuentes/
+Legislacion/
+Material_Completo/
+
+# Folders del sistema
+.opencode/
+.opencode/**
+node_modules/
+__pycache__/
+.vscode/
+.idea/
+
 # OS
 Thumbs.db
 .DS_Store
+
+# Archivos de evaluación (se integran en diapositivas, no se suben sueltos)
+_EVAL_*.md
+_GUIA_*.md
