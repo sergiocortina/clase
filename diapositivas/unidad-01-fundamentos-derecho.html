@@ -35,7 +35,20 @@
             text-align: left;
         }
         .reveal .slides section {
-            padding: 20px 50px;
+            padding: 20px 40px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .reveal .slides section * {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .reveal .slides p, .reveal .slides li, .reveal .slides h1, .reveal .slides h2, .reveal .slides h3, .reveal .slides h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            margin-right: 0;
+            padding-right: 0;
         }
         .reveal h1,
         .reveal h2,
@@ -596,6 +609,68 @@
             pointer-events: none;
         }
 
+        /* ========== CONTENT CARDS ========== */
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin: 8px 0;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .card p, .card li, .card h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            font-size: 0.85em;
+        }
+        .card-accent-blue { border-left: 4px solid var(--accent-blue); }
+        .card-accent-purple { border-left: 4px solid var(--accent-purple); }
+        .card-accent-pink { border-left: 4px solid var(--accent-pink); }
+        .card-accent-green { border-left: 4px solid var(--accent-green); }
+        .card-accent-orange { border-left: 4px solid var(--accent-orange); }
+        .card-accent-red { border-left: 4px solid var(--accent-red); }
+
+        /* ========== FUN FACT ========== */
+        .fun-fact {
+            background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(239,68,68,0.1));
+            border: 1px solid rgba(245,158,11,0.3);
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin: 10px 0;
+            font-size: 0.85em;
+        }
+        .fun-fact .ff-label {
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ========== SCROLL VERTICAL (TODAS LAS DIAPOSITIVAS) ========== */
+        .reveal .slides section {
+            overflow-y: auto;
+            max-height: 100%;
+            padding-bottom: 40px;
+        }
+        .reveal .slides section::-webkit-scrollbar {
+            width: 6px;
+        }
+        .reveal .slides section::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+            border-radius: 3px;
+        }
+        .reveal .slides section::-webkit-scrollbar-thumb {
+            background: rgba(79,140,255,0.4);
+            border-radius: 3px;
+        }
+        .reveal .slides section::-webkit-scrollbar-thumb:hover {
+            background: rgba(79,140,255,0.6);
+        }
+
         /* ========== RESPONSIVE ========== */
         @media (max-width: 768px) {
             .grid-2,
@@ -727,7 +802,47 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 2: ¿POR QUÉ IMPORTA ESTE TEMA?
+                 SLIDE 2: MAPA DE LA UNIDAD (ÁRBOL)
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Mapa de la Unidad 1</h3>
+                <div style="margin-top: 10px; font-family: monospace; font-size: 0.78em; line-height: 1.55; color: #d1d5db; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 12px; padding: 18px 22px; max-width: 95%; overflow-x: auto;">
+                    <div style="color: var(--accent-blue); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; font-family: 'Raleway', sans-serif;">⚖️ FUNDAMENTOS DEL DERECHO Y MARCO CONSTITUCIONAL</div>
+                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">1.1 Concepto de derecho</span></div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Acepciones: objetivo, subjetivo, positivo, vigente</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Derecho positivo vs. derecho natural</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Derecho vigente vs. derecho derogado</div>
+                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">1.2 Clasificación de normas jurídicas</span></div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Características: bilateralidad, heteronomía, coercibilidad, imperatividad</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Diferencia con normas morales, religiosas y de trato social</div>
+                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">1.3 Clasificación del derecho</span></div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Derecho público</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Derecho privado</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Derecho social (laboral, agrario, seguridad social)</div>
+                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">1.4 Fuentes del derecho</span></div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Formales: ley, jurisprudencia, costumbre, principios generales</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Jerarquía normativa (art. 133 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Proceso legislativo mexicano (arts. 71-72 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">1.5 Acto y hecho jurídico</span></div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Acto jurídico: consentimiento, objeto, capacidad, forma, licitud</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Hecho jurídico: lícitos e ilícitos</div>
+                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">1.6 Constitución como norma suprema</span></div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Supremacía constitucional (art. 133 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Control de constitucionalidad (arts. 103, 105 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">1.7 Estructura del Estado mexicano</span></div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> División de poderes (art. 49 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Distribución de competencias (art. 124 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Municipio Libre (art. 115 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);">└──</span> <span style="color:#fff; font-weight:600;">1.8 Garantías constitucionales para los negocios</span></div>
+                    <div><span style="color:var(--accent-purple);"></span>   <span style="color:var(--accent-green);">├──</span> Libertad de comercio (art. 5 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);"></span>   <span style="color:var(--accent-green);">├──</span> Seguridad jurídica (arts. 14 y 16 CPEUM)</div>
+                    <div><span style="color:var(--accent-purple);"></span>   <span style="color:var(--accent-green);">└──</span> Rectoría económica del Estado (arts. 25, 26, 28 CPEUM)</div>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE 3: ¿POR QUÉ IMPORTA ESTE TEMA? (ant. 2)
                  ========================================== -->
             <section class="content-slide">
                 <h3>¿Por qué importa este tema?</h3>
@@ -744,14 +859,26 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 3: MAPA CONCEPTUAL
+                 SLIDE 4: LEYES RELACIONADAS CON LOS NEGOCIOS (ant. 3)
+                 ========================================== -->
+            <section data-background-color="#0a0a1a" data-auto-animate id="leyes-slide">
+                <div id="leyes-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; width: 100%; height: 85vh;"></div>
+                
+                <div class="fun-fact fragment" id="dato-final" style="margin-top: 14px; display: none;">
+                    <div class="ff-label">💡 Dato clave</div>
+                    <p style="font-size: 0.85em;">El empresario mexicano interactúa diariamente con cientos de leyes, reglamentos, decretos y normas de carácter general de los 3 niveles de gobierno. Conocerlas no es opcional: es la diferencia entre operar con seguridad o enfrentar sanciones, multas y hasta el cierre del negocio.</p>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE 5: MAPA CONCEPTUAL (ant. 4)
                  ========================================== -->
             <section class="content-slide">
                 <h3>Mapa conceptual de la Unidad 1</h3>
                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 20px;">
                     <div class="concept-box blue fragment" style="text-align: center;">
                         <h4 style="font-size: 1em;">1.1 Concepto de Derecho</h4>
-                        <p style="font-size: 0.8em;">Objetivo, subjetivo, positivo. Supremacía e irretroactividad.</p>
+                        <p style="font-size: 0.8em;">Objetivo, subjetivo, positivo, vigente. Supremacía e irretroactividad.</p>
                     </div>
                     <div class="concept-box purple fragment" style="text-align: center;">
                         <h4 style="font-size: 1em;">1.2 Clasificación de las Normas</h4>
@@ -761,56 +888,79 @@
                         <h4 style="font-size: 1em;">1.3 Clasificación del Derecho</h4>
                         <p style="font-size: 0.8em;">Público, privado y social. Supletoriedad.</p>
                     </div>
-                    <div class="concept-box orange fragment" style="text-align: center; grid-column: 1 / 2;">
+                    <div class="concept-box orange fragment" style="text-align: center;">
                         <h4 style="font-size: 1em;">1.4 Fuentes del Derecho</h4>
-                        <p style="font-size: 0.8em;">Jerarquía normativa e integración.</p>
+                        <p style="font-size: 0.8em;">Jerarquía, proceso legislativo, fuentes reales e históricas.</p>
                     </div>
-                    <div class="concept-box pink fragment" style="text-align: center; grid-column: 2 / 4;">
+                    <div class="concept-box pink fragment" style="text-align: center;">
                         <h4 style="font-size: 1em;">1.5 Acto y Hecho Jurídico</h4>
-                        <p style="font-size: 0.8em;">Elementos, nulidad y diferencias entre acto y hecho jurídico.</p>
+                        <p style="font-size: 0.8em;">Elementos, nulidad, hechos lícitos e ilícitos.</p>
+                    </div>
+                    <div class="concept-box blue fragment" style="text-align: center;">
+                        <h4 style="font-size: 1em;">1.6 Constitución Suprema</h4>
+                        <p style="font-size: 0.8em;">Supremacía y control de constitucionalidad.</p>
+                    </div>
+                    <div class="concept-box purple fragment" style="text-align: center;">
+                        <h4 style="font-size: 1em;">1.7 Estructura del Estado</h4>
+                        <p style="font-size: 0.8em;">Poderes, competencias, Municipio Libre.</p>
+                    </div>
+                    <div class="concept-box green fragment" style="text-align: center; grid-column: 2 / 4;">
+                        <h4 style="font-size: 1em;">1.8 Garantías Constitucionales</h4>
+                        <p style="font-size: 0.8em;">Libertad de comercio, seguridad jurídica, rectoría económica.</p>
                     </div>
                 </div>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 4: SECTION HEADER — 1.1
+                 SLIDE 6: SECTION HEADER — 1.1 (ant. 5)
                  ========================================== -->
             <section class="section-header">
-                <p class="section-number">SECCIÓN 1 DE 5</p>
+                <p class="section-number">SECCIÓN 1 DE 8</p>
                 <h2>1.1 Concepto de Derecho</h2>
                 <p class="section-subtitle">Definiciones fundamentales y principios constitucionales</p>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 5: CONCEPTO DE DERECHO
+                 SLIDE 7: CONCEPTO DE DERECHO (ant. 6)
                  ========================================== -->
             <section class="content-slide">
                 <h3>Concepto de Derecho</h3>
-                <div class="grid-3" style="margin-top: 15px;">
-                    <div class="definition-box fragment">
-                        <h4>Derecho Objetivo</h4>
-                        <p>El conjunto de normas que forman el ordenamiento jurídico (Constitución, Código Civil Federal, Código de Comercio, etc.).</p>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div>
+                        <div class="definition-box fragment">
+                            <h4>Derecho Objetivo</h4>
+                            <p>El conjunto de normas que forman el ordenamiento jurídico (Constitución, CCF, CCom, etc.). Es el "derecho como norma".</p>
+                        </div>
+                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
+                            <h4 style="color: var(--accent-purple);">Derecho Subjetivo</h4>
+                            <p>La facultad que una persona tiene para exigir algo amparada por el derecho objetivo (ej: derecho de propiedad, arts. 830–891 CCF).</p>
+                        </div>
                     </div>
-                    <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
-                        <h4 style="color: var(--accent-purple);">Derecho Subjetivo</h4>
-                        <p>La facultad que una persona tiene para exigir algo amparada por el derecho objetivo (ej: derecho de propiedad, arts. 830–891 CCF).</p>
-                    </div>
-                    <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                        <h4 style="color: var(--accent-green);">Derecho Positivo</h4>
-                        <p>El derecho vigente en un país y época determinada.</p>
+                    <div>
+                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
+                            <h4 style="color: var(--accent-green);">Derecho Positivo</h4>
+                            <p>Creado por una autoridad competente mediante proceso legislativo formal. Se distingue del derecho natural (fundamentado en la razón humana).</p>
+                        </div>
+                        <div class="definition-box fragment" style="border-left-color: var(--accent-orange);">
+                            <h4 style="color: var(--accent-orange);">Derecho Vigente</h4>
+                            <p>El derecho positivo que se encuentra en plena aplicación. No todo derecho positivo es vigente: una ley puede haber sido derogada y ya no obligar.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="legal-box fragment" style="margin-top: 15px;">
+                <div class="highlight-box fragment" style="margin-top: 12px;">
+                    <p><strong>Cita:</strong> <em>"El derecho positivo es el que efectivamente rige en una sociedad dada, en un momento determinado."</em> — Jorge Avendaño Valdez, Introducción al Estudio del Derecho</p>
+                </div>
+                <div class="legal-box fragment" style="margin-top: 10px;">
                     <span class="legal-ref">Art. 133 CPEUM</span>
-                    <p><strong>Supremacía constitucional:</strong> Esta Constitución, las leyes del Congreso de la Unión que en ella se funden, los tratados internacionales celebrados por el Presidente de la República, aprobados por el Senado, y las disposiciones de las leyes locales, observarán el ordenamiento jerárquico en su aplicación.</p>
+                    <p><strong>Supremacía constitucional:</strong> Esta Constitución, las leyes del Congreso de la Unión que emanen de ella y todos los tratados que estén de acuerdo con la misma serán la Ley Suprema de toda la Unión.</p>
                 </div>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 6: IRRETROACTIVIDAD E IGNORANCIA
+                 SLIDE 8: IRRETROACTIVIDAD E IGNORANCIA (ant. 7)
                  ========================================== -->
             <section class="content-slide">
                 <h3>La irretroactividad y la ignorancia de la ley</h3>
@@ -833,27 +983,30 @@
                             <p><strong>Juan argumenta:</strong> "Es que yo no sabía que necesitaba un permiso sanitario."</p>
                             <p style="margin-top: 10px;">El art. 21 le responde: <strong>la ignorancia no lo exime.</strong> El permiso era obligatorio y su incumplimiento genera sanciones.</p>
                         </div>
-                        <div class="note-box fragment" style="margin-top: 12px;">
-                            <h4>⚠️ Dato importante</h4>
-                            <p>Si una ley se publica hoy, obliga a partir de los tres días siguientes (art. 3 CCF). Ese plazo existe precisamente para que nadie pueda alegar ignorancia.</p>
-                        </div>
+                <div class="note-box fragment" style="margin-top: 12px;">
+                    <h4>💡 Dato importante</h4>
+                    <p>Si una ley se publica hoy, obliga a partir de los tres días siguientes (art. 3 CCF). Ese plazo existe precisamente para que nadie pueda alegar ignorancia.</p>
+                </div>
+                <div class="highlight-box fragment" style="margin-top: 10px;">
+                    <p><strong>Cita:</strong> <em>"El derecho no es otra cosa que el mínimo de moral que una sociedad necesita para funcionar."</em> — Adolfo Posada y Ruiz, Tratado de Derecho Político</p>
+                </div>
                     </div>
                 </div>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 7: SECTION HEADER — 1.2
+                 SLIDE 8: SECTION HEADER — 1.2
                  ========================================== -->
             <section class="section-header">
-                <p class="section-number">SECCIÓN 2 DE 5</p>
+                <p class="section-number">SECCIÓN 2 DE 8</p>
                 <h2>1.2 Clasificación de las Normas</h2>
                 <p class="section-subtitle">Características de las normas jurídicas y su temporalidad</p>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 8: CARACTERÍSTICAS DE LAS NORMAS
+                 SLIDE 9: CARACTERÍSTICAS DE LAS NORMAS
                  ========================================== -->
             <section class="content-slide">
                 <h3>Características de las normas jurídicas</h3>
@@ -869,8 +1022,8 @@
                             </ul>
                         </div>
                         <div class="legal-box fragment" style="margin-top: 12px;">
-                            <span class="legal-ref">Art. 6 CCF</span>
-                            <p>La ley no tiene efecto retroactivo, sino en el caso de que la disposición legal así lo exprese. Los actos ejecutados al amparo de la ley vigente al momento de su realización, no pueden ser invalidados si han sido juzgados.</p>
+                            <span class="legal-ref">Art. 5 CCF</span>
+                            <p>"A ninguna ley ni disposición gubernativa se dará efecto retroactivo en perjuicio de persona alguna."</p>
                         </div>
                     </div>
                     <div>
@@ -906,8 +1059,62 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 9: LA LEY EN EL TIEMPO
+                 SLIDE 10: EJEMPLO NORMAS vs. PROFECO
                  ========================================== -->
+            <section class="content-slide">
+                <h3>¿Por qué las normas jurídicas son diferentes?</h3>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div>
+                        <div class="example-box fragment">
+                            <h4>📋 Ejemplo: Un comerciante vende productos caducados</h4>
+                            <p><strong>Si solo fuera moral:</strong> bastaría con que se arrepintiera internamente.</p>
+                            <p style="margin-top: 8px;"><strong>Como norma jurídica:</strong> la PROFECO puede sancionarlo con multa y obligarlo a resarcir al consumidor (Ley Federal de Protección al Consumidor).</p>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="comparison-table fragment">
+                            <thead>
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>Norma jurídica</th>
+                                    <th>Norma moral</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Origen</strong></td>
+                                    <td>Estado (legislador)</td>
+                                    <td>Conciencia individual</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Relación</strong></td>
+                                    <td>Bilateral (acreedor-deudor)</td>
+                                    <td>Unilateral (solo el sujeto)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Imposición</strong></td>
+                                    <td>Heterónoma (externa)</td>
+                                    <td>Autónoma (interna)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cumplimiento</strong></td>
+                                    <td>Coercible (fuerza estatal)</td>
+                                    <td>Incoercible (remordimiento)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sanción</strong></td>
+                                    <td>Multa, prisión, indemnización</td>
+                                    <td>Remordimiento, reproche moral</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="highlight-box fragment" style="margin-top: 10px;">
+                    <p><strong>Cita:</strong> <em>"La norma jurídica se distingue de la norma moral en que aquélla regula la conducta externa del individuo y ésta la interna; la primera se refiere a la relación entre dos personas, la segunda al comportamiento individual."</em> — Eduardo Couture, Fundamentos de Derecho Civil</p>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
             <section class="content-slide">
                 <h3>La ley en el tiempo</h3>
                 <div class="grid-2" style="margin-top: 15px;">
@@ -940,17 +1147,17 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 10: SECTION HEADER — 1.3
+                 SLIDE 11: SECTION HEADER — 1.3
                  ========================================== -->
             <section class="section-header">
-                <p class="section-number">SECCIÓN 3 DE 5</p>
+                <p class="section-number">SECCIÓN 3 DE 8</p>
                 <h2>1.3 Clasificación del Derecho</h2>
                 <p class="section-subtitle">Las tres ramas del derecho y su relación</p>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 11: LAS TRES RAMAS DEL DERECHO
+                 SLIDE 12: LAS TRES RAMAS DEL DERECHO
                  ========================================== -->
             <section class="content-slide">
                 <h3>Las tres ramas del derecho</h3>
@@ -979,11 +1186,37 @@
                         <li><strong>Social:</strong> Juan contrata empleados y les da de alta en el IMSS conforme a la LFT.</li>
                     </ul>
                 </div>
+                <table class="comparison-table fragment" style="margin-top: 12px;">
+                    <thead>
+                        <tr>
+                            <th>Rama</th>
+                            <th>Ámbito</th>
+                            <th>Relación con los negocios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong style="color: var(--accent-blue);">Público</strong></td>
+                            <td>Estado ↔ particulares</td>
+                            <td>Permisos, licencias, impuestos, regulación administrativa</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--accent-purple);">Privado</strong></td>
+                            <td>Particulares ↔ particulares</td>
+                            <td>Contratos, obligaciones, sociedades, propiedad</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--accent-green);">Social</strong></td>
+                            <td>Protección de trabajadores</td>
+                            <td>Relaciones laborales, prestaciones, seguridad social</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 12: SUPLETORIEDAD DEL DERECHO CIVIL
+                 SLIDE 13: SUPLETORIEDAD DEL DERECHO CIVIL
                  ========================================== -->
             <section class="content-slide">
                 <h3>Supletoriedad del derecho civil</h3>
@@ -995,7 +1228,7 @@
                         </div>
                         <div class="legal-box fragment" style="margin-top: 12px;">
                             <span class="legal-ref">Art. 1 CCom</span>
-                            <p>La libertad de contratación y el principio de autonomía de la voluntad son los fundamentos del derecho mercantil.</p>
+                            <p>"Los actos comerciales sólo se regirán por lo dispuesto en este Código y las demás leyes mercantiles aplicables."</p>
                         </div>
                     </div>
                     <div>
@@ -1016,17 +1249,17 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 13: SECTION HEADER — 1.4
+                 SLIDE 14: SECTION HEADER — 1.4
                  ========================================== -->
             <section class="section-header">
-                <p class="section-number">SECCIÓN 4 DE 5</p>
+                <p class="section-number">SECCIÓN 4 DE 8</p>
                 <h2>1.4 Fuentes del Derecho</h2>
                 <p class="section-subtitle">Jerarquía normativa e integración jurídica</p>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 14: JERARQUÍA NORMATIVA
+                 SLIDE 15: JERARQUÍA NORMATIVA
                  ========================================== -->
             <section class="content-slide">
                 <h3>Jerarquía normativa</h3>
@@ -1068,7 +1301,7 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 15: ARTÍCULOS DE INTEGRACIÓN JURÍDICA
+                 SLIDE 16: ARTÍCULOS DE INTEGRACIÓN JURÍDICA
                  ========================================== -->
             <section class="content-slide">
                 <h3>Artículos de integración jurídica</h3>
@@ -1096,7 +1329,7 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 16: LAS FUENTES EN LA PRÁCTICA
+                 SLIDE 17: LAS FUENTES EN LA PRÁCTICA
                  ========================================== -->
             <section class="content-slide">
                 <h3>Las fuentes en la práctica</h3>
@@ -1118,17 +1351,94 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 17: SECTION HEADER — 1.5
+                 SLIDE: PROCESO LEGISLATIVO MEXICANO
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Proceso legislativo mexicano</h3>
+                <p style="font-size: 0.85em; color: #9ca3af; margin-bottom: 12px;">Arts. 71–72 CPEUM — ¿Cómo se crea una ley?</p>
+                <div class="timeline" style="margin-top: 15px;">
+                    <div class="timeline-item fragment">
+                        <strong>1. Iniciativa</strong>
+                        <p>La presentan el Presidente, diputados, senadores o legislaturas de los estados.</p>
+                        <p class="tl-ref">Art. 71 CPEUM</p>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <strong>2. Dictamen de comisiones</strong>
+                        <p>Las comisiones ordinarias de la Cámara de Origen analizan la iniciativa.</p>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <strong>3. Debate y votación</strong>
+                        <p>Se aprueba, modifica o rechaza en la Cámara de Origen.</p>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <strong>4. Remisión a la Cámara Revisora</strong>
+                        <p>La iniciativa aprobada se envía a la otra cámara.</p>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <strong>5. Conciliación</strong>
+                        <p>Si hay diferencias, una comisión mixta busca acuerdos.</p>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <strong>6. Publicación en el DOF</strong>
+                        <p>La ley se publica en el Diario Oficial de la Federación.</p>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <strong>7. Entrada en vigor</strong>
+                        <p>Tres días después de su publicación (art. 3 CCF).</p>
+                    </div>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE: FUENTES REALES E HISTÓRICAS
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Fuentes reales e históricas</h3>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div>
+                        <div class="concept-box orange fragment">
+                            <h4><i class="fas fa-cogs"></i> Fuentes reales</h4>
+                            <p>Factores económicos, sociales, políticos e históricos que condicionan la creación del derecho.</p>
+                            <ul style="margin-top: 8px; font-size: 0.85em;">
+                                <li>Condiciones económicas de la sociedad</li>
+                                <li>Movimientos sociales</li>
+                                <li>Presión de grupos de interés</li>
+                                <li>Evolución tecnológica</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="concept-box purple fragment">
+                            <h4><i class="fas fa-landmark"></i> Fuentes históricas</h4>
+                            <p>Antecedentes normativos que han configurado el sistema jurídico actual.</p>
+                            <ul style="margin-top: 8px; font-size: 0.85em;">
+                                <li><strong>Derecho Romano:</strong> Estructura del Código Civil</li>
+                                <li><strong>Derecho Español:</strong> Durante la Colonia</li>
+                                <li><strong>Siete Partidas:</strong> Compilación de Alfonso X</li>
+                                <li><strong>Leyes de Indias:</strong> Regulación colonial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-box fragment" style="margin-top: 12px;">
+                    <p><strong>Importancia:</strong> Las fuentes reales explican <em>por qué</em> existe una ley; las fuentes históricas explican <em>de dónde viene</em> el sistema jurídico que hoy aplicamos.</p>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE 18: SECTION HEADER — 1.5
                  ========================================== -->
             <section class="section-header">
-                <p class="section-number">SECCIÓN 5 DE 5</p>
+                <p class="section-number">SECCIÓN 5 DE 8</p>
                 <h2>1.5 Acto y Hecho Jurídico</h2>
                 <p class="section-subtitle">Elementos, nulidad y diferencias fundamentales</p>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 18: ELEMENTOS DEL ACTO JURÍDICO
+                 SLIDE 19: ELEMENTOS DEL ACTO JURÍDICO
                  ========================================== -->
             <section class="content-slide">
                 <h3>Elementos del acto jurídico</h3>
@@ -1188,7 +1498,7 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 19: ACTO VS. HECHO JURÍDICO
+                 SLIDE 20: ACTO VS. HECHO JURÍDICO
                  ========================================== -->
             <section class="content-slide">
                 <h3>Acto vs. Hecho jurídico</h3>
@@ -1212,15 +1522,54 @@
                         <p><strong>Nulidad:</strong> Los actos jurídicos contrarios a la ley son nulos de pleno derecho, y no producen efecto alguno.</p>
                     </div>
                     <div class="legal-box fragment" style="border-left-color: var(--accent-pink);">
-                        <span class="legal-ref" style="background: linear-gradient(135deg, var(--accent-pink), var(--accent-red));">Art. 17 CCF</span>
-                        <p><strong>Lesión:</strong> El acto jurídico puede anularse cuando una persona recibe daño por causa de error, dolo, violencia o intimidación.</p>
+                        <span class="legal-ref" style="background: linear-gradient(135deg, var(--accent-pink), var(--accent-red));">Arts. 1796–1800 CCF</span>
+                        <p><strong>Vicios del consentimiento:</strong> El acto jurídico puede anularse cuando el consentimiento se vició por error, dolo, violencia o intimidación.</p>
                     </div>
                 </div>
                 <div class="jslides-logo">JSIDES</div>
             </section>
 
             <!-- ==========================================
-                 SLIDE 20: LEGISLACIÓN COMENTADA
+                 SLIDE: CLASIFICACIÓN DE HECHOS JURÍDICOS
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Clasificación de hechos jurídicos</h3>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div>
+                        <div class="concept-box green fragment">
+                            <h4><i class="fas fa-check-circle"></i> Hechos jurídicos lícitos</h4>
+                            <p>Son los hechos permitidos por la ley que generan obligaciones.</p>
+                            <ul style="margin-top: 8px; font-size: 0.85em;">
+                                <li>Transcurso del tiempo (prescripción)</li>
+                                <li>Nacimiento de una persona</li>
+                                <li>Pago voluntario de una deuda</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="concept-box red fragment">
+                            <h4><i class="fas fa-times-circle"></i> Hechos jurídicos ilícitos</h4>
+                            <p>Son los hechos prohibidos por la ley que generan responsabilidad.</p>
+                            <ul style="margin-top: 8px; font-size: 0.85em;">
+                                <li>Accidente automovilístico que daña a terceros</li>
+                                <li>Incendio causado por negligencia</li>
+                                <li>Daño por products defectuosos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="legal-box fragment" style="margin-top: 12px;">
+                    <span class="legal-ref">Art. 1915 CCF</span>
+                    <p>El deudor no será responsable del caso fortuito o de la fuerza mayor, a menos que haya causado o contribuido a ellos intencionalmente.</p>
+                </div>
+                <div class="highlight-box fragment" style="margin-top: 10px;">
+                    <p><strong>Cita:</strong> <em>"El acto jurídico es la manifestación de voluntad dirigida a producir efectos jurídicos. El hecho jurídico es todo acontecimiento que produce efectos jurídicos sin que intervenga la voluntad dirigida a ese fin."</em> — Jorge Avendaño Valdez, Introducción al Estudio del Derecho</p>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE 21: LEGISLACIÓN COMENTADA
                  ========================================== -->
             <section class="content-slide">
                 <h3>Legislación comentada</h3>
@@ -1253,7 +1602,7 @@
                 <div class="grid-2" style="margin-top: 8px;">
                     <div class="legal-box fragment" style="border-left-color: var(--accent-purple);">
                         <span class="legal-ref">Art. 6 CCF</span>
-                        <p><strong>Irrenunciabilidad.</strong> La ley no tiene efecto retroactivo salvo disposición expresa. Los actos ejecutados bajo la ley vigente no pueden ser invalidados.</p>
+                        <p><strong>Irrenunciabilidad.</strong> La voluntad de los particulares no puede eximir de la observancia de la ley, ni alterarla o modificarla. Sólo pueden renunciarse los derechos privados que no afecten directamente al interés público.</p>
                     </div>
                     <div class="legal-box fragment" style="border-left-color: var(--accent-blue);">
                         <span class="legal-ref" style="background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));">Art. 10 CCF</span>
@@ -1274,7 +1623,7 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 21: CASO PRÁCTICO
+                 SLIDE 22: CASO PRÁCTICO
                  ========================================== -->
             <section class="content-slide">
                 <h3>Caso práctico — Juan cumple con la ley</h3>
@@ -1328,31 +1677,290 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 22: ESQUEMA DE SÍNTESIS
+                 SECTION HEADER — 1.6
+                 ========================================== -->
+            <section class="section-header">
+                <p class="section-number">SECCIÓN 6 DE 8</p>
+                <h2>1.6 Constitución como norma suprema</h2>
+                <p class="section-subtitle">Supremacía constitucional y control de constitucionalidad</p>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE: SUPREMACÍA CONSTITUCIONAL
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Supremacía constitucional</h3>
+                <div class="definition-box fragment" style="margin-top: 15px;">
+                    <h4>Definición</h4>
+                    <p>Principio según el cual la Constitución se encuentra en la cúspide del ordenamiento jurídico y todas las demás normas deben ser conformes a ella. Toda norma que la contravenga es inválida.</p>
+                </div>
+                <div class="grid-3" style="margin-top: 15px;">
+                    <div class="concept-box blue fragment">
+                        <h4>Supremacía formal</h4>
+                        <p>La Constitución es la norma de mayor jerarquía. Ninguna otra norma puede contravenirla.</p>
+                    </div>
+                    <div class="concept-box purple fragment">
+                        <h4>Supremacía material</h4>
+                        <p>Solo puede modificarse mediante reforma constitucional (art. 135), no por ley ordinaria.</p>
+                    </div>
+                    <div class="concept-box green fragment">
+                        <h4>Supremacía territorial</h4>
+                        <p>Rige en todo el territorio nacional. Las leyes locales deben ser conformes a ella.</p>
+                    </div>
+                </div>
+                <div class="legal-box fragment" style="margin-top: 12px;">
+                    <span class="legal-ref">Art. 135 CPEUM</span>
+                    <p>La Constitución podrá ser adicionada o reformada por el Congreso de la Unión, con el voto de las dos terceras partes de los diputados y senadores presentes, y serán sometidas a la ratificación de la mitad de las legislaturas de los Estados.</p>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE: CONTROL DE CONSTITUCIONALIDAD
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Control de constitucionalidad</h3>
+                <p style="font-size: 0.85em; color: #9ca3af; margin-bottom: 12px;">Mecanismos para hacer efectiva la supremacía constitucional</p>
+                <div class="grid-3" style="margin-top: 12px;">
+                    <div class="concept-box blue fragment">
+                        <h4><i class="fas fa-gavel"></i> Acción de inconstitucionalidad</h4>
+                        <p>Proceso ante la SCJN para declarar la inconstitucionalidad de leyes o actos generales.</p>
+                        <p style="font-size: 0.8em; color: var(--accent-blue); margin-top: 6px;">Art. 105 CPEUM</p>
+                    </div>
+                    <div class="concept-box purple fragment">
+                        <h4><i class="fas fa-shield-alt"></i> Juicio de amparo</h4>
+                        <p>Mecanismo para proteger derechos fundamentales de los particulares frente a actos de autoridad.</p>
+                        <p style="font-size: 0.8em; color: var(--accent-purple); margin-top: 6px;">Art. 103 CPEUM</p>
+                    </div>
+                    <div class="concept-box green fragment">
+                        <h4><i class="fas fa-exchange-alt"></i> Contradicción de tesis</h4>
+                        <p>Procedimiento para resolver discrepancias entre tribunales sobre interpretación de una norma.</p>
+                        <p style="font-size: 0.8em; color: var(--accent-green); margin-top: 6px;">Art. 107 CPEUM</p>
+                    </div>
+                </div>
+                <div class="highlight-box fragment" style="margin-top: 12px;">
+                    <p><strong>Para el empresario:</strong> Sus derechos fundamentales (libertad de comercio, seguridad jurídica, propiedad) están protegidos por la Constitución y pueden ser defendidos mediante amparo o acción de inconstitucionalidad si una autoridad o una ley los vulnera.</p>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION HEADER — 1.7
+                 ========================================== -->
+            <section class="section-header">
+                <p class="section-number">SECCIÓN 7 DE 8</p>
+                <h2>1.7 Estructura del Estado mexicano</h2>
+                <p class="section-subtitle">División de poderes y distribución de competencias</p>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE: DIVISIÓN DE PODERES
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>División de poderes</h3>
+                <p style="font-size: 0.85em; color: #9ca3af; margin-bottom: 10px;">Art. 49 CPEUM — "El supremo poder del Estado se divide, para su ejercicio, en Legislativo, Ejecutivo y Judicial."</p>
+                <div class="grid-3" style="margin-top: 12px;">
+                    <div class="concept-box blue fragment">
+                        <h4><i class="fas fa-scroll"></i> Poder Legislativo</h4>
+                        <p>Crea leyes generales, abstractas e impersonales.</p>
+                        <p style="font-size: 0.8em; color: var(--accent-blue); margin-top: 6px;">Congreso de la Unión (arts. 50–79 CPEUM)</p>
+                        <p style="font-size: 0.8em; margin-top: 4px;">Facultades: crear impuestos, regular el comercio, aprobar tratados.</p>
+                    </div>
+                    <div class="concept-box green fragment">
+                        <h4><i class="fas fa-landmark"></i> Poder Ejecutivo</h4>
+                        <p>Ejecuta leyes, expide reglamentos, administra la función pública.</p>
+                        <p style="font-size: 0.8em; color: var(--accent-green); margin-top: 6px;">Presidente (arts. 80–93 CPEUM)</p>
+                        <p style="font-size: 0.8em; margin-top: 4px;">Facultades: presentar iniciativas, expedir reglamentos, celebrar tratados.</p>
+                    </div>
+                    <div class="concept-box purple fragment">
+                        <h4><i class="fas fa-balance-scale"></i> Poder Judicial</h4>
+                        <p>Resuelve conflictos con autoridad de cosa juzgada.</p>
+                        <p style="font-size: 0.8em; color: var(--accent-purple); margin-top: 6px;">SCJN, Tribunales (arts. 94–139 CPEUM)</p>
+                        <p style="font-size: 0.8em; margin-top: 4px;">Facultades: control de constitucionalidad, amparo, jurisprudencia.</p>
+                    </div>
+                </div>
+                <div class="note-box fragment" style="margin-top: 12px;">
+                    <h4>⚠️ Pero ojo...</h4>
+                    <p>La realidad es más compleja: cada poder ejerce funciones de los otros. El Ejecutivo emite reglamentos (función legislativa material). Los tribunales administrativos resuelven conflictos (función jurisdiccional).</p>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE: DISTRIBUCIÓN DE COMPETENCIAS
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Distribución de competencias y Municipio Libre</h3>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div>
+                        <div class="legal-box fragment">
+                            <span class="legal-ref">Art. 124 CPEUM</span>
+                            <p><strong>Competencia residual:</strong> "Las facultades que no están expresamente concedidas por esta Constitución a los funcionarios fedulares, se entienden reservadas a los Estados o a los Municipios."</p>
+                        </div>
+                        <div class="highlight-box fragment" style="margin-top: 12px;">
+                            <p>Todo lo que no está expresamente asignado a la Federación corresponde a los estados o municipios.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="legal-box fragment" style="border-left-color: var(--accent-green);">
+                            <span class="legal-ref" style="background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));">Art. 115 CPEUM</span>
+                            <p><strong>Municipio Libre:</strong> Los municipios son libres para administrar su patrimonio y elegir sus autoridades. Tienen autonomía para prestar servicios públicos y crear impuestos propios.</p>
+                        </div>
+                        <div class="example-box fragment" style="margin-top: 12px;">
+                            <h4>📋 Ejemplo práctico</h4>
+                            <p>Un empresario que abre un restaurante debe cumplir con 3 niveles de gobierno:</p>
+                            <ul style="font-size: 0.85em;">
+                                <li><strong>Federal:</strong> Ley Federal del Trabajo, Código Fiscal</li>
+                                <li><strong>Estatal:</strong> Protección civil, salud</li>
+                                <li><strong>Municipal:</strong> Permiso de funcionamiento, licencia de uso de suelo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION HEADER — 1.8
+                 ========================================== -->
+            <section class="section-header">
+                <p class="section-number">SECCIÓN 8 DE 8</p>
+                <h2>1.8 Garantías constitucionales</h2>
+                <p class="section-subtitle">Libertad de comercio, seguridad jurídica y rectoría económica</p>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE: LIBERTAD DE COMERCIO Y SEGURIDAD JURÍDICA
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Libertad de comercio y seguridad jurídica</h3>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div>
+                        <div class="legal-box fragment">
+                            <span class="legal-ref">Art. 5 CPEUM</span>
+                            <p><strong>Libertad de comercio:</strong> "A ninguna persona podrá impedirse que se dedique a la profesión, industria, comercio o trabajo que le acomode, siendo lícitos."</p>
+                            <p style="font-size: 0.82em; margin-top: 6px;">Es la base constitucional de la libertad empresarial. El Estado puede regular, pero no prohibir sin justificación.</p>
+                        </div>
+                        <div class="note-box fragment" style="margin-top: 12px;">
+                            <h4>⚠️ Importante</h4>
+                            <p>La libertad de comercio no implica ausencia de regulación. El art. 5 permite al Estado establecer condiciones (sanitarias, fiscales, laborales), pero no puede prohibir la actividad misma.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="legal-box fragment" style="border-left-color: var(--accent-purple);">
+                            <span class="legal-ref" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));">Arts. 14 y 16 CPEUM</span>
+                            <p><strong>Seguridad jurídica:</strong> Tres principios fundamentales:</p>
+                            <ul style="margin-top: 8px; font-size: 0.85em;">
+                                <li><strong>Legalidad:</strong> Toda autoridad debe actuar con fundamento en la ley.</li>
+                                <li><strong>Irretroactividad:</strong> Las leyes no pueden afectar derechos adquiridos.</li>
+                                <li><strong>Debido proceso:</strong> Nadie puede ser privado de sus derechos sin juicio previo.</li>
+                            </ul>
+                        </div>
+                        <div class="example-box fragment" style="margin-top: 12px;">
+                            <h4>📋 Ejemplo</h4>
+                            <p>Una empresa tiene derecho a que no le decomisen mercancía sin orden judicial escrita que funde y motive el decomiso (art. 16 CPEUM).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE: RECTORÍA ECONÓMICA DEL ESTADO
+                 ========================================== -->
+            <section class="content-slide">
+                <h3>Rectoría económica del Estado</h3>
+                <div class="grid-3" style="margin-top: 15px;">
+                    <div class="legal-box fragment">
+                        <span class="legal-ref">Art. 25 CPEUM</span>
+                        <p><strong>Rectoría del desarrollo nacional.</strong> Al desarrollo económico concurrirán el sector público, el sector social y el sector privado.</p>
+                        <p style="font-size: 0.82em; margin-top: 6px;">El Estado orienta, el sector social participa y el sector privado opera.</p>
+                    </div>
+                    <div class="legal-box fragment" style="border-left-color: var(--accent-green);">
+                        <span class="legal-ref" style="background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));">Art. 26 CPEUM</span>
+                        <p><strong>Sistema Nacional de Planeación.</strong> El Plan Nacional de Desarrollo establece objetivos y estrategias nacionales.</p>
+                        <p style="font-size: 0.82em; margin-top: 6px;">El Presidente es responsable de su elaboración.</p>
+                    </div>
+                    <div class="legal-box fragment" style="border-left-color: var(--accent-red);">
+                        <span class="legal-ref" style="background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));">Art. 28 CPEUM</span>
+                        <p><strong>Prohibición de monopolios.</strong> Se prohíben los monopolios, las prácticas monopólicas y las concentraciones ilícitas.</p>
+                        <p style="font-size: 0.82em; margin-top: 6px;">Áreas estratégicas reservadas al Estado (petróleo, energía, agua).</p>
+                    </div>
+                </div>
+                <table class="comparison-table fragment" style="margin-top: 12px;">
+                    <thead>
+                        <tr>
+                            <th>Garantía</th>
+                            <th>Artículos</th>
+                            <th>Aplicación a los negocios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong style="color: var(--accent-blue);">Libertad de comercio</strong></td>
+                            <td>Art. 5</td>
+                            <td>Derecho a dedicarse a cualquier actividad económica lícita</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--accent-purple);">Seguridad jurídica</strong></td>
+                            <td>Arts. 14, 16</td>
+                            <td>Irretroactividad, debido proceso, legalidad</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--accent-green);">Rectoría económica</strong></td>
+                            <td>Arts. 25, 26, 28</td>
+                            <td>Libre concurrencia, prohibición de monopolios</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="example-box fragment" style="margin-top: 12px;">
+                    <h4>📋 Ejemplo</h4>
+                    <p>Una empresa que domina el 90% del mercado y fija precios excesivos podría estar incurriendo en práctica monopólica, sancionada por la Ley Federal de Competencia Económica. El art. 28 constitucional es la base de esa regulación.</p>
+                </div>
+                <div class="jslides-logo">JSIDES</div>
+            </section>
+
+            <!-- ==========================================
+                 SLIDE 23: ESQUEMA DE SÍNTESIS
                  ========================================== -->
             <section class="content-slide">
                 <h3>Esquema de síntesis</h3>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 15px;">
                     <div class="concept-box blue">
-                        <h4>1.1 Concepto de Derecho</h4>
-                        <p>Derecho objetivo (normas), subjetivo (facultades), positivo (vigente). Suprema la Constitución.</p>
+                        <h4 style="font-size: 0.9em;">1.1 Concepto de Derecho</h4>
+                        <p style="font-size: 0.78em;">Objetivo, subjetivo, positivo, vigente. Irretroactividad e ignorancia de la ley.</p>
                     </div>
                     <div class="concept-box purple">
-                        <h4>1.2 Clasificación de las Normas</h4>
-                        <p>Jurídicas: bilaterales, heterónomas, coercibles. Obligan desde su publicación + 3 días.</p>
+                        <h4 style="font-size: 0.9em;">1.2 Clasificación de Normas</h4>
+                        <p style="font-size: 0.78em;">Bilaterales, heterónomas, coercibles. Obligan desde publicación + 3 días.</p>
                     </div>
                     <div class="concept-box green">
-                        <h4>1.3 Clasificación del Derecho</h4>
-                        <p>Público (Estado), privado (particulares), social (laboral). El CCF es supletorio del CCom.</p>
+                        <h4 style="font-size: 0.9em;">1.3 Clasificación del Derecho</h4>
+                        <p style="font-size: 0.78em;">Público, privado, social. Supletoriedad del CCF frente al CCom.</p>
                     </div>
                     <div class="concept-box orange">
-                        <h4>1.4 Fuentes del Derecho</h4>
-                        <p>Jerarquía: Constitución → Leyes → Reglamentos → Jurisprudencia → Principios → Costumbre.</p>
+                        <h4 style="font-size: 0.9em;">1.4 Fuentes del Derecho</h4>
+                        <p style="font-size: 0.78em;">Jerarquía normativa, proceso legislativo, fuentes reales e históricas.</p>
                     </div>
-                </div>
-                <div class="concept-box pink" style="margin-top: 12px; text-align: center;">
-                    <h4>1.5 Acto y Hecho Jurídico</h4>
-                    <p>Acto jurídico: voluntario, con 5 elementos. Hecho jurídico: involuntario, genera efectos sin voluntad. Art. 8 CCF: nulidad por licitud.</p>
+                    <div class="concept-box pink">
+                        <h4 style="font-size: 0.9em;">1.5 Acto y Hecho Jurídico</h4>
+                        <p style="font-size: 0.78em;">Elementos del acto jurídico. Hechos lícitos e ilícitos. Nulidad.</p>
+                    </div>
+                    <div class="concept-box blue">
+                        <h4 style="font-size: 0.9em;">1.6 Constitución Suprema</h4>
+                        <p style="font-size: 0.78em;">Supremacía formal, material y territorial. Control de constitucionalidad.</p>
+                    </div>
+                    <div class="concept-box purple">
+                        <h4 style="font-size: 0.9em;">1.7 Estructura del Estado</h4>
+                        <p style="font-size: 0.78em;">División de poderes. Distribución de competencias. Municipio Libre.</p>
+                    </div>
+                    <div class="concept-box green">
+                        <h4 style="font-size: 0.9em;">1.8 Garantías Constitucionales</h4>
+                        <p style="font-size: 0.78em;">Libertad de comercio, seguridad jurídica, rectoría económica.</p>
+                    </div>
                 </div>
                 <div class="highlight-box" style="margin-top: 12px;">
                     <p><strong>Regla de oro:</strong> El derecho es el marco que protege y hace posible cualquier negocio. Conocerlo es el primer paso para emprender con seguridad.</p>
@@ -1361,7 +1969,7 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 23: AUTOEVALUACIÓN
+                 SLIDE 24: AUTOEVALUACIÓN
                  ========================================== -->
             <section class="content-slide">
                 <h3>Autoevaluación</h3>
@@ -1435,7 +2043,7 @@
             </section>
 
             <!-- ==========================================
-                 SLIDE 24: CIERRE
+                 SLIDE 25: CIERRE
                  ========================================== -->
             <section class="title-slide">
                 <a href="../index.html" class="back-btn" style="position:absolute;top:20px;left:20px;z-index:1000;"><i class="fas fa-arrow-left"></i> Índice</a>
@@ -1465,19 +2073,44 @@
         // ========== Reveal.js Initialization ==========
         Reveal.initialize({
             hash: true,
+            slideNumber: 'c/t',
+            width: 1100,
+            height: 700,
+            margin: 0.04,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            center: true,
             controls: true,
             controlsLayout: 'edges',
             controlsTutorial: false,
-            progress: true,
-            slideNumber: 'c/t',
-            showSlideNumber: 'all',
-            center: false,
-            transition: 'slide',
-            transitionSpeed: 'default',
-            width: 1280,
-            height: 800,
-            margin: 0.04,
+            disableLayout: true,
             plugins: [RevealNotes]
+        });
+
+        // Click en cualquier lugar avanza la diapositiva
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('a, button, .quiz-option, [onclick], input, select, textarea')) {
+                return;
+            }
+            var slide = Reveal.getCurrentSlide();
+            if (e.target === slide || slide.contains(e.target)) {
+                Reveal.navigateNext();
+            }
+        });
+
+        // Mapeo de teclas de volumen para scroll
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode === 174 || e.keyCode === 175) {
+                e.preventDefault();
+                var slide = Reveal.getCurrentSlide();
+                var scrollAmount = 100;
+                if (e.keyCode === 175) {
+                    slide.scrollTop -= scrollAmount;
+                } else {
+                    slide.scrollTop += scrollAmount;
+                }
+            }
         });
 
         // ========== Quiz Interactive JavaScript ==========
@@ -1531,6 +2164,76 @@
                 });
             } else {
                 initQuizzes();
+            }
+        });
+
+        // ========== Animated Law Blocks (Slide 3) ==========
+        const leyesNegocios = [
+            {nombre: "Constitución Política de los Estados Unidos Mexicanos", color: "blue"},
+            {nombre: "Código Civil Federal", color: "purple"},
+            {nombre: "Código de Comercio", color: "green"},
+            {nombre: "Ley Federal del Trabajo", color: "orange"},
+            {nombre: "Código Fiscal de la Federación", color: "pink"},
+            {nombre: "Ley General de Sociedades Mercantiles", color: "red"},
+            {nombre: "Ley Federal de Protección al Consumidor", color: "blue"},
+            {nombre: "Ley del Seguro Social", color: "purple"},
+            {nombre: "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores", color: "green"},
+            {nombre: "Ley del Impuesto Sobre la Renta", color: "orange"},
+            {nombre: "Ley del Impuesto al Valor Agregado", color: "pink"},
+            {nombre: "Ley del Impuesto General Importaciones y Exportaciones", color: "red"},
+            {nombre: "Ley Federal de Protección a la Propiedad Industrial", color: "blue"},
+            {nombre: "Ley Federal del Derecho de Autor", color: "purple"},
+            {nombre: "Ley General de Sociedades Cooperativas", color: "green"},
+            {nombre: "Ley Federal de Competencia Económica", color: "orange"},
+            {nombre: "Ley del Servicio de Administración Tributaria", color: "pink"},
+            {nombre: "Ley Orgánica de la Administración Pública Federal", color: "red"},
+            {nombre: "Ley General de Profesiones", color: "blue"},
+            {nombre: "Ley Federal de Armas de Fuego y Explosivos", color: "purple"},
+            {nombre: "Ley General de Salud", color: "green"},
+            {nombre: "Ley Federal de Prevención de Riesgos Laborales", color: "orange"},
+            {nombre: "Ley del Infonavit", color: "pink"},
+            {nombre: "Ley del Instituto Mexicano del Seguro Social", color: "red"},
+            {nombre: "Ley Federal del Trabajo", color: "blue"},
+            {nombre: "Ley de Infraestructura de la Calidad", color: "purple"},
+            {nombre: "Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita", color: "green"},
+            {nombre: "Ley Nacional sobre Sistema de Monitoreo de Transacciones en Efectivo", color: "orange"},
+            {nombre: "Ley General de Sociedades Mercantiles", color: "pink"},
+            {nombre: "Ley de Sociedades por Acciones Simplificadas", color: "red"}
+        ];
+
+        let leyesTimer = null;
+        let leyesIndex = 0;
+
+        function mostrarLeyNegocio() {
+            var grid = document.getElementById('leyes-grid');
+            if (!grid || leyesIndex >= leyesNegocios.length) {
+                var dato = document.getElementById('dato-final');
+                if (dato) dato.style.display = 'block';
+                return;
+            }
+            var ley = leyesNegocios[leyesIndex];
+            var div = document.createElement('div');
+            div.className = 'card card-accent-' + ley.color;
+            div.style.cssText = 'padding: 10px 12px; text-align: center; font-size: clamp(10px, 1.2vw, 16px); animation: fadeIn 0.3s ease;';
+            div.innerHTML = '<div style="font-weight: 700; color: var(--accent-' + ley.color + ');">' + ley.nombre + '</div>';
+            grid.appendChild(div);
+            leyesIndex++;
+            leyesTimer = setTimeout(mostrarLeyNegocio, 1000);
+        }
+
+        Reveal.on('slidechanged', function(event) {
+            if (leyesTimer) {
+                clearTimeout(leyesTimer);
+                leyesTimer = null;
+            }
+
+            if (event.currentSlide && event.currentSlide.querySelector('#leyes-grid')) {
+                var grid = event.currentSlide.querySelector('#leyes-grid');
+                grid.innerHTML = '';
+                leyesIndex = 0;
+                var dato = document.getElementById('dato-final');
+                if (dato) dato.style.display = 'none';
+                mostrarLeyNegocio();
             }
         });
 
