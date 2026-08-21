@@ -1772,11 +1772,7 @@
         // ========== INDEX BUTTON ==========
         document.getElementById('index-btn').addEventListener('click', function(e) {
             e.stopPropagation();
-            var slideIndice = document.getElementById('indice');
-            if (slideIndice) {
-                var idx = Reveal.getIndices(slideIndice);
-                Reveal.slide(idx.h, idx.v, idx.f);
-            }
+            window.location.href = '../index.html';
         });
 
         // ========== FRAGMENT COUNTER ==========
