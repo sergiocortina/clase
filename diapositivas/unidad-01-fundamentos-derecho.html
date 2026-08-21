@@ -954,7 +954,7 @@
             <!-- ==========================================
                  SLIDE 3: MAPA DE LA UNIDAD (ÁRBOL) (ant. 2)
                  ========================================== -->
-            <section class="content-slide">
+            <section class="content-slide" id="indice">
                 <h3>Mapa de la Unidad 1</h3>
                 <div style="margin-top: 10px; font-family: monospace; font-size: 0.78em; line-height: 1.55; color: #d1d5db; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 12px; padding: 18px 22px; max-width: 95%; overflow-x: auto;">
                     <div style="color: var(--accent-blue); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; font-family: 'Raleway', sans-serif;">⚖️ FUNDAMENTOS DEL DERECHO Y MARCO CONSTITUCIONAL</div>
@@ -2284,7 +2284,11 @@
         // ========== INDEX BUTTON ==========
         document.getElementById('index-btn').addEventListener('click', function(e) {
             e.stopPropagation();
-            window.location.href = '../index.html';
+            var slideIndice = document.getElementById('indice');
+            if (slideIndice) {
+                var idx = Reveal.getIndices(slideIndice);
+                Reveal.slide(idx.h, idx.v, idx.f);
+            }
         });
 
         // ========== FRAGMENT COUNTER ==========
