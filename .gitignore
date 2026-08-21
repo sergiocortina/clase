@@ -5,6 +5,9 @@
 *.pptx
 *.typ
 
+# Excepción: material de alumnos sí se sube
+!Material Alumnos/**/*.pdf
+
 # Fuentes y legislación (no se suben)
 fuentes/
 Legislacion/
