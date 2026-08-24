@@ -17,6 +17,17 @@
 
 ---
 
+## 🗂️ Al agregar una unidad: actualizar SIEMPRE el índice general
+
+> **Regla de flujo (aplica a TODOS los proyectos UCC):** Cada vez que se cree o publique una nueva unidad de diapositivas, **hay que modificar el `index.html` general del curso** para que la unidad aparezca listada y accesible.
+
+- Buscar la tarjeta placeholder de esa unidad (`<div class="unit pending">…<span class="badge soon">Próximamente</span></div>`) y convertirla en enlace activo `<a class="unit" href="diapositivas/unidad-XX-….html">…<span class="badge available">Disponible</span></a>`.
+- Actualizar el contador de progreso (ej. `X de 15 unidades disponibles`).
+- Si no existe tarjeta para la unidad, crearla siguiendo el patrón de las unidades ya disponibles.
+- Aplicó a Derecho Administrativo, Marco Jurídico de los Negocios y cualquier otro curso UCC con `index.html` de portada.
+
+---
+
 ## 📁 Estructura de carpetas por proyecto
 
 ```
