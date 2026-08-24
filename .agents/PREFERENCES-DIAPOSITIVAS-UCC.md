@@ -6,6 +6,17 @@
 
 ---
 
+## 🎯 Directiva de Exhaustividad (Aplica a TODAS las unidades)
+
+> **Regla general para TODO lo que haya en UCC:** Cada vez que se pida hacer diapositivas para una unidad, **ser exhaustivo**. No hay límite de contenido.
+
+- **Cubrir TODOS los temas/saberes** de la unidad (según la planeación y las guías), sin omitir ninguno.
+- **Desglosar lo suficiente** para que el maestro se guíe directamente de las slides al impartir la clase: conceptos, definiciones, artículos de ley (con cita), ejemplos, casos prácticos, clasificaciones y esquemas.
+- **Modelo a seguir:** la Unidad 2 de Marco Jurídico de los Negocios (`unidad-02-personas-obligaciones-contratos.html`) — 8 secciones completas (personas física/moral, bienes, derechos reales, obligaciones concepto/elementos/fuentes, clasificación de obligaciones, extinción, contratos elementos/validez/clasificación, contratos atípicos y mercantiles), caso integrador y 10 preguntas de autoevaluación. Ese nivel de profundidad es el estándar.
+- Si una unidad previa tiene pocas diapositivas (p.ej. 29), **reescribirla/expandirla** a este estándar en lugar de dejarla corta.
+
+---
+
 ## 📁 Estructura de carpetas por proyecto
 
 ```
