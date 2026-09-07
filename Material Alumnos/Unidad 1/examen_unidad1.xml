@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>U1-01 Derecho objetivo vs subjetivo</text></name>
+    <questiontext format="html"><text>El derecho objetivo se diferencia del derecho subjetivo en que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Son sinónimos, no hay distinción.</text></answer>
+    <answer fraction="100"><text>b) El objetivo es el conjunto de normas del ordenamiento; el subjetivo es la facultad que la norma concede a una persona para exigir.</text></answer>
+    <answer fraction="0"><text>c) El subjetivo solo existe en el derecho penal.</text></answer>
+    <answer fraction="0"><text>d) El objetivo es más importante que el subjetivo.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-02 Derecho positivo vs vigente</text></name>
+    <questiontext format="html"><text>Respecto al derecho positivo y al derecho vigente, es correcto afirmar:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Todo derecho positivo es necesariamente vigente.</text></answer>
+    <answer fraction="100"><text>b) El positivo ha sido creado por el legislador; el vigente es el que está en plena aplicación.</text></answer>
+    <answer fraction="0"><text>c) El vigente es solo el derecho natural.</text></answer>
+    <answer fraction="0"><text>d) La distinción no tiene relevancia en los negocios.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-03 Irretroactividad de la ley</text></name>
+    <questiontext format="html"><text>En materia de irretroactividad de la ley, el sistema jurídico mexicano establece que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Toda ley se aplica retroactivamente para sancionar.</text></answer>
+    <answer fraction="100"><text>b) Ninguna ley surte efecto retroactivo en perjuicio de persona alguna.</text></answer>
+    <answer fraction="0"><text>c) La retroactividad solo aplica en materia penal.</text></answer>
+    <answer fraction="0"><text>d) No existe la irretroactividad en México.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-04 Ignorancia de la ley</text></name>
+    <questiontext format="html"><text>En el derecho mexicano, la ignorancia de la ley:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Excusa siempre su cumplimiento.</text></answer>
+    <answer fraction="100"><text>b) No excusa su cumplimiento, salvo excepciones muy limitadas.</text></answer>
+    <answer fraction="0"><text>c) Libera de toda responsabilidad al comerciante.</text></answer>
+    <answer fraction="0"><text>d) Solo aplica a extranjeros.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-05 Caracteres de la norma juridica</text></name>
+    <questiontext format="html"><text>Las normas jurídicas se distinguen de las morales, religiosas y de trato social por cuatro caracteres:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Unilateralidad, autonomía, incoercibilidad e imperatividad.</text></answer>
+    <answer fraction="100"><text>b) Bilateralidad, heteronomía, coercibilidad e imperatividad.</text></answer>
+    <answer fraction="0"><text>c) Bilateralidad, autonomía, voluntariedad e incoercibilidad.</text></answer>
+    <answer fraction="0"><text>d) Heteronomía, coercibilidad, unilateralidad y moralidad.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-06 Heteronomia</text></name>
+    <questiontext format="html"><text>La característica "heteronomía" de la norma jurídica significa que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Depende de la voluntad individual del destinatario.</text></answer>
+    <answer fraction="100"><text>b) Es creada por un poder externo (el Estado), no por la voluntad del individuo.</text></answer>
+    <answer fraction="0"><text>c) Solo importa la intención interna del sujeto.</text></answer>
+    <answer fraction="0"><text>d) Se impone por la conciencia.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-07 Norma moral</text></name>
+    <questiontext format="html"><text>A diferencia de la norma jurídica, la norma moral es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Bilateral y coercible.</text></answer>
+    <answer fraction="100"><text>b) Unilateral, autónoma e incoercible.</text></answer>
+    <answer fraction="0"><text>c) Heterónoma y coercible.</text></answer>
+    <answer fraction="0"><text>d) Imperativa y estatal.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-08 Coercibilidad</text></name>
+    <questiontext format="html"><text>La "coercibilidad" de la norma jurídica implica que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Su cumplimiento puede ser exigido por la fuerza a través del Estado.</text></answer>
+    <answer fraction="0"><text>b) Solo genera remordimiento interno.</text></answer>
+    <answer fraction="0"><text>c) Depende del rechazo social.</text></answer>
+    <answer fraction="0"><text>d) Es voluntaria y no exigible.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-09 Derecho privado</text></name>
+    <questiontext format="html"><text>El derecho privado regula las relaciones:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Estado ↔ particulares.</text></answer>
+    <answer fraction="100"><text>b) Particulares ↔ particulares.</text></answer>
+    <answer fraction="0"><text>c) Entre poderes del Estado.</text></answer>
+    <answer fraction="0"><text>d) De protección agraria exclusiva.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-10 Supletoriedad Codigo Civil</text></name>
+    <questiontext format="html"><text>Cuando el Código de Comercio no regula un acto de comercio, se aplican:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Las leyes administrativas.</text></answer>
+    <answer fraction="100"><text>b) Las normas del derecho común del Código Civil Federal.</text></answer>
+    <answer fraction="0"><text>c) Únicamente los usos mercantiles.</text></answer>
+    <answer fraction="0"><text>d) Los tratados internacionales.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-11 Derecho social</text></name>
+    <questiontext format="html"><text>El derecho social comprende, entre otros, a:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) El derecho constitucional y el penal.</text></answer>
+    <answer fraction="100"><text>b) El derecho laboral, agrario y de seguridad social.</text></answer>
+    <answer fraction="0"><text>c) El derecho mercantil y el civil.</text></answer>
+    <answer fraction="0"><text>d) El derecho fiscal y administrativo.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-12 Ramas del derecho privado</text></name>
+    <questiontext format="html"><text>Son ramas del derecho privado:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Constitucional y administrativo.</text></answer>
+    <answer fraction="100"><text>b) Civil y mercantil.</text></answer>
+    <answer fraction="0"><text>c) Penal y procesal.</text></answer>
+    <answer fraction="0"><text>d) Fiscal y agrario.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-13 Jerarquia normativa</text></name>
+    <questiontext format="html"><text>En México, la jerarquía de las normas sitúa en la cúspide a:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Las leyes locales.</text></answer>
+    <answer fraction="100"><text>b) La Constitución, seguida de tratados, leyes federales, reglamentos, jurisprudencia, principios y costumbre.</text></answer>
+    <answer fraction="0"><text>c) Los reglamentos.</text></answer>
+    <answer fraction="0"><text>d) La jurisprudencia.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-14 Costumbre frente a la ley</text></name>
+    <questiontext format="html"><text>Respecto a la costumbre frente a la ley, es correcto afirmar:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) La costumbre siempre prevalece sobre la ley.</text></answer>
+    <answer fraction="100"><text>b) No puede alegarse desuso, costumbre ni práctica en contrario de la ley.</text></answer>
+    <answer fraction="0"><text>c) La costumbre deroga la ley formal.</text></answer>
+    <answer fraction="0"><text>d) Los principios generales no aplican.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-15 Formacion de jurisprudencia</text></name>
+    <questiontext format="html"><text>En México, la jurisprudencia de la Suprema Corte se forma cuando un criterio se sustenta en:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Una sola sentencia.</text></answer>
+    <answer fraction="100"><text>b) Al menos cinco sentencias consecutivas y no interrumpidas.</text></answer>
+    <answer fraction="0"><text>c) Un dictamen legislativo.</text></answer>
+    <answer fraction="0"><text>d) La costumbre reiterada.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-16 Entrada en vigor de la ley</text></name>
+    <questiontext format="html"><text>En México, las leyes federales entran en vigor y obligan:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) El día de su promulgación.</text></answer>
+    <answer fraction="100"><text>b) Tres días después de su publicación en el Diario Oficial.</text></answer>
+    <answer fraction="0"><text>c) Un año después de publicadas.</text></answer>
+    <answer fraction="0"><text>d) Al momento de su discusión en el Congreso.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-17 Elementos de validez del acto juridico</text></name>
+    <questiontext format="html"><text>Los elementos de validez del acto jurídico son:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Solo la firma de las partes.</text></answer>
+    <answer fraction="100"><text>b) Consentimiento, objeto, capacidad, forma y licitud.</text></answer>
+    <answer fraction="0"><text>c) Únicamente el precio.</text></answer>
+    <answer fraction="0"><text>d) La voluntad del juez.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-18 Hecho juridico ilicito</text></name>
+    <questiontext format="html"><text>Un hecho jurídico ilícito es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Un contrato celebrado válidamente.</text></answer>
+    <answer fraction="100"><text>b) Un suceso prohibido por la ley que genera responsabilidad.</text></answer>
+    <answer fraction="0"><text>c) El transcurso del tiempo.</text></answer>
+    <answer fraction="0"><text>d) El nacimiento de una persona.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-19 Actos nulos</text></name>
+    <questiontext format="html"><text>Según el derecho mexicano, son nulos los actos ejecutados:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Contra el tenor de las leyes prohibitivas o de interés público.</text></answer>
+    <answer fraction="0"><text>b) Por mayores de edad.</text></answer>
+    <answer fraction="0"><text>c) Ante notario.</text></answer>
+    <answer fraction="0"><text>d) Con precio determinado.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-20 Acto vs hecho juridico</text></name>
+    <questiontext format="html"><text>La diferencia entre acto y hecho jurídico es que el acto:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Nunca produce efectos.</text></answer>
+    <answer fraction="100"><text>b) Requiere manifestación de voluntad dirigida a producir efectos jurídicos.</text></answer>
+    <answer fraction="0"><text>c) Ocurre sin intervención de la voluntad.</text></answer>
+    <answer fraction="0"><text>d) Es siempre ilícito.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-21 Supremacia constitucional</text></name>
+    <questiontext format="html"><text>La supremacía constitucional significa que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) La Constitución está por debajo de las leyes federales.</text></answer>
+    <answer fraction="100"><text>b) La Constitución está en la cúspide y toda norma contraria es inválida.</text></answer>
+    <answer fraction="0"><text>c) Los reglamentos prevalecen sobre la Constitución.</text></answer>
+    <answer fraction="0"><text>d) Solo vincula al Poder Ejecutivo.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-22 Reforma constitucional</text></name>
+    <questiontext format="html"><text>Para reformar la Constitución mexicana se requiere:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Mayoría simple del Congreso.</text></answer>
+    <answer fraction="100"><text>b) Voto de dos terceras partes del Congreso y ratificación de la mitad de las legislaturas estatales.</text></answer>
+    <answer fraction="0"><text>c) Solo decreto del Presidente.</text></answer>
+    <answer fraction="0"><text>d) Consulta popular obligatoria.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-23 Control de constitucionalidad</text></name>
+    <questiontext format="html"><text>El juicio de amparo y la acción de inconstitucionalidad son mecanismos de:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Creación de leyes.</text></answer>
+    <answer fraction="100"><text>b) Control de constitucionalidad.</text></answer>
+    <answer fraction="0"><text>c) Formación de jurisprudencia penal.</text></answer>
+    <answer fraction="0"><text>d) Registro de sociedades.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-24 Division de poderes</text></name>
+    <questiontext format="html"><text>El supremo poder del Estado en México se divide en:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Legislativo, Ejecutivo y Judicial.</text></answer>
+    <answer fraction="0"><text>b) Federal, estatal y municipal.</text></answer>
+    <answer fraction="0"><text>c) Central, regional y local.</text></answer>
+    <answer fraction="0"><text>d) Civil, penal y mercantil.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-25 Distribucion de competencias</text></name>
+    <questiontext format="html"><text>En la distribución de competencias, las facultades no concedidas expresamente a la Federación:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Corresponden al poder judicial.</text></answer>
+    <answer fraction="100"><text>b) Se entienden reservadas a los Estados o Municipios.</text></answer>
+    <answer fraction="0"><text>c) Son del Presidente.</text></answer>
+    <answer fraction="0"><text>d) No pueden ejercerse.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-26 Municipio Libre</text></name>
+    <questiontext format="html"><text>El principio de Municipio Libre implica que los municipios:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Dependen totalmente del gobierno federal.</text></answer>
+    <answer fraction="100"><text>b) Son libres para administrar su patrimonio y elegir sus autoridades.</text></answer>
+    <answer fraction="0"><text>c) No tienen personalidad jurídica.</text></answer>
+    <answer fraction="0"><text>d) No pueden crear impuestos.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-27 Facultad del Congreso en materia economica</text></name>
+    <questiontext format="html"><text>Una de las siguientes es facultad del Congreso de la Unión en materia económica:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Legislar sobre comercio, minería y propiedad industrial.</text></answer>
+    <answer fraction="0"><text>b) Nombrar a los gobernadores de los estados.</text></answer>
+    <answer fraction="0"><text>c) Administrar justicia en juicio.</text></answer>
+    <answer fraction="0"><text>d) Expedir reglamentos autónomos.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-28 Libertad de comercio</text></name>
+    <questiontext format="html"><text>La Constitución mexicana garantiza la libertad de:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Prohibir toda actividad comercial.</text></answer>
+    <answer fraction="100"><text>b) Dedicarse a la profesión, industria o comercio lícitos.</text></answer>
+    <answer fraction="0"><text>c) Monopolizar el comercio sin límites.</text></answer>
+    <answer fraction="0"><text>d) Trabajar sin retribución.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-29 Seguridad juridica</text></name>
+    <questiontext format="html"><text>La seguridad jurídica en México comprende, entre otros principios:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Libre comercio sin límites.</text></answer>
+    <answer fraction="100"><text>b) Legalidad, irretroactividad y debido proceso.</text></answer>
+    <answer fraction="0"><text>c) Supletoriedad del derecho civil.</text></answer>
+    <answer fraction="0"><text>d) Costumbre contra ley.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-30 Rectoria economica monopolios</text></name>
+    <questiontext format="html"><text>La rectoría económica del Estado prohíbe:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) La libre concurrencia.</text></answer>
+    <answer fraction="100"><text>b) Los monopolios y las prácticas monopólicas.</text></answer>
+    <answer fraction="0"><text>c) La actividad empresarial privada.</text></answer>
+    <answer fraction="0"><text>d) La propiedad privada.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R01 Derecho positivo vs natural</text></name>
+    <questiontext format="html"><text>El derecho positivo se distingue del derecho natural porque:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) El positivo se basa en la razón humana.</text></answer>
+    <answer fraction="100"><text>b) El positivo ha sido creado por una autoridad competente mediante proceso legislativo.</text></answer>
+    <answer fraction="0"><text>c) El natural es el que está en vigor.</text></answer>
+    <answer fraction="0"><text>d) Ambos son sinónimos.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R02 Derecho subjetivo</text></name>
+    <questiontext format="html"><text>El derecho subjetivo es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) El conjunto de normas del ordenamiento.</text></answer>
+    <answer fraction="100"><text>b) La facultad que una persona tiene para exigir algo, amparada por el derecho objetivo.</text></answer>
+    <answer fraction="0"><text>c) La ley misma.</text></answer>
+    <answer fraction="0"><text>d) El poder del Estado.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R03 Norma religiosa</text></name>
+    <questiontext format="html"><text>Respecto a la norma religiosa, es correcto afirmar que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Es bilateral y coercible.</text></answer>
+    <answer fraction="100"><text>b) Es unilateral y se vincula con lo trascendente.</text></answer>
+    <answer fraction="0"><text>c) Es heterónoma y estatal.</text></answer>
+    <answer fraction="0"><text>d) Es de trato social.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R04 Venta de productos caducados</text></name>
+    <questiontext format="html"><text>Un comerciante que vende productos caducados incurre principalmente en:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Una cuestión exclusivamente moral.</text></answer>
+    <answer fraction="100"><text>b) Una infracción administrativa sancionable por la autoridad.</text></answer>
+    <answer fraction="0"><text>c) Ninguna consecuencia jurídica.</text></answer>
+    <answer fraction="0"><text>d) Un delito penal sin intervención de autoridad.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R05 Derecho social vs publico</text></name>
+    <questiontext format="html"><text>El derecho social se distingue del derecho público porque protege:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) La organización de los poderes del Estado.</text></answer>
+    <answer fraction="100"><text>b) A los sectores más vulnerables frente a los más poderosos.</text></answer>
+    <answer fraction="0"><text>c) Al Estado frente a los particulares.</text></answer>
+    <answer fraction="0"><text>d) La libre competencia.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R06 Obligaciones de una SA</text></name>
+    <questiontext format="html"><text>Una Sociedad Anónima, además de su regulación privada, debe cumplir con:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Solo el derecho privado.</text></answer>
+    <answer fraction="100"><text>b) Permisos administrativos, obligaciones fiscales y registro en el IMSS.</text></answer>
+    <answer fraction="0"><text>c) Nada más allá de su constitución.</text></answer>
+    <answer fraction="0"><text>d) Únicamente el derecho social.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R07 Fuentes historicas</text></name>
+    <questiontext format="html"><text>Las fuentes históricas del derecho en México incluyen:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Los factores económicos actuales.</text></answer>
+    <answer fraction="100"><text>b) El Derecho Romano, las Siete Partidas y las Leyes de Indias.</text></answer>
+    <answer fraction="0"><text>c) La jurisprudencia.</text></answer>
+    <answer fraction="0"><text>d) Los principios generales del derecho.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R08 Principios generales supletorios</text></name>
+    <questiontext format="html"><text>Cuando existe silencio u oscuridad de la ley, los principios generales del derecho:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) No pueden aplicarse.</text></answer>
+    <answer fraction="100"><text>b) Sirven para integrar las lagunas legales.</text></answer>
+    <answer fraction="0"><text>c) Derogan la Constitución.</text></answer>
+    <answer fraction="0"><text>d) Sustituyen a los reglamentos.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R09 Iniciativa de ley</text></name>
+    <questiontext format="html"><text>La iniciativa de ley en México puede ser presentada por:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Solo el Presidente de la República.</text></answer>
+    <answer fraction="100"><text>b) El Presidente, diputados, senadores y legislaturas estatales.</text></answer>
+    <answer fraction="0"><text>c) Únicamente la Suprema Corte.</text></answer>
+    <answer fraction="0"><text>d) Los municipios.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R10 Vicio del consentimiento</text></name>
+    <questiontext format="html"><text>Un acto jurídico con vicio del consentimiento (error, dolo o violencia) es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Válido.</text></answer>
+    <answer fraction="0"><text>b) Nulo de pleno derecho.</text></answer>
+    <answer fraction="100"><text>c) Anulable a petición del perjudicado.</text></answer>
+    <answer fraction="0"><text>d) Inexistente.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R11 Nacimiento hecho licito</text></name>
+    <questiontext format="html"><text>El nacimiento de una persona es un ejemplo de:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Hecho jurídico ilícito.</text></answer>
+    <answer fraction="100"><text>b) Hecho jurídico lícito.</text></answer>
+    <answer fraction="0"><text>c) Acto jurídico.</text></answer>
+    <answer fraction="0"><text>d) Norma moral.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R12 Facultades del Senado</text></name>
+    <questiontext format="html"><text>Son facultades privativas del Senado:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Revisar la Cuenta Pública.</text></answer>
+    <answer fraction="100"><text>b) Ratificar tratados internacionales y nombrar ministros de la Corte.</text></answer>
+    <answer fraction="0"><text>c) Promulgar las leyes.</text></answer>
+    <answer fraction="0"><text>d) Administrar justicia.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R13 Cuenta Publica Diputados</text></name>
+    <questiontext format="html"><text>Revisar la Cuenta Pública es facultad privativa de:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) La Suprema Corte de Justicia.</text></answer>
+    <answer fraction="100"><text>b) La Cámara de Diputados.</text></answer>
+    <answer fraction="0"><text>c) Los municipios.</text></answer>
+    <answer fraction="0"><text>d) El Senado.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R14 Facultades del Presidente</text></name>
+    <questiontext format="html"><text>Al Presidente de la República corresponde:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Nombrar gobernadores de los estados.</text></answer>
+    <answer fraction="100"><text>b) Promulgar y ejecutar las leyes dictadas por el Congreso.</text></answer>
+    <answer fraction="0"><text>c) Reformar la Constitución por sí solo.</text></answer>
+    <answer fraction="0"><text>d) Administrar justicia.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R15 Areas estrategicas</text></name>
+    <questiontext format="html"><text>Son áreas estratégicas reservadas al Estado:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) El comercio minorista.</text></answer>
+    <answer fraction="100"><text>b) Petróleo, energía eléctrica, agua y correos.</text></answer>
+    <answer fraction="0"><text>c) La industria alimentaria.</text></answer>
+    <answer fraction="0"><text>d) El transporte terrestre privado.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U1-R16 Mandamiento escrito</text></name>
+    <questiontext format="html"><text>Para molestar a una persona o decomisar sus bienes, la autoridad debe:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Actuar libremente sin requisito.</text></answer>
+    <answer fraction="100"><text>b) Contar con mandamiento escrito que funde y motive la causa.</text></answer>
+    <answer fraction="0"><text>c) Solo avisar verbalmente.</text></answer>
+    <answer fraction="0"><text>d) Pedir permiso al municipio.</text></answer>
+  </question>
+</quiz>
