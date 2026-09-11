@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 3: Derecho Mercantil y Sociedades</title>
+    <title>Unidad 2: Personas, Obligaciones y Contratos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -150,7 +150,7 @@
             .section-header h2 { font-size: 1.6em; }
             .reveal .slides section { padding: 10px 30px; }
             .quiz-question { padding: 16px; margin-bottom: 12px; }
-            .concept-box, .definition-box, .example-box, .note-box, .warning-box, .legal-box, .highlight-box, .case-box { padding: 12px; margin: 8px 0; }
+            .concept-box, .definition-box, .example-box, .note-box, .warning-box, .legal-box, .highlight-box { padding: 12px; margin: 8px 0; }
             .timeline .timeline-item { margin-bottom: 12px; }
         }
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
@@ -198,420 +198,399 @@
         <div class="slide-nav-display">
             <span class="slide-nav-current" id="slide-nav-current">1</span>
             <span class="slide-nav-sep">/</span>
-            <span id="slide-nav-total">1</span>
+            <span class="slide-nav-total" id="slide-nav-total">0</span>
         </div>
-        <input type="number" class="slide-nav-input" id="slide-nav-input" min="1" placeholder="">
+        <input type="number" class="slide-nav-input" id="slide-nav-input" min="1" />
     </div>
 
     <div class="reveal">
         <div class="slides">
 
-            <!-- SLIDE 1: PORTADA -->
-            <section class="title-slide">
-                <a href="../index.html" class="back-btn" style="position:absolute;top:20px;left:20px;z-index:1000;"><i class="fas fa-arrow-left"></i> Índice</a>
-                <div class="slide-icon">💼</div>
-                <h1>Derecho Mercantil<br>y Sociedades</h1>
-                <p class="subtitle">Unidad 3 — Marco Jurídico de los Negocios</p>
-                <div class="unit-badge">UNIDAD 3</div>
-                <p class="professor">Mtro. Sergio Armando Cortina Ceballos</p>
-                <p class="institution">Universidad Cristóbal Colón · 2026</p>
-                <div class="jslides-logo">JSIDES</div>
+            <!-- PORTADA -->
+            <section class="title-slide" id="portada">
+                <div class="slide-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="unit-badge">Unidad 3</div>
+                <h1>Derecho Mercantil y Sociedades</h1>
+                <p class="subtitle">Marco Jurídico de los Negocios</p>
+                <p class="professor">Profesor: Luis Armando Linares Zavala</p>
+                <p class="institution">Universidad Cooperativa de Colombia</p>
             </section>
 
-            <!-- SLIDE 2: MAPA DEL CURSO -->
-            <section class="content-slide">
-                <h3>Mapa del Curso</h3>
-                <div style="margin-top: 10px; font-family: monospace; font-size: 0.78em; line-height: 1.55; color: #d1d5db; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 12px; padding: 18px 22px; max-width: 95%; overflow-x: auto;">
-                    <div style="color: var(--accent-blue); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; font-family: 'Raleway', sans-serif;">📚 MARCO JURÍDICO DE LOS NEGOCIOS — 7 UNIDADES</div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#6b7280;">Unidad 1. Fundamentos del Derecho y Marco Constitucional</span> <span style="color:var(--accent-green);">✓</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#6b7280;">Unidad 2. Personas, Obligaciones y Contratos</span> <span style="color:var(--accent-green);">✓</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#fff; font-weight:600;">Unidad 3. Derecho Mercantil y Sociedades</span> <span style="color:var(--accent-blue);">◄ ESTA UNIDAD</span></div>
-                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Actos de comercio y comerciantes</div>
-                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> La empresa y auxiliares mercantiles</div>
-                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> Sociedades: SA, SRL y SAS</div>
-                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> Fusión, escisión, disolución y liquidación</div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#6b7280;">Unidad 4. Títulos de Crédito y Operaciones Mercantiles</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#6b7280;">Unidad 5. Propiedad Intelectual y Competencia Económica</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <span style="color:#6b7280;">Unidad 6. Régimen Fiscal, Laboral e Internacional</span></div>
-                    <div><span style="color:var(--accent-purple);">└──</span> <span style="color:#6b7280;">Unidad 7. Taller: Compliance Empresarial y Puesta en Operación</span></div>
+            <!-- MAPA CONCEPTUAL -->
+            <section>
+                <h3>Mapa Conceptual de la Unidad</h3>
+                <div class="grid-2">
+                    <div class="card card-accent-blue">
+                        <h4>Actos de Comercio</h4>
+                        <p>Absolutos, relativos, criterio mixto</p>
+                    </div>
+                    <div class="card card-accent-purple">
+                        <h4>Comerciantes</h4>
+                        <p>Concepto, requisitos, obligaciones</p>
+                    </div>
+                    <div class="card card-accent-green">
+                        <h4>La Empresa</h4>
+                        <p>Fondo de comercio, elementos</p>
+                    </div>
+                    <div class="card card-accent-orange">
+                        <h4>Auxiliares Mercantiles</h4>
+                        <p>Dependientes e independientes</p>
+                    </div>
+                    <div class="card card-accent-pink" style="grid-column: span 2;">
+                        <h4>Sociedades Mercantiles</h4>
+                        <p>SA, SRL, SAS, fusión, escisión, disolución</p>
+                    </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SLIDE 3: ÍNDICE DE LA UNIDAD -->
-            <section class="content-slide" id="indice">
-                <h3>Mapa de la Unidad 3</h3>
-                <div style="margin-top: 10px; font-family: monospace; font-size: 0.74em; line-height: 1.5; color: #d1d5db; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 12px; padding: 16px 22px; max-width: 95%; overflow-x: auto;">
-                    <div style="color: var(--accent-blue); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; font-family: 'Raleway', sans-serif;">💼 DERECHO MERCANTIL Y SOCIEDADES</div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-1');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.1 Actos de comercio</a> <span style="color:var(--accent-green);">— arts. 1-10, 75-76 CCom</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-2');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.2 Comerciantes</a> <span style="color:var(--accent-green);">— arts. 3-20 CCom</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-3');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.3 Empresa y negociación mercantil</a> <span style="color:var(--accent-green);">— concepto económico y jurídico</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-4');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.4 Auxiliares mercantiles</a> <span style="color:var(--accent-green);">— dependientes e independientes</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-5');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.5 Sociedades mercantiles</a> <span style="color:var(--accent-green);">— personalidad y nacionalidad</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-6');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.6 Sociedad Anónima (SA)</a> <span style="color:var(--accent-green);">— arts. 87-204 LGSM</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-7');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.7 Sociedad de Responsabilidad Limitada (SRL)</a> <span style="color:var(--accent-green);">— arts. 58-86 LGSM</span></div>
-                    <div><span style="color:var(--accent-purple);">├──</span> <a onclick="var s=document.getElementById('seccion-3-8');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.8 Sociedad por Acciones Simplificada (SAS)</a> <span style="color:var(--accent-green);">— arts. 260-271 LGSM</span></div>
-                    <div><span style="color:var(--accent-purple);">└──</span> <a onclick="var s=document.getElementById('seccion-3-9');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; font-weight:600; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">3.9 Fusión, escisión, disolución y liquidación</a> <span style="color:var(--accent-green);">— arts. 222-249 LGSM</span></div>
+            <!-- OBJETIVOS -->
+            <section>
+                <h3>Objetivos de Aprendizaje</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <strong>1. Actos de Comercio</strong>
+                        <p>Definir y clasificar los actos de comercio conforme a la legislación</p>
+                    </div>
+                    <div class="timeline-item">
+                        <strong>2. Comerciantes</strong>
+                        <p>Identificar los elementos que configuran la calidad de comerciante</p>
+                    </div>
+                    <div class="timeline-item">
+                        <strong>3. La Empresa</strong>
+                        <p>Distinguir empresa, comerciante y fondo de comercio</p>
+                    </div>
+                    <div class="timeline-item">
+                        <strong>4. Auxiliares</strong>
+                        <p>Clasificar auxiliares mercantiles según su vinculación</p>
+                    </div>
+                    <div class="timeline-item">
+                        <strong>5. Sociedades</strong>
+                        <p>Comparar SA, SRL y SAS: características y ventajas</p>
+                    </div>
+                    <div class="timeline-item">
+                        <strong>6. Ciclo de Vida</strong>
+                        <p>Analizar fusión, escisión, disolución y liquidación</p>
+                    </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SLIDE 4: ¿DÓNDE ESTAMOS? -->
-            <section class="content-slide">
-                <h3>¿Dónde estamos?</h3>
-                <div class="concept-box blue fragment" style="margin-top: 20px;">
-                    <h4>🧭 El camino recorrido</h4>
-                    <p>En la <strong>Unidad 1</strong> estudiamos los fundamentos del derecho y el marco constitucional. En la <strong>Unidad 2</strong> analizamos a las personas (físicas y morales), los bienes, las obligaciones y los contratos desde el derecho civil.</p>
+            <!-- COMPETENCIAS -->
+            <section>
+                <h3>Competencias a Desarrollar</h3>
+                <div class="grid-2">
+                    <div class="concept-box blue">
+                        <h4>Interpretativa</h4>
+                        <p>Comprensión de normas mercantiles y su aplicación</p>
+                    </div>
+                    <div class="concept-box purple">
+                        <h4>Analítica</h4>
+                        <p>Comparación de figuras societarias y regímenes</p>
+                    </div>
+                    <div class="concept-box green">
+                        <h4>Argumentativa</h4>
+                        <p>Fundamentación de decisiones mercantiles</p>
+                    </div>
+                    <div class="concept-box orange">
+                        <h4>Práctica</h4>
+                        <p>Redacción de estatutos y contratos mercantiles</p>
+                    </div>
                 </div>
-                <div class="concept-box purple fragment" style="margin-top: 15px;">
-                    <h4>🚀 Ahora: el Derecho Mercantil</h4>
-                    <p>La Unidad 3 entra de lleno en el <strong>derecho mercantil</strong>: el conjunto de normas que regulan a los comerciantes, los actos de comercio, la empresa y, sobre todo, las <strong>sociedades mercantiles</strong> como motor de los negocios.</p>
-                </div>
-                <p class="fragment" style="margin-top: 15px; font-size: 0.9em; color: #6b7280;">El derecho mercantil es el "derecho de los negocios": especial, técnico y profundamente práctico (Código de Comercio y LGSM).</p>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SLIDE 5: ¿POR QUÉ ESTUDIAR EL DERECHO MERCANTIL? -->
-            <section class="content-slide">
+            <!-- ¿POR QUÉ ESTUDIAR DERECHO MERCANTIL? -->
+            <section>
                 <h3>¿Por qué estudiar el derecho mercantil?</h3>
-                <div class="grid-2" style="margin-top: 15px;">
+                <div class="grid-2">
                     <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">El comercio mueve al mundo</h4>
-                            <p>Toda empresa —desde el puesto de tacos hasta una multinacional— se constituye, opera y se extingue bajo reglas mercantiles. Entenderlas es entender el motor de la economía.</p>
+                        <div class="definition-box">
+                            <h4>El comercio mueve al mundo</h4>
+                            <p>Toda empresa se constituye, opera y se extingue bajo reglas mercantiles. Entenderlas es entender el motor de la economía.</p>
                         </div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green); margin-top: 12px;">
+                        <div class="definition-box" style="border-left-color: var(--accent-green); margin-top: 12px;">
                             <h4 style="color: var(--accent-green);">Protección y seguridad</h4>
                             <p>La mercantilidad determina qué juez conoce el litigio, qué formalidades rigen y qué responsabilidad asume el empresario.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
+                        <div class="definition-box" style="border-left-color: var(--accent-purple);">
                             <h4 style="color: var(--accent-purple);">La sociedad como herramienta</h4>
                             <p>La SA, la SRL y la SAS permiten limitar la responsabilidad, reunir capital y perpetuar el negocio más allá de sus fundadores.</p>
                         </div>
-                        <div class="note-box fragment" style="margin-top: 12px;">
-                            <h4>💡 En la práctica</h4>
-                            <p>Elegir mal el tipo societario o incumplir las obligaciones mercantiles puede costar el patrimonio personal. Esta unidad te da el mapa para decidir con base legal.</p>
+                        <div class="note-box" style="margin-top: 12px;">
+                            <h4>En la práctica</h4>
+                            <p>Elegir mal el tipo societario o incumplir las obligaciones mercantiles puede costar el patrimonio personal.</p>
                         </div>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SLIDE 6: ¿QUÉ VEREMOS HOY? -->
-            <section class="content-slide">
+            <!-- ¿QUÉ VEREMOS? -->
+            <section>
                 <h3>¿Qué veremos hoy?</h3>
-                <div class="timeline" style="margin-top: 15px;">
-                    <div class="timeline-item fragment"><strong>1. Actos de comercio</strong><p>El hecho jurídico que da origen a la mercantilidad: enumeración, absolutos, relativos y fuentes del derecho mercantil.</p></div>
-                    <div class="timeline-item fragment"><strong>2. Comerciantes</strong><p>Quién es sujeto de derecho mercantil, sus requisitos, obligaciones y prohibiciones.</p></div>
-                    <div class="timeline-item fragment"><strong>3. La empresa</strong><p>Concepto económico y jurídico, fondo de comercio, clientela y propiedad industrial.</p></div>
-                    <div class="timeline-item fragment"><strong>4. Auxiliares mercantiles</strong><p>Los dependientes (factor, gerente) y los independientes (corredor, comisionista).</p></div>
-                    <div class="timeline-item fragment"><strong>5. Sociedades mercantiles</strong><p>SA, SRL y SAS: constitución, órganos, capital y transmisión.</p></div>
-                    <div class="timeline-item fragment"><strong>6. Ciclo de vida societario</strong><p>Fusión, escisión, disolución y liquidación.</p></div>
+                <div class="timeline">
+                    <div class="timeline-item"><strong>1. Actos de comercio</strong><p>Enumeración, absolutos, relativos y fuentes del derecho mercantil.</p></div>
+                    <div class="timeline-item"><strong>2. Comerciantes</strong><p>Quién es sujeto de derecho mercantil, sus requisitos, obligaciones y prohibiciones.</p></div>
+                    <div class="timeline-item"><strong>3. La empresa</strong><p>Concepto económico y jurídico, fondo de comercio, clientela y propiedad industrial.</p></div>
+                    <div class="timeline-item"><strong>4. Auxiliares mercantiles</strong><p>Los dependientes (factor, gerente) y los independientes (corredor, comisionista).</p></div>
+                    <div class="timeline-item"><strong>5. Sociedades mercantiles</strong><p>SA, SRL y SAS: constitución, órganos, capital y transmisión.</p></div>
+                    <div class="timeline-item"><strong>6. Ciclo de vida societario</strong><p>Fusión, escisión, disolución y liquidación.</p></div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
-
-            <!-- SLIDE 7: MAPA CONCEPTUAL -->
-            <section class="content-slide">
-                <h3>Mapa Conceptual de la Unidad 3</h3>
-                <div style="margin-top: 10px; font-family: monospace; font-size: 0.72em; line-height: 1.5; color: #d1d5db; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 12px; padding: 16px 22px; max-width: 96%; overflow-x: auto;">
-                    <div style="color: var(--accent-blue); font-weight: bold; font-size: 1.05em; margin-bottom: 8px;">🌳 DERECHO MERCANTIL Y SOCIEDADES</div>
-                    <div><span style="color:var(--accent-green);">├──</span> ACTOS DE COMERCIO <span style="color:#6b7280;">(arts. 1-10, 75-76 CCom)</span></div>
-                    <div><span style="color:var(--accent-green);">├──</span> COMERCIANTES <span style="color:#6b7280;">(art. 3 CCom)</span></div>
-                    <div><span style="color:var(--accent-green);">├──</span> LA EMPRESA <span style="color:#6b7280;">(fondo de comercio)</span></div>
-                    <div><span style="color:var(--accent-green);">├──</span> AUXILIARES MERCANTILES <span style="color:#6b7280;">(dependientes / independientes)</span></div>
-                    <div><span style="color:var(--accent-green);">├──</span> SOCIEDADES MERCANTILES <span style="color:#6b7280;">(personalidad, nacionalidad)</span></div>
-                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> SA <span style="color:#6b7280;">(acciones, arts. 87-204)</span></div>
-                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">├──</span> SRL <span style="color:#6b7280;">(partes sociales, arts. 58-86)</span></div>
-                    <div><span style="color:var(--accent-purple);">│</span>   <span style="color:var(--accent-green);">└──</span> SAS <span style="color:#6b7280;">(en línea, arts. 260-271)</span></div>
-                    <div><span style="color:var(--accent-green);">└──</span> FUSIÓN · ESCISIÓN · DISOLUCIÓN · LIQUIDACIÓN <span style="color:#6b7280;">(arts. 222-249)</span></div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <!-- SECCIÓN 1 DE 9: 3.1 ACTOS DE COMERCIO -->
+            <!-- ==================== SECCION 3.1: ACTOS DE COMERCIO ==================== -->
             <section class="section-header" id="seccion-3-1">
-                <p class="section-number">SECCIÓN 1 DE 9</p>
-                <h2>3.1 Actos de Comercio</h2>
-                <p class="section-subtitle">Concepto, clasificación y fuentes del derecho mercantil (arts. 1-10 CCom)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.1</div>
+                <h2>Actos de Comercio</h2>
+                <p class="section-subtitle">Concepto, clasificación y fuentes del derecho mercantil</p>
             </section>
 
-            <section class="content-slide">
-                <h3>Concepto y Enumeración Casuística</h3>
-                <div class="definition-box fragment" style="margin-top: 15px;">
-                    <h4>¿Qué es un acto de comercio?</h4>
+            <!-- Concepto -->
+            <section>
+                <h3>Concepto de Acto de Comercio</h3>
+                <div class="definition-box">
+                    <h4>Definición</h4>
                     <p>Es todo acto realizado con fines de lucro, en ejercicio de actividad comercial, que se sujeta al régimen del derecho mercantil.</p>
                 </div>
-                <div class="legal-box fragment" style="margin-top: 12px;">
-                    <span class="legal-ref">Art. 1 CCom</span>
-                    <p>"Las negociaciones mercantiles se rigen por las disposiciones de este Código y, en su defecto, por los usos mercantiles; en lo que respecta a la <strong>capacidad y al formalismo de los actos jurídicos</strong>, se aplicarán las normas del Código Civil."</p>
+                <div class="highlight-box" style="margin-top:15px;">
+                    <p><strong>Sistema de enumeración casuística:</strong> A diferencia de otros códigos que usan una definición general, el Código de Comercio mexicano <em>enumera</em> los actos de comercio. Esto significa que la ley lista específicamente qué actos son mercantiles.</p>
                 </div>
-                <div class="highlight-box fragment" style="margin-top: 12px;">
-                    <p><strong>Sistema de enumeración casuística:</strong> A diferencia de otros códigos que usan una definición general, el CCom mexicano <em>enumera</em> los actos de comercio (arts. 75-76 y 1-10).</p>
+                <div class="note-box" style="margin-top:15px;">
+                    <h4>Cita Doctrinal</h4>
+                    <p>Enrique Uribe Holmes define el acto de comercio como "una empresa de intermediación industrial o mercantil" que tiene por objeto hacer producir el capital mediante el cambio o la circulación de riqueza.</p>
                 </div>
-                <div class="legal-box fragment" style="margin-top: 12px;">
-                    <span class="legal-ref">Doctrina · Enrique Uribe Holmes</span>
-                    <p>Define el acto de comercio como "una empresa de intermediación industrial o mercantil" que tiene por objeto hacer producir el capital mediante el cambio o la circulación de riqueza.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Clasificación: Actos Absolutos (art. 75 CCom)</h3>
-                <div class="concept-box fragment" style="margin-top: 15px;">
-                    <h4>📜 Actos absolutos de comercio</h4>
-                    <p>Son mercantiles <strong>por sí mismos</strong>, independientemente de quién los realiza. El art. 75 CCom enumera, entre otros:</p>
+            <!-- Actos absolutos -->
+            <section>
+                <h3>Actos Absolutos de Comercio</h3>
+                <div class="concept-box blue">
+                    <h4>Actos absolutos</h4>
+                    <p>Son mercantiles <strong>por sí mismos</strong>, independientemente de quién los realiza. Si el acto está en esta categoría, es mercantil siempre.</p>
                 </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">Producción y construcción</h4>
-                            <ul style="margin-top: 8px;">
-                                <li>Empresa de fabricación, construcción</li>
-                                <li>Empresa de construcción y reparación de bienes muebles</li>
-                                <li>Empresa de almacenes y depósitos</li>
-                                <li>Empresa de distribución de bienes</li>
-                            </ul>
-                        </div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green); margin-top: 12px;">
-                            <h4 style="color: var(--accent-green);">Circulación de riqueza</h4>
-                            <ul style="margin-top: 8px;">
-                                <li>Compraventa de bienes muebles</li>
-                                <li>Arrendamiento de bienes muebles con fines lucrativos</li>
-                                <li>Arrendamiento de talleres</li>
-                                <li>Empresa de expendio de bebidas y comidas</li>
-                            </ul>
-                        </div>
+                <div class="grid-2" style="margin-top:15px;">
+                    <div class="definition-box">
+                        <h4>Producción y construcción</h4>
+                        <ul>
+                            <li>Empresa de fabricación y construcción</li>
+                            <li>Empresa de construcción y reparación de bienes muebles</li>
+                            <li>Empresa de almacenes y depósitos</li>
+                            <li>Empresa de distribución de bienes</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
-                            <h4 style="color: var(--accent-purple);">Servicios e intermediación</h4>
-                            <ul style="margin-top: 8px;">
-                                <li>Empresa de servicios de transportes</li>
-                                <li>Empresa de seguros</li>
-                                <li>Empresa de banca</li>
-                                <li>Empresa de montepíos</li>
-                            </ul>
-                        </div>
-                        <div class="example-box fragment" style="margin-top: 12px;">
-                            <h4>📋 Ejemplo</h4>
-                            <p>Una empresa de transporte es mercantil <strong>por sí misma</strong> (art. 75), aunque la dirija una sola persona o una sociedad.</p>
-                        </div>
+                    <div class="definition-box" style="border-left-color: var(--accent-green);">
+                        <h4 style="color: var(--accent-green);">Circulación de riqueza</h4>
+                        <ul>
+                            <li>Compraventa de bienes muebles</li>
+                            <li>Arrendamiento de bienes muebles con fines lucrativos</li>
+                            <li>Arrendamiento de talleres</li>
+                            <li>Empresa de expendio de bebidas y comidas</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="grid-2" style="margin-top:10px;">
+                    <div class="definition-box" style="border-left-color: var(--accent-purple);">
+                        <h4 style="color: var(--accent-purple);">Servicios e intermediación</h4>
+                        <ul>
+                            <li>Empresa de servicios de transportes</li>
+                            <li>Empresa de seguros</li>
+                            <li>Empresa de banca</li>
+                            <li>Empresa de montepíos</li>
+                        </ul>
+                    </div>
+                    <div class="example-box">
+                        <h4>Ejemplo</h4>
+                        <p>Una empresa de transporte es mercantil <strong>por sí misma</strong>, aunque la dirija una sola persona o una sociedad. No importa quién la opere: el acto es mercantil por su naturaleza.</p>
+                    </div>
+                </div>
             </section>
 
-            <section class="content-slide">
-                <h3>Clasificación: Actos Relativos (art. 76 CCom)</h3>
-                <div class="concept-box fragment" style="margin-top: 15px;">
-                    <h4>📜 Actos relativos de comercio</h4>
-                    <p>Solo son mercantiles cuando los realiza un <strong>comerciante</strong>. El art. 76 CCom comprende:</p>
+            <!-- Actos relativos -->
+            <section>
+                <h3>Actos Relativos de Comercio</h3>
+                <div class="concept-box purple">
+                    <h4>Actos relativos</h4>
+                    <p>Solo son mercantiles cuando los realiza un <strong>comerciante</strong>. Si los realiza una persona que no es comerciante, el acto tiene naturaleza civil.</p>
                 </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <ul>
-                                <li>El comercio bancario y las operaciones de crédito</li>
-                                <li>Las operaciones de intercambio</li>
-                                <li>Las operaciones de corretaje</li>
-                            </ul>
-                        </div>
+                <div class="grid-2" style="margin-top:15px;">
+                    <div class="definition-box">
+                        <ul>
+                            <li>El comercio bancario y las operaciones de crédito</li>
+                            <li>Las operaciones de intercambio</li>
+                            <li>Las operaciones de corretaje</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                            <ul>
-                                <li>Las operaciones de comisión</li>
-                                <li>Las operaciones de depósito</li>
-                            </ul>
-                        </div>
+                    <div class="definition-box" style="border-left-color: var(--accent-green);">
+                        <ul>
+                            <li>Las operaciones de comisión</li>
+                            <li>Las operaciones de depósito</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="example-box fragment" style="margin-top: 15px;">
-                    <h4>📋 Ejemplo clave</h4>
-                    <p>La intermediación comercial (comprar para revender) es mercantil <strong>solo si la realiza un comerciante</strong> (art. 76). Si un consumidor revende su celular usado, no es acto relativo de comercio.</p>
+                <div class="example-box" style="margin-top:15px;">
+                    <h4>Ejemplo clave</h4>
+                    <p>La intermediación comercial (comprar para revender) es mercantil <strong>solo si la realiza un comerciante</strong>. Si un consumidor revende su celular usado, no es acto relativo de comercio.</p>
                 </div>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
-                    <thead><tr><th>Criterio</th><th>Art. 75 (Absolutos)</th><th>Art. 76 (Relativos)</th></tr></thead>
+                <table class="comparison-table" style="margin-top:15px;">
+                    <thead><tr><th>Criterio</th><th>Absolutos</th><th>Relativos</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Mercantilidad</strong></td><td>Por la naturaleza del acto</td><td>Por el sujeto (comerciante)</td></tr>
                         <tr><td><strong>Sujeto</strong></td><td>Cualquiera</td><td>Solo comerciantes</td></tr>
                         <tr><td><strong>Ejemplo</strong></td><td>Transporte de carga</td><td>Operación de comisión</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Criterio subjetivo vs objetivo -->
+            <section>
                 <h3>Criterio Subjetivo vs. Objetivo</h3>
-                <div class="grid-2" style="margin-top: 15px;">
+                <div class="grid-2">
                     <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">Criterio subjetivo</h4>
-                            <p>Depende de la calidad del sujeto (comerciante). Lo mercantil es lo que hace un comerciante (art. 3 CCom).</p>
+                        <div class="definition-box">
+                            <h4>Criterio subjetivo</h4>
+                            <p>Depende de la calidad del sujeto (comerciante). Lo mercantil es lo que hace un comerciante.</p>
                         </div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green); margin-top: 12px;">
+                        <div class="definition-box" style="border-left-color: var(--accent-green); margin-top: 12px;">
                             <h4 style="color: var(--accent-green);">Criterio objetivo</h4>
-                            <p>Depende de la naturaleza del acto. Lo mercantil es el acto en sí (arts. 1-10 CCom), con independencia de quién lo realice.</p>
+                            <p>Depende de la naturaleza del acto. Lo mercantil es el acto en sí, con independencia de quién lo realice.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="highlight-box fragment">
-                            <p><strong>⚖️ Sistema mexicano: criterio MIXTO.</strong> Combina elementos objetivos (naturaleza del acto) con subjetivos (calidad de comerciante) para determinar la mercantilidad.</p>
+                        <div class="highlight-box">
+                            <p><strong>Sistema mexicano: criterio MIXTO.</strong> Combina elementos objetivos (naturaleza del acto) con subjetivos (calidad de comerciante) para determinar la mercantilidad.</p>
                         </div>
-                        <div class="note-box fragment" style="margin-top: 12px;">
-                            <h4>💡 Relevancia</h4>
+                        <div class="note-box" style="margin-top: 12px;">
+                            <h4>Relevancia</h4>
                             <p>El criterio aplicado define qué tribunal conoce el asunto y qué formalidades rigen la operación.</p>
                         </div>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Fuentes del derecho mercantil -->
+            <section>
                 <h3>Fuentes del Derecho Mercantil</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 2 CCom</span>
-                    <p>"En los casos de oscuridad o deficiencia de la ley mercantil, el juez o tribunal debe recurrir a los <strong>usos y costumbre mercantiles</strong>. A falta de éstos, a los principios del derecho mercantil universal, y en defecto de todos ellos, a la <strong>analogía con las disposiciones de la ley civil</strong>."</p>
-                </div>
-                <div class="timeline fragment" style="margin-top: 12px;">
-                    <div class="timeline-item"><strong>1. Código de Comercio</strong><p>Norma principal y supletoria (art. 2 CCom).</p></div>
-                    <div class="timeline-item"><strong>2. LGSM</strong><p>Ley General de Sociedades Mercantiles.</p></div>
-                    <div class="timeline-item"><strong>3. LGTOC</strong><p>Ley General de Títulos y Operaciones de Crédito.</p></div>
-                    <div class="timeline-item"><strong>4. Usos y costumbres</strong><p>Art. 2 CCom — fuente inmediata.</p></div>
+                <div class="timeline">
+                    <div class="timeline-item"><strong>1. Código de Comercio</strong><p>Norma principal y supletoria.</p></div>
+                    <div class="timeline-item"><strong>2. Ley General de Sociedades Mercantiles</strong><p>Regulación de sociedades.</p></div>
+                    <div class="timeline-item"><strong>3. Ley General de Títulos y Operaciones de Crédito</strong><p>Títulos de crédito y operaciones.</p></div>
+                    <div class="timeline-item"><strong>4. Usos y costumbres mercantiles</strong><p>Fuente inmediata cuando la ley es oscura o deficiente.</p></div>
                     <div class="timeline-item"><strong>5. Jurisprudencia</strong><p>SCJN y Tribunales Colegiados.</p></div>
                     <div class="timeline-item"><strong>6. Doctrina</strong><p>Uribe Holmes, Garrigues, Goldschmidt.</p></div>
                 </div>
-                <div class="warning-box fragment" style="margin-top: 12px;">
-                    <h4>⚠️ Jerarquía interna</h4>
-                    <p>En materia de capacidad y formalismo de los actos jurídicos se aplican las normas del Código Civil (art. 1 CCom).</p>
+                <div class="warning-box" style="margin-top:15px;">
+                    <h4>Jerarquía interna</h4>
+                    <p>En materia de capacidad y formalismo de los actos jurídicos se aplican las normas del Código Civil. El derecho mercantil es supletorio del civil.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
-
-            <!-- SECCIÓN 2 DE 9: 3.2 COMERCIANTES -->
+            <!-- ==================== SECCION 3.2: COMERCIANTES ==================== -->
             <section class="section-header" id="seccion-3-2">
-                <p class="section-number">SECCIÓN 2 DE 9</p>
-                <h2>3.2 Comerciantes</h2>
-                <p class="section-subtitle">Concepto, requisitos, obligaciones y prohibiciones (arts. 3-20 CCom)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.2</div>
+                <h2>Comerciantes</h2>
+                <p class="section-subtitle">Concepto, requisitos, obligaciones y prohibiciones</p>
             </section>
 
-            <section class="content-slide">
+            <!-- Concepto -->
+            <section>
                 <h3>Concepto de Comerciante</h3>
-                <div class="grid-2" style="margin-top: 15px;">
+                <div class="grid-2">
                     <div>
-                        <div class="legal-box fragment">
-                            <span class="legal-ref">Art. 3 CCom</span>
-                            <p>"Toda persona que, con arreglo a las prescripciones de este Código, sea <strong>hábil para comerciar</strong>, y que de hecho se ocupe en <strong>operaciones mercantiles</strong>."</p>
+                        <div class="definition-box">
+                            <h4>Definición legal</h4>
+                            <p>Comerciante es toda persona que, con arreglo a las prescripciones del Código de Comercio, sea hábil para comerciar, y que de hecho se ocupe en operaciones mercantiles.</p>
                         </div>
-                        <div class="legal-box fragment" style="margin-top: 12px;">
-                            <span class="legal-ref">Art. 8 CCom</span>
-                            <p>"Son comerciantes los que, teniendo capacidad legal para comerciar, se han <strong>inscrito en el Registro Mercantil</strong> y hacen del comercio su ocupación principal."</p>
+                        <div class="definition-box" style="margin-top: 12px; border-left-color: var(--accent-green);">
+                            <h4 style="color: var(--accent-green);">Requisito formal</h4>
+                            <p>Son comerciantes los que, teniendo capacidad legal para comerciar, se han inscrito en el Registro Mercantil y hacen del comercio su ocupación principal.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                            <h4 style="color: var(--accent-green);">Definición doctrinal</h4>
+                        <div class="definition-box" style="border-left-color: var(--accent-purple);">
+                            <h4 style="color: var(--accent-purple);">Definición doctrinal</h4>
                             <p>Comerciante es la persona natural o jurídica que, teniendo capacidad legal, ejerce <strong>habitualmente</strong> actos de comercio con fines de lucro.</p>
                         </div>
-                        <div class="note-box fragment" style="margin-top: 12px;">
-                            <h4>💡 Dos elementos</h4>
+                        <div class="note-box" style="margin-top: 12px;">
+                            <h4>Dos elementos esenciales</h4>
                             <p><strong>Capacidad legal</strong> (ser hábil para comerciar) + <strong>habitualidad</strong> (ocuparse de hecho en operaciones mercantiles).</p>
                         </div>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Requisitos -->
+            <section>
                 <h3>Requisitos para ser Comerciante</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
+                <table class="comparison-table">
                     <thead><tr><th>Requisito</th><th>Fundamento</th><th>Observaciones</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Mayoría de edad o emancipación</strong></td><td>Art. 34 CCom</td><td>Capacidad legal</td></tr>
-                        <tr><td><strong>Inscripción en el Registro Mercantil</strong></td><td>Art. 28 CCom</td><td>Requisito formal</td></tr>
-                        <tr><td><strong>Habitualidad</strong></td><td>Art. 3 CCom</td><td>Ejercicio profesional</td></tr>
-                        <tr><td><strong>Dedicación a operaciones mercantiles</strong></td><td>Art. 8 CCom</td><td>Ocupación principal</td></tr>
+                        <tr><td><strong>Mayoría de edad o emancipación</strong></td><td>Capacidad legal</td><td>Ser hábil para comerciar</td></tr>
+                        <tr><td><strong>Inscripción en el Registro Mercantil</strong></td><td>Requisito formal</td><td>No impide el comercio si no se cumple</td></tr>
+                        <tr><td><strong>Habitualidad</strong></td><td>Ejercicio profesional</td><td>No es ocasional sino permanente</td></tr>
+                        <tr><td><strong>Dedicación a operaciones mercantiles</strong></td><td>Ocupación principal</td><td>El comercio debe ser la actividad principal</td></tr>
                     </tbody>
                 </table>
-                <div class="warning-box fragment" style="margin-top: 15px;">
-                    <h4>⚠️ La inscripción</h4>
-                    <p>La omisión de la inscripción no impide el ejercicio del comercio, pero <strong>priva al comerciante de la protección legal específica</strong> (art. 28 CCom).</p>
+                <div class="warning-box" style="margin-top: 15px;">
+                    <h4>La inscripción</h4>
+                    <p>La omisión de la inscripción no impide el ejercicio del comercio, pero <strong>priva al comerciante de la protección legal específica</strong>. Sin inscripción, no se pueden invocar beneficios mercantiles.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Obligaciones -->
+            <section>
                 <h3>Obligaciones del Comerciante</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 19 CCom</span>
-                    <p>Los comerciantes están obligados a:</p>
-                </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <ul>
-                                <li>Inscribirse en el Registro Mercantil</li>
-                                <li>Llevar contabilidad</li>
-                            </ul>
-                        </div>
+                <div class="grid-2">
+                    <div class="definition-box">
+                        <h4>Obligaciones principales</h4>
+                        <ul>
+                            <li>Inscribirse en el Registro Mercantil</li>
+                            <li>Llevar contabilidad</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                            <ul>
-                                <li>Conservar libros y documentos mercantiles</li>
-                                <li>Comunicar al registro los cambios en su situación</li>
-                                <li>Someterse a los usos y costumbres mercantiles</li>
-                            </ul>
-                        </div>
+                    <div class="definition-box" style="border-left-color: var(--accent-green);">
+                        <h4 style="color: var(--accent-green);">Obligaciones complementarias</h4>
+                        <ul>
+                            <li>Conservar libros y documentos mercantiles</li>
+                            <li>Comunicar al registro los cambios en su situación</li>
+                            <li>Someterse a los usos y costumbres mercantiles</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="example-box fragment" style="margin-top: 15px;">
-                    <h4>📋 Ejemplo</h4>
-                    <p>Carlos, ingeniero que vende software, debe inscribirse en el Registro Mercantil, llevar su contabilidad y conservar sus libros para quedar amparado por las reglas mercantiles.</p>
+                <div class="example-box" style="margin-top: 15px;">
+                    <h4>Ejemplo</h4>
+                    <p>Un emprendedor que vende software debe inscribirse en el Registro Mercantil, llevar su contabilidad y conservar sus libros para quedar amparado por las reglas mercantiles.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Prohibiciones -->
+            <section>
                 <h3>Prohibiciones para Comerciar</h3>
-                <div class="grid-2" style="margin-top: 15px;">
-                    <div>
-                        <div class="warning-box fragment">
-                            <h4>⛔ Prohibiciones absolutas (art. 10 CCom)</h4>
-                            <ul>
-                                <li>Funcionarios públicos en asuntos de su ministerio</li>
-                                <li>Menores no emancipados</li>
-                                <li>Inhabilitados judicialmente</li>
-                                <li>Fallidos no rehabilitados</li>
-                            </ul>
-                        </div>
+                <div class="grid-2">
+                    <div class="warning-box">
+                        <h4>Prohibiciones absolutas</h4>
+                        <ul>
+                            <li>Funcionarios públicos en asuntos de su ministerio</li>
+                            <li>Menores no emancipados</li>
+                            <li>Inhabilitados judicialmente</li>
+                            <li>Fallidos no rehabilitados</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="warning-box fragment" style="border-left-color: var(--accent-orange);">
-                            <h4>⛔ Prohibiciones relativas (art. 11 CCom)</h4>
-                            <ul>
-                                <li>Abogados en asuntos de su profesión</li>
-                                <li>Empleados de casas comerciales (salvo autorización)</li>
-                                <li>Clérigos en asuntos de su ministerio</li>
-                            </ul>
-                        </div>
+                    <div class="warning-box" style="border-left-color: var(--accent-orange);">
+                        <h4 style="color: var(--accent-orange);">Prohibiciones relativas</h4>
+                        <ul>
+                            <li>Abogados en asuntos de su profesión</li>
+                            <li>Empleados de casas comerciales (salvo autorización)</li>
+                            <li>Clérigos en asuntos de su ministerio</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="note-box fragment" style="margin-top: 15px;">
-                    <h4>💡 En la práctica</h4>
+                <div class="note-box" style="margin-top: 15px;">
+                    <h4>En la práctica</h4>
                     <p>Un profesor universitario <strong>puede</strong> comerciar libremente, pero no como comerciante en asuntos de su cátedra si genera conflicto de interés.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Comerciante individual vs sociedad -->
+            <section>
                 <h3>Comerciante Individual vs. Sociedad Mercantil</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
+                <table class="comparison-table">
                     <thead><tr><th>Aspecto</th><th>Comerciante individual</th><th>Sociedad mercantil</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Personalidad</strong></td><td>Natural</td><td>Jurídica</td></tr>
@@ -621,67 +600,65 @@
                         <tr><td><strong>Continuidad</strong></td><td>Depende de la persona</td><td>Perpetua</td></tr>
                     </tbody>
                 </table>
-                <div class="highlight-box fragment" style="margin-top: 15px;">
+                <div class="highlight-box" style="margin-top: 15px;">
                     <p><strong>Idea clave:</strong> La gran diferencia es la <em>responsabilidad</em>. El comerciante individual responde con todo su patrimonio; la sociedad, solo con el aportado.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SECCIÓN 3 DE 9: 3.3 EMPRESA -->
+            <!-- ==================== SECCION 3.3: LA EMPRESA ==================== -->
             <section class="section-header" id="seccion-3-3">
-                <p class="section-number">SECCIÓN 3 DE 9</p>
-                <h2>3.3 La Empresa y la Negociación Mercantil</h2>
+                <div class="section-number">Sección 3.3</div>
+                <h2>La Empresa y la Negociación Mercantil</h2>
                 <p class="section-subtitle">Concepto económico y jurídico, fondo de comercio y elementos</p>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Concepto económico -->
+            <section>
                 <h3>Concepto Económico de Empresa</h3>
-                <div class="grid-2" style="margin-top: 15px;">
+                <div class="grid-2">
                     <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">José Santos Cossío</h4>
+                        <div class="definition-box">
+                            <h4>José Santos Cossío</h4>
                             <p>Define la empresa como "una unidad de organización destinada al ejercicio de una actividad económica".</p>
                         </div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple); margin-top: 12px;">
+                        <div class="definition-box" style="border-left-color: var(--accent-purple); margin-top: 12px;">
                             <h4 style="color: var(--accent-purple);">Enrique Uribe Holmes</h4>
                             <p>"La empresa no es una cosa, sino una <strong>función</strong>: la función de intermediación entre la producción y el consumo."</p>
                         </div>
                     </div>
                     <div>
-                        <div class="concept-box fragment">
+                        <div class="concept-box">
                             <h4>Factor organización</h4>
                             <p>El concepto económico se centra en la capacidad de combinar factores productivos (trabajo, capital, tierra, tecnología) para generar valor económico.</p>
                         </div>
-                        <div class="note-box fragment" style="margin-top: 12px;">
-                            <h4>💡 Enfoque</h4>
+                        <div class="note-box" style="margin-top: 12px;">
+                            <h4>Enfoque</h4>
                             <p>No es el local ni la máquina: es la <strong>organización</strong> que los combina para producir bienes o servicios.</p>
                         </div>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Concepto jurídico -->
+            <section>
                 <h3>Concepto Jurídico de Empresa</h3>
-                <div class="definition-box fragment" style="margin-top: 15px;">
+                <div class="definition-box">
                     <h4>Definición jurídica</h4>
                     <p>La empresa es la <strong>organización de los factores de producción</strong> mediante la cual el empresario asume el riesgo de producir un bien o servicio.</p>
                 </div>
-                <div class="legal-box fragment" style="margin-top: 12px;">
-                    <span class="legal-ref">Jurisprudencia</span>
-                    <p>Se ha reconocido que la empresa es una <strong>universalidad de bienes</strong> que se distingue del comerciante que la explota.</p>
-                </div>
-                <div class="definition-box fragment" style="margin-top: 12px; border-left-color: var(--accent-green);">
+                <div class="definition-box" style="margin-top: 12px; border-left-color: var(--accent-green);">
                     <h4 style="color: var(--accent-green);">Fondo de comercio</h4>
-                    <p>Es la universalidad de bienes <strong>corpóreos e incorpóreos</strong> que permiten la explotación de la empresa (clientela, nombre, instalaciones, know-how).</p>
+                    <p>Es la universalidad de bienes <strong>corpóreos e incorpóreos</strong> que permiten la explotación de la empresa: clientela, nombre comercial, instalaciones, know-how.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="highlight-box" style="margin-top: 15px;">
+                    <p><strong>Estabilidad del empresario:</strong> La doctrina protege la continuidad de la empresa como unidad productiva, incluso ante cambios en su titularidad. Cuando se vende una empresa, se transmite el fondo de comercio con todos sus elementos.</p>
+                </div>
             </section>
 
-            <section class="content-slide">
+            <!-- Elementos de la empresa -->
+            <section>
                 <h3>Elementos de la Empresa</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
+                <table class="comparison-table">
                     <thead><tr><th>Elemento</th><th>Descripción</th><th>Importancia</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Clientela</strong></td><td>Conjunto de clientes habituales</td><td>Elemento principal</td></tr>
@@ -693,84 +670,66 @@
                         <tr><td><strong>Know-how</strong></td><td>Conocimientos técnicos</td><td>Ventaja competitiva</td></tr>
                     </tbody>
                 </table>
-                <div class="highlight-box fragment" style="margin-top: 15px;">
-                    <p><strong>Estabilidad del empresario:</strong> La doctrina protege la continuidad de la empresa como unidad productiva, incluso ante cambios en su titularidad.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Empresa vs comerciante -->
+            <section>
                 <h3>Empresa vs. Comerciante</h3>
-                <div class="grid-2" style="margin-top: 15px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">Empresa</h4>
-                            <ul>
-                                <li>Unidad de producción</li>
-                                <li>Concepto económico</li>
-                                <li>Puede ser explotada por varios</li>
-                                <li>No tiene personalidad propia</li>
-                            </ul>
-                        </div>
+                <div class="grid-2">
+                    <div class="definition-box">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li>Unidad de producción</li>
+                            <li>Concepto económico</li>
+                            <li>Puede ser explotada por varios</li>
+                            <li>No tiene personalidad propia</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
-                            <h4 style="color: var(--accent-purple);">Comerciante</h4>
-                            <ul>
-                                <li>Persona que explota</li>
-                                <li>Concepto jurídico</li>
-                                <li>Es una sola persona (física o moral)</li>
-                                <li>Tiene personalidad jurídica</li>
-                            </ul>
-                        </div>
+                    <div class="definition-box" style="border-left-color: var(--accent-purple);">
+                        <h4 style="color: var(--accent-purple);">Comerciante</h4>
+                        <ul>
+                            <li>Persona que explota</li>
+                            <li>Concepto jurídico</li>
+                            <li>Es una sola persona (física o moral)</li>
+                            <li>Tiene personalidad jurídica</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="example-box fragment" style="margin-top: 15px;">
-                    <h4>📋 Ejemplo</h4>
+                <div class="example-box" style="margin-top: 15px;">
+                    <h4>Ejemplo</h4>
                     <p>Al vender una empresa, el comprador adquiere el <strong>fondo de comercio</strong> con todos sus elementos: clientela, nombre comercial, instalaciones y know-how.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SECCIÓN 4 DE 9: 3.4 AUXILIARES MERCANTILES -->
+            <!-- ==================== SECCION 3.4: AUXILIARES MERCANTILES ==================== -->
             <section class="section-header" id="seccion-3-4">
-                <p class="section-number">SECCIÓN 4 DE 9</p>
-                <h2>3.4 Auxiliares Mercantiles</h2>
-                <p class="section-subtitle">Dependientes e independientes (arts. 893, 935, 1325 CCom)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.4</div>
+                <h2>Auxiliares Mercantiles</h2>
+                <p class="section-subtitle">Dependientes e independientes</p>
             </section>
 
-            <section class="content-slide">
+            <!-- Auxiliares dependientes -->
+            <section>
                 <h3>Auxiliares Dependientes</h3>
-                <div class="grid-2" style="margin-top: 15px;">
-                    <div>
-                        <div class="legal-box fragment">
-                            <span class="legal-ref">Art. 893 CCom</span>
-                            <p>El <strong>factor</strong> es el apoderado general del comerciante para administrar sus negocios; su poder se extiende a todos los actos propios del giro.</p>
-                        </div>
-                        <div class="definition-box fragment" style="margin-top: 12px;">
-                            <h4>El factor</h4>
-                            <p>Representante general del comerciante, investido de facultades <strong>amplias</strong> para gestionar la empresa.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <table class="comparison-table fragment" style="margin-top: 0;">
-                            <thead><tr><th>Auxiliar</th><th>Función</th><th>Apoderación</th></tr></thead>
-                            <tbody>
-                                <tr><td><strong>Factor</strong></td><td>Gerente general</td><td>General y amplia</td></tr>
-                                <tr><td><strong>Gerente</strong></td><td>Administración específica</td><td>Según poder</td></tr>
-                                <tr><td><strong>Viajante</strong></td><td>Ventas y cobros</td><td>Representación</td></tr>
-                                <tr><td><strong>Dependiente</strong></td><td>Tareas diversas</td><td>Limitada</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="definition-box">
+                    <h4>El Factor</h4>
+                    <p>El factor es el apoderado general del comerciante para administrar sus negocios. Su poder se extiende a todos los actos propios del giro del negocio.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
+                <table class="comparison-table" style="margin-top: 15px;">
+                    <thead><tr><th>Auxiliar</th><th>Función</th><th>Apoderación</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>Factor</strong></td><td>Gerente general</td><td>General y amplia</td></tr>
+                        <tr><td><strong>Gerente</strong></td><td>Administración específica</td><td>Según poder</td></tr>
+                        <tr><td><strong>Viajante</strong></td><td>Ventas y cobros</td><td>Representación</td></tr>
+                        <tr><td><strong>Dependiente</strong></td><td>Tareas diversas</td><td>Limitada</td></tr>
+                    </tbody>
+                </table>
             </section>
 
-            <section class="content-slide">
+            <!-- Auxiliares independientes -->
+            <section>
                 <h3>Auxiliares Independientes</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
+                <table class="comparison-table">
                     <thead><tr><th>Auxiliar</th><th>Función</th><th>Característica</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Corredor público</strong></td><td>Intermediación</td><td>Sin posesión de mercancías</td></tr>
@@ -779,151 +738,127 @@
                         <tr><td><strong>Martillero</strong></td><td>Venta en subasta</td><td>Independencia</td></tr>
                     </tbody>
                 </table>
-                <div class="grid-2" style="margin-top: 15px;">
-                    <div>
-                        <div class="legal-box fragment">
-                            <span class="legal-ref">Art. 935 CCom</span>
-                            <p>El comisionista puede actuar en <strong>nombre propio o ajeno</strong>, según el tipo de comisión.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="legal-box fragment" style="border-left-color: var(--accent-green);">
-                            <span class="legal-ref">Art. 1325 CCom</span>
-                            <p>El <strong>representante de comercio</strong> promueve habitualmente la celebración de contratos de compraventa por cuenta de los comerciantes.</p>
-                        </div>
-                    </div>
+                <div class="note-box" style="margin-top: 15px;">
+                    <h4>Comisionista</h4>
+                    <p>El comisionista puede actuar en <strong>nombre propio o ajeno</strong>, según el tipo de comisión. Tiene posesión temporal de las mercancías.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Auxiliares Técnicos y de Resolución</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
+            <!-- Auxiliares técnicos -->
+            <section>
+                <h3>Auxiliares Técnicos y Representantes</h3>
+                <table class="comparison-table">
                     <thead><tr><th>Auxiliar</th><th>Función</th><th>Fuente</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Mediador</strong></td><td>Conciliación</td><td>Ley de Arbitraje (1993)</td></tr>
-                        <tr><td><strong>Perito</strong></td><td>Dictamen técnico</td><td>Art. 59 CCom</td></tr>
-                        <tr><td><strong>Árbitro</strong></td><td>Resolución de conflictos</td><td>Ley de Arbitraje (1993)</td></tr>
+                        <tr><td><strong>Mediador</strong></td><td>Conciliación</td><td>Ley de Arbitraje</td></tr>
+                        <tr><td><strong>Perito</strong></td><td>Dictamen técnico</td><td>Código de Comercio</td></tr>
+                        <tr><td><strong>Árbitro</strong></td><td>Resolución de conflictos</td><td>Ley de Arbitraje</td></tr>
+                        <tr><td><strong>Representante de comercio</strong></td><td>Promover contratos de compraventa</td><td>Código de Comercio</td></tr>
                     </tbody>
                 </table>
-                <div class="note-box fragment" style="margin-top: 15px;">
-                    <h4>⚠️ Dependencia vs. Autonomía</h4>
+                <div class="warning-box" style="margin-top: 15px;">
+                    <h4>Dependencia vs. Autonomía</h4>
                     <p>El representante de comercio se distingue del agente comercial por su <strong>dependencia económica y jurídica</strong> respecto del principal; el corredor y el comisionista actúan por su propia cuenta.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SECCIÓN 5 DE 9: 3.5 SOCIEDADES MERCANTILES -->
+            <!-- ==================== SECCION 3.5: SOCIEDADES MERCANTILES ==================== -->
             <section class="section-header" id="seccion-3-5">
-                <p class="section-number">SECCIÓN 5 DE 9</p>
-                <h2>3.5 Sociedades Mercantiles</h2>
-                <p class="section-subtitle">Concepto, clasificación, personalidad jurídica y nacionalidad (arts. 1-10 LGSM)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.5</div>
+                <h2>Sociedades Mercantiles</h2>
+                <p class="section-subtitle">Concepto, clasificación, personalidad jurídica y nacionalidad</p>
             </section>
 
-            <section class="content-slide">
+            <!-- Concepto -->
+            <section>
                 <h3>Concepto de Sociedad Mercantil</h3>
-                <div class="grid-2" style="margin-top: 15px;">
-                    <div>
-                        <div class="legal-box fragment">
-                            <span class="legal-ref">Art. 98 CCom</span>
-                            <p>"Hay sociedad mercantil cuando <strong>dos o más personas se obligan a contribuir con bienes o servicios</strong> para el ejercicio de una actividad mercantil, con el fin de repartir entre sí las ganancias."</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                            <h4 style="color: var(--accent-green);">Definición doctrinaria</h4>
-                            <p>Persona jurídica constituida por la reunión de dos o más personas que aportan bienes o servicios para realizar una actividad mercantil y distribuir las utilidades.</p>
-                        </div>
-                    </div>
+                <div class="definition-box">
+                    <h4>Definición</h4>
+                    <p>Hay sociedad mercantil cuando dos o más personas se obligan a contribuir con bienes o servicios para el ejercicio de una actividad mercantil, con el fin de repartir entre sí las ganancias.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="highlight-box" style="margin-top: 15px;">
+                    <p><strong>Elementos esenciales:</strong> Reunión de personas + aporte de bienes o servicios + actividad mercantil + reparto de ganancias.</p>
+                </div>
             </section>
 
-            <section class="content-slide">
+            <!-- Personalidad jurídica -->
+            <section>
                 <h3>Personalidad Jurídica</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 2 LGSM</span>
-                    <p>"Las sociedades legalmente constituidas en un país tendrán <strong>personalidad jurídica en todo el territorio nacional</strong>."</p>
+                <div class="definition-box">
+                    <h4>Concepto</h4>
+                    <p>Las sociedades legalmente constituidas en un país tendrán personalidad jurídica en todo el territorio nacional.</p>
                 </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4>La personalidad implica:</h4>
-                            <ul>
-                                <li>Capacidad de ser titular de derechos y obligaciones</li>
-                                <li>Patrimonio propio y separado de los socios</li>
-                            </ul>
-                        </div>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div class="definition-box">
+                        <h4>La personalidad implica:</h4>
+                        <ul>
+                            <li>Capacidad de ser titular de derechos y obligaciones</li>
+                            <li>Patrimonio propio y separado de los socios</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
-                            <ul>
-                                <li>Representación legal</li>
-                                <li>Perpetuidad</li>
-                                <li>Responsabilidad limitada al aporte</li>
-                            </ul>
-                        </div>
+                    <div class="definition-box" style="border-left-color: var(--accent-purple);">
+                        <ul>
+                            <li>Representación legal</li>
+                            <li>Perpetuidad</li>
+                            <li>Responsabilidad limitada al aporte</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Nacionalidad -->
+            <section>
                 <h3>Nacionalidad de la Sociedad</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 9 LGSM</span>
-                    <p>Las sociedades son <strong>mexicanas cuando tengan su domicilio principal en México</strong>, cualquiera que sea el lugar de su constitución.</p>
+                <div class="definition-box">
+                    <h4>Regla general</h4>
+                    <p>Las sociedades son mexicanas cuando tengan su <strong>domicilio principal en México</strong>, cualquiera que sea el lugar de su constitución.</p>
                 </div>
-                <div class="warning-box fragment" style="margin-top: 12px;">
-                    <h4>⚠️ Dato clave</h4>
-                    <p>La nacionalidad de la sociedad se determina por el <strong>domicilio social</strong>, no por la nacionalidad de los socios.</p>
+                <div class="warning-box" style="margin-top: 15px;">
+                    <h4>Dato clave</h4>
+                    <p>La nacionalidad de la sociedad se determina por el <strong>domicilio social</strong>, no por la nacionalidad de los socios. Una sociedad constituida en el extranjero con domicilio en México es mexicana.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Clasificación -->
+            <section>
                 <h3>Clasificación de las Sociedades</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
-                    <thead><tr><th>Tipo</th><th>Fundamento</th><th>Características</th></tr></thead>
+                <table class="comparison-table">
+                    <thead><tr><th>Tipo</th><th>Características</th><th>Ejemplo</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Sociedades reguladas</strong></td><td>LGSM</td><td>Reglas imperativas</td></tr>
-                        <tr><td><strong>Sociedades irregulares</strong></td><td>CCom</td><td>Flexibilidad (art. 99 CCom)</td></tr>
-                        <tr><td><strong>Sociedades de economía mixta</strong></td><td>LGSM</td><td>Participación estatal</td></tr>
-                        <tr><td><strong>Tipos principales</strong></td><td>LGSM</td><td>SA · SRL · SAS (y otras)</td></tr>
+                        <tr><td><strong>Sociedades reguladas</strong></td><td>Reglas imperativas de la LGSM</td><td>SA, SRL, SAS</td></tr>
+                        <tr><td><strong>Sociedades irregulares</strong></td><td>Flexibilidad, se rigen por el CCom</td><td>Sociedades de hecho</td></tr>
+                        <tr><td><strong>Sociedades de economía mixta</strong></td><td>Participación estatal</td><td>Empresas paraestatales</td></tr>
                     </tbody>
                 </table>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 99 CCom</span>
-                    <p>Las sociedades irregulares se forman con sujeción a las reglas generales del contrato de sociedad.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
-
-            <!-- SECCIÓN 6 DE 9: 3.6 SOCIEDAD ANÓNIMA -->
+            <!-- ==================== SECCION 3.6: SA ==================== -->
             <section class="section-header" id="seccion-3-6">
-                <p class="section-number">SECCIÓN 6 DE 9</p>
-                <h2>3.6 Sociedad Anónima (SA)</h2>
-                <p class="section-subtitle">Constitución, órganos sociales, capital social y acciones (arts. 87-204 LGSM)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.6</div>
+                <h2>Sociedad Anónima (SA)</h2>
+                <p class="section-subtitle">Constitución, órganos sociales, capital social y acciones</p>
             </section>
 
-            <section class="content-slide">
+            <!-- Constitución -->
+            <section>
                 <h3>Constitución de la SA</h3>
-                <div class="grid-2" style="margin-top: 15px;">
+                <div class="grid-2">
                     <div>
-                        <div class="legal-box fragment">
-                            <span class="legal-ref">Art. 87 LGSM</span>
+                        <div class="definition-box">
+                            <h4>Forma de constitución</h4>
                             <p>La sociedad por acciones puede constituirse mediante <strong>escritura pública o acta protocolizada</strong>, cuando no se haga oferta pública de sus acciones.</p>
                         </div>
-                        <div class="legal-box fragment" style="margin-top: 12px;">
-                            <span class="legal-ref">Art. 88 LGSM</span>
-                            <p>Requisitos: mínimo de dos accionistas; capital social mínimo de <strong>$50.000.000</strong> cuando se ofrezcan acciones al público; admite socio único (unipersonal).</p>
+                        <div class="definition-box" style="margin-top: 12px; border-left-color: var(--accent-green);">
+                            <h4 style="color: var(--accent-green);">Requisitos</h4>
+                            <ul>
+                                <li>Mínimo de dos accionistas</li>
+                                <li>Capital social mínimo de $50,000,000 (con oferta pública)</li>
+                                <li>Admite socio único (unipersonal)</li>
+                            </ul>
                         </div>
                     </div>
                     <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                            <h4 style="color: var(--accent-green);">Características base</h4>
+                        <div class="concept-box">
+                            <h4>Características base</h4>
                             <ul>
                                 <li>Capital dividido en acciones</li>
                                 <li>Responsabilidad limitada al aporte</li>
@@ -933,16 +868,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Capital social -->
+            <section>
                 <h3>Capital Social de la SA</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 89 LGSM</span>
+                <div class="definition-box">
+                    <h4>Concepto</h4>
                     <p>El capital social se divide en <strong>acciones de igual valor nominal</strong>. Las acciones pueden ser de distintas clases según los derechos que confieran.</p>
                 </div>
-                <table class="comparison-table fragment" style="margin-top: 12px;">
+                <table class="comparison-table" style="margin-top: 15px;">
                     <thead><tr><th>Componente</th><th>Descripción</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Capital autorizado</strong></td><td>Máximo que puede emitirse</td></tr>
@@ -950,93 +885,57 @@
                         <tr><td><strong>Capital pagado</strong></td><td>Parte efectivamente aportada</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Órganos sociales -->
+            <section>
                 <h3>Órganos Sociales de la SA</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 120 LGSM</span>
-                    <p>Los órganos de la SA son: <strong>Asamblea general de accionistas</strong> (máximo órgano de dirección), <strong>Consejo de administración</strong> (gestión y representación) y <strong>Revisor fiscal</strong> (control y vigilancia).</p>
-                </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">Asamblea de accionistas</h4>
-                            <p>Art. 130 LGSM: se reúne ordinariamente al menos una vez al año para examinar estados financieros, aprobar utilidades, elegir administradores y modificar estatutos.</p>
-                        </div>
+                <div class="grid-3">
+                    <div class="card card-accent-blue">
+                        <h4>Asamblea de Accionistas</h4>
+                        <p>Máximo órgano de dirección. Se reúne al menos una vez al año para examinar estados financieros, aprobar utilidades y elegir administradores.</p>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
-                            <h4 style="color: var(--accent-purple);">Consejo de administración</h4>
-                            <p>Art. 137 LGSM: ejerce dirección y representación. Su duración máxima es de <strong>un año</strong>.</p>
-                        </div>
+                    <div class="card card-accent-purple">
+                        <h4>Consejo de Administración</h4>
+                        <p>Ejerce dirección y representación. Su duración máxima es de un año. Puede ser designado por la asamblea.</p>
+                    </div>
+                    <div class="card card-accent-green">
+                        <h4>Revisor Fiscal</h4>
+                        <p>Control y vigilancia. Es obligatorio en las SA. Verifica la contabilidad y los estados financieros.</p>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Acciones de la SA</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 146 LGSM</span>
-                    <p>Las acciones son <strong>títulos valores</strong> que incorporan derechos de crédito y político.</p>
-                </div>
-                <table class="comparison-table fragment" style="margin-top: 12px;">
-                    <thead><tr><th>Tipo</th><th>Derechos</th></tr></thead>
+            <!-- Acciones -->
+            <section>
+                <h3>Tipos de Acciones</h3>
+                <table class="comparison-table">
+                    <thead><tr><th>Tipo</th><th>Derechos</th><th>Características</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Nominativas</strong></td><td>Registradas a nombre del titular</td></tr>
-                        <tr><td><strong>Al portador</strong></td><td>El poseedor es titular</td></tr>
-                        <tr><td><strong>Ordinarias</strong></td><td>Derechos políticos y económicos</td></tr>
-                        <tr><td><strong>Preferenciales</strong></td><td>Prioridad en dividendos</td></tr>
-                        <tr><td><strong>De ahorro</strong></td><td>Sin derecho a voto</td></tr>
+                        <tr><td><strong>Nominativas</strong></td><td>Registradas a nombre del titular</td><td>Mayor seguridad</td></tr>
+                        <tr><td><strong>Al portador</strong></td><td>El poseedor es titular</td><td>Mayor liquidez</td></tr>
+                        <tr><td><strong>Ordinarias</strong></td><td>Derechos políticos y económicos</td><td>Tipo más común</td></tr>
+                        <tr><td><strong>Preferenciales</strong></td><td>Prioridad en dividendos</td><td>Sin derecho a voto generalmente</td></tr>
+                        <tr><td><strong>De ahorro</strong></td><td>Sin derecho a voto</td><td>Solo derecho económico</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Fusión y Obligaciones de Publicidad (SA)</h3>
-                <div class="grid-2" style="margin-top: 15px;">
-                    <div>
-                        <div class="legal-box fragment">
-                            <span class="legal-ref">Art. 163 LGSM</span>
-                            <p>La fusión puede ser: <strong>Absoluta</strong> (una sociedad absorbe a otra) o <strong>Relativa</strong> (dos o más crean una nueva).</p>
-                        </div>
-                        <div class="legal-box fragment" style="margin-top: 12px;">
-                            <span class="legal-ref">Art. 156 LGSM</span>
-                            <p>Obligaciones de publicidad: estados financieros, convocatoria de asambleas, fusión, escisión, disolución y liquidación.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="note-box fragment">
-                            <h4>💡 La SA es la más regulada</h4>
-                            <p>Revisor fiscal obligatorio, asamblea anual obligatoria y amplia publicidad. Ideal para grandes capitales y bursatilización.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <!-- SECCIÓN 7 DE 9: 3.7 SRL -->
+            <!-- ==================== SECCION 3.7: SRL ==================== -->
             <section class="section-header" id="seccion-3-7">
-                <p class="section-number">SECCIÓN 7 DE 9</p>
-                <h2>3.7 Sociedad de Responsabilidad Limitada (SRL)</h2>
-                <p class="section-subtitle">Características, capital social, partes sociales y administración (arts. 58-86 LGSM)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.7</div>
+                <h2>Sociedad de Responsabilidad Limitada (SRL)</h2>
+                <p class="section-subtitle">Partes sociales, administración y transmisión</p>
             </section>
 
-            <section class="content-slide">
+            <!-- Capital y partes sociales -->
+            <section>
                 <h3>Capital Social y Partes Sociales</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 59 LGSM</span>
-                    <p>El capital social se divide en <strong>partes sociales de igual valor</strong>, que representan los aportes de los socios.</p>
+                <div class="definition-box">
+                    <h4>Partes sociales</h4>
+                    <p>El capital social se divide en partes sociales de igual valor, que representan los aportes de los socios. No son acciones y no pueden ofrecerse al público.</p>
                 </div>
-                <div class="definition-box fragment" style="margin-top: 12px; border-left-color: var(--accent-green);">
-                    <h4 style="color: var(--accent-green);">¿Qué son las partes sociales?</h4>
-                    <p>Títulos que representan la participación de cada socio en el capital de la SRL. <strong>No son acciones</strong> y no pueden ofrecerse al público.</p>
-                </div>
-                <table class="comparison-table fragment" style="margin-top: 12px;">
+                <table class="comparison-table" style="margin-top: 15px;">
                     <thead><tr><th>Aspecto</th><th>SRL</th><th>SA</th></tr></thead>
                     <tbody>
                         <tr><td><strong>Título</strong></td><td>Partes sociales</td><td>Acciones</td></tr>
@@ -1045,68 +944,46 @@
                         <tr><td><strong>Número de socios</strong></td><td>2 a 50</td><td>Mínimo 2 (o 1 unipersonal)</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Administración -->
+            <section>
                 <h3>Administración de la SRL</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 64 LGSM</span>
-                    <p>La administración está a cargo de <strong>uno o más administradores</strong>, que pueden ser socios o terceros.</p>
+                <div class="definition-box">
+                    <h4>Administradores</h4>
+                    <p>La administración está a cargo de uno o más administradores, que pueden ser socios o terceros. Son nombrados por los socios y pueden ser removidos por la mayoría.</p>
                 </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4>Nombramiento y remoción</h4>
-                            <ul>
-                                <li>Los administradores son nombrados por los socios</li>
-                                <li>Duración determinada o indefinida</li>
-                                <li>Pueden ser removidos por la mayoría</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="legal-box fragment" style="border-left-color: var(--accent-orange);">
-                            <span class="legal-ref">Art. 65 LGSM</span>
-                            <p>Los administradores responden <strong>personalmente</strong> por los daños causados a la sociedad por dolo o culpa en el ejercicio de sus funciones.</p>
-                        </div>
-                    </div>
+                <div class="warning-box" style="margin-top: 15px;">
+                    <h4>Responsabilidad</h4>
+                    <p>Los administradores responden personalmente por los daños causados a la sociedad por dolo o culpa en el ejercicio de sus funciones.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Transmisión -->
+            <section>
                 <h3>Transmisión de Partes Sociales</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 68 LGSM</span>
+                <div class="definition-box">
+                    <h4>Requisitos</h4>
                     <p>La transmisión de partes sociales requiere:</p>
+                    <ul>
+                        <li>Consentimiento de la mayoría de los socios</li>
+                        <li>Comunicación previa a todos los socios</li>
+                        <li>Derecho de tanteo de los socios</li>
+                    </ul>
                 </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <ul>
-                                <li>Consentimiento de la mayoría de los socios</li>
-                                <li>Comunicación previa a todos los socios</li>
-                                <li>Derecho de tanteo de los socios</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="warning-box fragment" style="border-left-color: var(--accent-red);">
-                            <h4>⚠️ Protección</h4>
-                            <p>La transmisión es más restrictiva que la de acciones, lo que protege la <strong>confianza entre socios</strong>.</p>
-                        </div>
-                    </div>
+                <div class="warning-box" style="margin-top: 15px;">
+                    <h4>Importante</h4>
+                    <p>La transmisión de partes sociales es más restrictiva que la de acciones, lo que protege la confianza entre socios.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Diferencias entre SA y SRL</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
+            <!-- Comparación SA vs SRL -->
+            <section>
+                <h3>Comparación: SA vs. SRL</h3>
+                <table class="comparison-table">
                     <thead><tr><th>Característica</th><th>SA</th><th>SRL</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Capital mínimo</strong></td><td>$50.000.000</td><td>$100.000</td></tr>
+                        <tr><td><strong>Capital mínimo</strong></td><td>$50,000,000</td><td>$100,000</td></tr>
                         <tr><td><strong>Socios</strong></td><td>Ilimitados</td><td>2 a 50</td></tr>
                         <tr><td><strong>Transmisión</strong></td><td>Libre</td><td>Requiere consentimiento</td></tr>
                         <tr><td><strong>Oferta pública</strong></td><td>Permitida</td><td>Prohibida</td></tr>
@@ -1115,575 +992,252 @@
                         <tr><td><strong>Flexibilidad</strong></td><td>Menor</td><td>Mayor</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- SECCIÓN 8 DE 9: 3.8 SAS -->
+            <!-- ==================== SECCION 3.8: SAS ==================== -->
             <section class="section-header" id="seccion-3-8">
-                <p class="section-number">SECCIÓN 8 DE 9</p>
-                <h2>3.8 Sociedad por Acciones Simplificada (SAS)</h2>
-                <p class="section-subtitle">Régimen simplificado, constitución en línea y capital social (arts. 260-271 LGSM)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.8</div>
+                <h2>Sociedad por Acciones Simplificada (SAS)</h2>
+                <p class="section-subtitle">Régimen simplificado, constitución en línea</p>
             </section>
 
-            <section class="content-slide">
-                <h3>Constitución y Un Solo Accionista</h3>
-                <div class="grid-2" style="margin-top: 15px;">
+            <!-- Constitución -->
+            <section>
+                <h3>Constitución de la SAS</h3>
+                <div class="grid-2">
                     <div>
-                        <div class="legal-box fragment">
-                            <span class="legal-ref">Art. 260 LGSM</span>
-                            <p>La SAS puede constituirse mediante <strong>escritura pública o acta protocolizada</strong>. Puede tener <strong>un solo accionista</strong> (sociedad unipersonal).</p>
+                        <div class="definition-box">
+                            <h4>Forma de constitución</h4>
+                            <p>La SAS puede constituirse mediante escritura pública o acta protocolizada. También admite <strong>constitución en línea ante notario</strong>.</p>
                         </div>
-                        <div class="legal-box fragment" style="margin-top: 12px;">
-                            <span class="legal-ref">Art. 262 LGSM</span>
-                            <p>La constitución en línea se realiza ante notario mediante instrumento privado protocolizado, si: no hay oferta pública, el capital es íntegramente pagado y todos los accionistas están presentes.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                            <h4 style="color: var(--accent-green);">Ventajas de la unipersonalidad</h4>
+                        <div class="definition-box" style="margin-top: 12px; border-left-color: var(--accent-green);">
+                            <h4 style="color: var(--accent-green);">Constitución en línea</h4>
                             <ul>
-                                <li>Mayor control del emprendedor</li>
-                                <li>Simplificación de trámites</li>
-                                <li>Flexibilidad en la gestión</li>
+                                <li>No se hace oferta pública de acciones</li>
+                                <li>El capital es íntegramente pagado</li>
+                                <li>Todos los accionistas están presentes</li>
                             </ul>
                         </div>
-                        <div class="warning-box fragment" style="margin-top: 12px;">
-                            <h4>⚠️ Separación patrimonial</h4>
-                            <p>La sociedad unipersonal <strong>no responde</strong> por las deudas del accionista, ni viceversa.</p>
+                    </div>
+                    <div>
+                        <div class="concept-box">
+                            <h4>Ventajas</h4>
+                            <ul>
+                                <li>Constitución en menos de 24 horas</li>
+                                <li>Costo significativamente menor</li>
+                                <li>Trámites simplificados</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="example-box fragment" style="margin-top: 15px;">
-                    <h4>📋 Ejemplo</h4>
-                    <p>Una SAS puede constituirse en <strong>menos de 24 horas</strong> mediante constitución en línea ante notario, con costo muy inferior a la SA tradicional.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Capital Social de la SAS</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 261 LGSM</span>
-                    <p>No existe <strong>capital social mínimo legal</strong> para la SAS, a diferencia de la SA ($50.000.000) y la SRL ($100.000).</p>
+            <!-- Un solo accionista -->
+            <section>
+                <h3>Sociedad Unipersonal</h3>
+                <div class="definition-box">
+                    <h4>SAS con un solo accionista</h4>
+                    <p>La SAS puede tener un solo accionista, lo que permite:</p>
+                    <ul>
+                        <li>Mayor control por parte del emprendedor</li>
+                        <li>Simplificación de trámites</li>
+                        <li>Flexibilidad en la gestión</li>
+                    </ul>
                 </div>
-                <table class="comparison-table fragment" style="margin-top: 12px;">
-                    <thead><tr><th>Tipo</th><th>Capital mínimo</th><th>Fundamento</th></tr></thead>
+                <div class="warning-box" style="margin-top: 15px;">
+                    <h4>Separación patrimonial</h4>
+                    <p>La sociedad unipersonal no responde personalmente por las deudas del accionista, y viceversa. Existe separación patrimonial completa.</p>
+                </div>
+            </section>
+
+            <!-- Capital -->
+            <section>
+                <h3>Capital Social de la SAS</h3>
+                <div class="highlight-box">
+                    <p><strong>No existe capital social mínimo legal</strong> para la SAS, a diferencia de la SA ($50,000,000) y la SRL ($100,000).</p>
+                </div>
+                <table class="comparison-table" style="margin-top: 15px;">
+                    <thead><tr><th>Tipo</th><th>Capital mínimo</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>SA</strong></td><td>$50.000.000</td><td>Art. 88 LGSM</td></tr>
-                        <tr><td><strong>SRL</strong></td><td>$100.000</td><td>Art. 59 LGSM</td></tr>
-                        <tr><td><strong>SAS</strong></td><td>Sin mínimo</td><td>Art. 261 LGSM</td></tr>
+                        <tr><td><strong>SA</strong></td><td>$50,000,000</td></tr>
+                        <tr><td><strong>SRL</strong></td><td>$100,000</td></tr>
+                        <tr><td><strong>SAS</strong></td><td>Sin mínimo legal</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Régimen Simplificado de Administración</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 266 LGSM</span>
-                    <p>La SAS puede elegir entre: <strong>un solo administrador</strong> (sin formalidades especiales), <strong>consejo de administración</strong> (como en la SA) o <strong>revisor fiscal</strong> (no obligatorio).</p>
-                </div>
-                <div class="legal-box fragment" style="margin-top: 12px; border-left-color: var(--accent-purple);">
-                    <span class="legal-ref">Doctrina · Joaquín Garrigues</span>
-                    <p>La SAS representa "una revolución en el derecho societario, al permitir la constitución de empresas con trámites mínimos".</p>
-                </div>
-                <table class="comparison-table fragment" style="margin-top: 12px;">
+            <!-- Obligaciones simplificadas -->
+            <section>
+                <h3>Obligaciones Simplificadas</h3>
+                <table class="comparison-table">
                     <thead><tr><th>Obligación</th><th>SA</th><th>SAS</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Contabilidad</strong></td><td>Completa</td><td>Simplificada</td></tr>
+                        <tr><td><strong>Contabilidad completa</strong></td><td>Sí</td><td>Simplificada</td></tr>
                         <tr><td><strong>Estados financieros</strong></td><td>Anuales</td><td>No obligatorios</td></tr>
                         <tr><td><strong>Asamblea anual</strong></td><td>Obligatoria</td><td>No obligatoria</td></tr>
                         <tr><td><strong>Revisor fiscal</strong></td><td>Obligatorio</td><td>No obligatorio</td></tr>
                         <tr><td><strong>Publicaciones</strong></td><td>Múltiples</td><td>Reducidas</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Constitución en Línea y Fiscalidad</h3>
-                <div class="grid-2" style="margin-top: 15px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4>Procedimiento (art. 262 LGSM)</h4>
-                            <ul>
-                                <li>Los accionistas suscriben el instrumento privado</li>
-                                <li>El notario verifica identidad y capacidad</li>
-                                <li>Se protocoliza el documento</li>
-                                <li>Se inscribe en el Registro Mercantil</li>
-                                <li>La sociedad queda constituida</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="legal-box fragment" style="border-left-color: var(--accent-orange);">
-                            <span class="legal-ref">Art. 269 LGSM</span>
-                            <p>Régimen de <strong>transparencia fiscal</strong>: declaración de dividendos, información a accionistas y publicación de estados cuando se ofrezcan acciones.</p>
-                        </div>
-                        <div class="note-box fragment" style="margin-top: 12px;">
-                            <h4>💡 Para el emprendedor</h4>
-                            <p>La SAS es la opción más flexible y económica para iniciar operaciones rápidamente.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <!-- SECCIÓN 9 DE 9: 3.9 FUSIÓN, ESCISIÓN, DISOLUCIÓN Y LIQUIDACIÓN -->
+            <!-- ==================== SECCION 3.9: FUSIÓN, ESCISIÓN, DISOLUCIÓN ==================== -->
             <section class="section-header" id="seccion-3-9">
-                <p class="section-number">SECCIÓN 9 DE 9</p>
-                <h2>3.9 Fusión, Escisión, Disolución y Liquidación</h2>
-                <p class="section-subtitle">Reorganización y extinción de sociedades (arts. 222-249 LGSM)</p>
-                <div class="jslides-logo">JSIDES</div>
+                <div class="section-number">Sección 3.9</div>
+                <h2>Fusión, Escisión, Disolución y Liquidación</h2>
+                <p class="section-subtitle">Ciclo de vida de las sociedades mercantiles</p>
             </section>
 
-            <section class="content-slide">
+            <!-- Fusión -->
+            <section>
                 <h3>Fusión de Sociedades</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 222 LGSM</span>
-                    <p>La fusión es la <strong>reunión de dos o más sociedades en una sola</strong>, que asume sus derechos y obligaciones.</p>
+                <div class="definition-box">
+                    <h4>Concepto</h4>
+                    <p>La fusión es la reunión de dos o más sociedades en una sola, que asume sus derechos y obligaciones.</p>
                 </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">Tipos de fusión</h4>
-                            <ul>
-                                <li><strong>Por absorción:</strong> una sociedad absorbe a otra</li>
-                                <li><strong>Por creación:</strong> se crea una nueva sociedad</li>
-                            </ul>
-                        </div>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div class="concept-box blue">
+                        <h4>Por Absorción</h4>
+                        <p>Una sociedad absorbe a otra. La sociedad absorbente subsiste y la absorbida se extingue.</p>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-purple);">
-                            <h4 style="color: var(--accent-purple);">Procedimiento</h4>
-                            <ul>
-                                <li>Proyecto de fusión</li>
-                                <li>Aprobación por las asambleas</li>
-                                <li>Publicación del proyecto</li>
-                                <li>Oposición de acreedores</li>
-                                <li>Inscripción en el Registro Mercantil</li>
-                            </ul>
-                        </div>
+                    <div class="concept-box purple">
+                        <h4>Por Creación</h4>
+                        <p>Se crea una nueva sociedad que recibe el patrimonio de las sociedades fusionadas. Las originales se extinguen.</p>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
+            <!-- Procedimiento de fusión -->
+            <section>
+                <h3>Procedimiento de Fusión</h3>
+                <div class="timeline">
+                    <div class="timeline-item"><strong>1. Proyecto de fusión</strong><p>Elaboración del acuerdo entre las sociedades.</p></div>
+                    <div class="timeline-item"><strong>2. Aprobación por las asambleas</strong><p>Cada sociedad aprueba el proyecto en asamblea extraordinaria.</p></div>
+                    <div class="timeline-item"><strong>3. Publicación del proyecto</strong><p>Se publica para conocimiento de terceros.</p></div>
+                    <div class="timeline-item"><strong>4. Oposición de acreedores</strong><p>Los acreedores pueden oponerse en un plazo determinado.</p></div>
+                    <div class="timeline-item"><strong>5. Inscripción en el Registro Mercantil</strong><p>Se formaliza la fusión ante el registro.</p></div>
+                    <div class="timeline-item"><strong>6. Disolución de las sociedades fusionadas</strong><p>Se extinguen las sociedades absorbidas o fusionadas.</p></div>
+                </div>
+            </section>
+
+            <!-- Escisión -->
+            <section>
                 <h3>Escisión de Sociedades</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 233 LGSM</span>
-                    <p>La escisión es la <strong>división del patrimonio</strong> de una sociedad en dos o más partes, que se transfieren a sociedades existentes o nuevas.</p>
+                <div class="definition-box">
+                    <h4>Concepto</h4>
+                    <p>La escisión es la división del patrimonio de una sociedad en dos o más partes, que se transfieren a sociedades existentes o nuevas.</p>
                 </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4>Tipos de escisión</h4>
-                            <ul>
-                                <li><strong>Total:</strong> la sociedad se disuelve sin liquidarse</li>
-                                <li><strong>Parcial:</strong> se transfiere una parte del patrimonio</li>
-                            </ul>
-                        </div>
+                <div class="grid-2" style="margin-top: 15px;">
+                    <div class="concept-box blue">
+                        <h4>Escisión Total</h4>
+                        <p>La sociedad se disuelve sin liquidarse. Su patrimonio se divide entre varias sociedades.</p>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-green);">
-                            <h4>Procedimiento (art. 234)</h4>
-                            <ul>
-                                <li>Proyecto de escisión</li>
-                                <li>Aprobación por la asamblea</li>
-                                <li>Publicación</li>
-                                <li>Oposición de acreedores</li>
-                                <li>Inscripción</li>
-                            </ul>
-                        </div>
+                    <div class="concept-box purple">
+                        <h4>Escisión Parcial</h4>
+                        <p>Se transfiere una parte del patrimonio a otra sociedad. La sociedad original subsiste.</p>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Disolución de la Sociedad</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 244 LGSM</span>
-                    <p><strong>Causales de disolución:</strong></p>
-                </div>
-                <div class="grid-2" style="margin-top: 12px;">
-                    <div>
-                        <div class="definition-box fragment">
-                            <h4 style="color: var(--accent-blue);">Voluntaria</h4>
-                            <p>Decisión de los socios.</p>
-                        </div>
+            <!-- Disolución -->
+            <section>
+                <h3>Disolución de Sociedades</h3>
+                <div class="grid-2">
+                    <div class="definition-box">
+                        <h4>Disolución voluntaria</h4>
+                        <p>Decisión de los socios de poner fin a la sociedad.</p>
                     </div>
-                    <div>
-                        <div class="definition-box fragment" style="border-left-color: var(--accent-red);">
-                            <h4 style="color: var(--accent-red);">Forzosa</h4>
-                            <ul>
-                                <li>Vencimiento del plazo</li>
-                                <li>Cumplimiento de condición resolutoria</li>
-                                <li>Pérdida del capital social</li>
-                                <li>Fusión o escisión</li>
-                                <li>Convenio de reestructuración</li>
-                                <li>Quiebra</li>
-                            </ul>
-                        </div>
+                    <div class="warning-box">
+                        <h4>Disolución forzosa</h4>
+                        <ul>
+                            <li>Vencimiento del plazo</li>
+                            <li>Cumplimiento de la condición resolutoria</li>
+                            <li>Pérdida del capital social</li>
+                            <li>Fusión o escisión</li>
+                            <li>Convenio de reestructuración</li>
+                            <li>Quiebra</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="warning-box fragment" style="margin-top: 12px;">
-                    <h4>⚠️.importante</h4>
-                    <p>La disolución <strong>no implica liquidación inmediata</strong>. La sociedad sigue existiendo hasta que se complete la liquidación.</p>
+                <div class="note-box" style="margin-top: 15px;">
+                    <h4>Importante</h4>
+                    <p>La disolución no implica liquidación inmediata. La sociedad sigue existiendo hasta que se complete la liquidación.</p>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Liquidación de la Sociedad</h3>
-                <div class="legal-box fragment" style="margin-top: 15px;">
-                    <span class="legal-ref">Art. 245 LGSM</span>
-                    <p>El procedimiento comprende: designación de liquidador, pago de deudas sociales, distribución del remanente y extinción de la personalidad jurídica.</p>
+            <!-- Liquidación -->
+            <section>
+                <h3>Liquidación de Sociedades</h3>
+                <div class="definition-box">
+                    <h4>Procedimiento</h4>
+                    <p>El procedimiento de liquidación comprende:</p>
+                    <ul>
+                        <li>Designación de liquidador</li>
+                        <li>Pago de deudas sociales</li>
+                        <li>Distribución del remanente</li>
+                        <li>Extinción de la personalidad jurídica</li>
+                    </ul>
                 </div>
-                <div class="legal-box fragment" style="margin-top: 12px;">
-                    <span class="legal-ref">Art. 246 LGSM</span>
-                    <p>El remanente se distribuye: <strong>1)</strong> devolución de aportes; <strong>2)</strong> utilidades pendientes; <strong>3)</strong> participación proporcional a los aportes.</p>
+                <div class="highlight-box" style="margin-top: 15px;">
+                    <p><strong>Orden de distribución del remanente:</strong></p>
+                    <p>1. Devolución de aportes</p>
+                    <p>2. Distribución de utilidades pendientes</p>
+                    <p>3. Participación en el remanente proporcional a los aportes</p>
                 </div>
-                <div class="example-box fragment" style="margin-top: 12px;">
-                    <h4>📋 Ejemplo</h4>
-                    <p>Una SA se liquida con patrimonio de $1.000.000.000 y deudas de $300.000.000. El remanente de $700.000.000 se distribuye primero para devolver los aportes y luego proporcionalmente.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
+            <!-- ==================== CIERRE ==================== -->
 
-            <!-- ESQUEMA DE SÍNTESIS -->
-            <section class="content-slide">
-                <h3>Esquema de Síntesis: Marco Jurídico de Sociedades</h3>
-                <div style="margin-top: 10px; font-family: monospace; font-size: 0.7em; line-height: 1.5; color: #d1d5db; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 12px; padding: 16px 22px; max-width: 96%; overflow-x: auto;">
-                    <div style="color: var(--accent-blue); font-weight: bold; font-size: 1.05em; margin-bottom: 8px;">🌳 DERECHO MERCANTIL</div>
-                    <div><span style="color:var(--accent-green);">├──</span> ACTOS DE COMERCIO <span style="color:#6b7280;">(arts. 1-10, 75-76 CCom)</span></div>
-                    <div><span style="color:var(--accent-green);">│</span>   <span style="color:var(--accent-green);">├──</span> Absolutos (art. 75) · Relativos (art. 76) · Criterio mixto</div>
-                    <div><span style="color:var(--accent-green);">├──</span> COMERCIANTES <span style="color:#6b7280;">(art. 3, 8, 10-11, 19)</span></div>
-                    <div><span style="color:var(--accent-green);">├──</span> EMPRESA <span style="color:#6b7280;">(concepto económico y jurídico, fondo de comercio)</span></div>
-                    <div><span style="color:var(--accent-green);">├──</span> AUXILIARES <span style="color:#6b7280;">(factor, gerente / corredor, comisionista)</span></div>
-                    <div><span style="color:var(--accent-purple);">└──</span> SOCIEDADES MERCANTILES</div>
-                    <div><span style="color:var(--accent-purple);">    ├──</span> SA <span style="color:#6b7280;">(acciones, capital $50M, consejo, art. 87-204)</span></div>
-                    <div><span style="color:var(--accent-purple);">    ├──</span> SRL <span style="color:#6b7280;">(partes sociales, 2-50 socios, art. 58-86)</span></div>
-                    <div><span style="color:var(--accent-purple);">    └──</span> SAS <span style="color:#6b7280;">(en línea, sin mínimo, art. 260-271)</span></div>
-                    <div><span style="color:var(--accent-orange);">    └──</span> FUSIÓN · ESCISIÓN · DISOLUCIÓN · LIQUIDACIÓN <span style="color:#6b7280;">(arts. 222-249)</span></div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Cuadro Comparativo: SA vs SRL vs SAS</h3>
-                <table class="comparison-table fragment" style="margin-top: 15px;">
+            <!-- Cuadro comparativo SA vs SRL vs SAS -->
+            <section>
+                <h3>Comparación: SA vs. SRL vs. SAS</h3>
+                <table class="comparison-table">
                     <thead><tr><th>Característica</th><th>SA</th><th>SRL</th><th>SAS</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Capital mínimo</strong></td><td>$50.000.000</td><td>$100.000</td><td>Sin mínimo</td></tr>
+                        <tr><td><strong>Capital mínimo</strong></td><td>$50,000,000</td><td>$100,000</td><td>Sin mínimo</td></tr>
                         <tr><td><strong>Número de socios</strong></td><td>Mínimo 2</td><td>2 a 50</td><td>1 o más</td></tr>
                         <tr><td><strong>Transmisión</strong></td><td>Libre</td><td>Requiere consentimiento</td><td>Libre</td></tr>
                         <tr><td><strong>Oferta pública</strong></td><td>Permitida</td><td>Prohibida</td><td>No permitida</td></tr>
-                        <tr><td><strong>Administración</strong></td><td>Consejo</td><td>Administradores</td><td>Flexible</td></tr>
+                        <tr><td><strong>Administración</strong></td><td>Consejo administración</td><td>Administradores</td><td>Flexible</td></tr>
                         <tr><td><strong>Revisor fiscal</strong></td><td>Obligatorio</td><td>No obligatorio</td><td>No obligatorio</td></tr>
-                        <tr><td><strong>Publicidad</strong></td><td>Amplia</td><td>Reducida</td><td>Mínima</td></tr>
                         <tr><td><strong>Constitución</strong></td><td>Escritura pública</td><td>Escritura pública</td><td>En línea</td></tr>
                         <tr><td><strong>Flexibilidad</strong></td><td>Baja</td><td>Media</td><td>Alta</td></tr>
-                        <tr><td><strong>Costo</strong></td><td>Alto</td><td>Medio</td><td>Bajo</td></tr>
+                        <tr><td><strong>Costo constitución</strong></td><td>Alto</td><td>Medio</td><td>Bajo</td></tr>
                     </tbody>
                 </table>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <!-- AUTOEVALUACIÓN -->
-            <section class="content-slide">
-                <h3>Autoevaluación</h3>
-                <div class="quiz-container" style="margin-top: 15px;">
-                    <div class="quiz-question" data-correct="B">
-                        <h4>Pregunta 1</h4>
-                        <div class="question-text">¿Cuál es el concepto de acto de comercio según el Código de Comercio?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Todo acto realizado entre comerciantes</button>
-                            <button class="quiz-option" data-value="B">B. Todo acto realizado con fines de lucro en ejercicio de actividad comercial</button>
-                            <button class="quiz-option" data-value="C">C. Solo los actos inscritos en el Registro Mercantil</button>
-                            <button class="quiz-option" data-value="D">D. Los actos regulados por el Código Civil</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: B</strong> — El acto de comercio es aquel realizado con fines de lucro en ejercicio de actividad comercial (arts. 1-10 CCom).</div>
+            <!-- Resumen General -->
+            <section>
+                <h3>Resumen de la Unidad</h3>
+                <div class="grid-2">
+                    <div class="highlight-box">
+                        <p><strong>Actos de comercio:</strong> Enumeración casuística. Absolutos (por naturaleza) y relativos (por sujeto). Sistema mixto.</p>
                     </div>
-                    <div class="quiz-question" data-correct="C">
-                        <h4>Pregunta 2</h4>
-                        <div class="question-text">¿Cuáles son los actos absolutos de comercio (art. 75 CCom)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Los que requieren ser realizados por comerciantes</button>
-                            <button class="quiz-option" data-value="B">B. Los regulados por la Ley General de Sociedades</button>
-                            <button class="quiz-option" data-value="C">C. Los que son mercantiles por sí mismos, independientemente del sujeto</button>
-                            <button class="quiz-option" data-value="D">D. Solo los actos bancarios</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: C</strong> — Los actos absolutos son mercantiles por sí mismos, independientemente de quien los realice (art. 75 CCom).</div>
+                    <div class="highlight-box">
+                        <p><strong>Comerciantes:</strong> Persona natural o jurídica que ejerce habitualmente actos de comercio. Requisitos: capacidad, inscripción, habitualidad.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <p><strong>La empresa:</strong> Unidad de organización. Fondo de comercio: clientela, nombre, instalaciones, know-how.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <p><strong>Auxiliares:</strong> Dependientes (factor, gerente) e independientes (corredor, comisionista).</p>
+                    </div>
+                    <div class="highlight-box">
+                        <p><strong>Sociedades:</strong> SA (acciones), SRL (partes sociales), SAS (simplificada, en línea).</p>
+                    </div>
+                    <div class="highlight-box">
+                        <p><strong>Ciclo de vida:</strong> Fusión, escisión, disolución y liquidación de sociedades.</p>
                     </div>
                 </div>
-                <div class="jslides-logo">JSIDES</div>
             </section>
 
-            <section class="content-slide">
-                <h3>Autoevaluación</h3>
-                <div class="quiz-container" style="margin-top: 15px;">
-                    <div class="quiz-question" data-correct="A">
-                        <h4>Pregunta 3</h4>
-                        <div class="question-text">¿Qué requisito es necesario para ser comerciante individual (arts. 3, 8 CCom)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Ser mayor de edad y estar inscrito en el Registro Mercantil</button>
-                            <button class="quiz-option" data-value="B">B. Tener un capital mínimo de $50.000.000</button>
-                            <button class="quiz-option" data-value="C">C. Ser persona jurídica</button>
-                            <button class="quiz-option" data-value="D">D. Tener un local comercial</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: A</strong> — Para ser comerciante se requiere mayoría de edad e inscripción en el Registro Mercantil (arts. 3, 8 CCom).</div>
-                    </div>
-                    <div class="quiz-question" data-correct="B">
-                        <h4>Pregunta 4</h4>
-                        <div class="question-text">¿Qué es el fondo de comercio?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. El patrimonio total del comerciante</button>
-                            <button class="quiz-option" data-value="B">B. La universalidad de bienes que permiten la explotación de la empresa</button>
-                            <button class="quiz-option" data-value="C">C. El capital social de una sociedad</button>
-                            <button class="quiz-option" data-value="D">D. El registro mercantil del comerciante</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: B</strong> — El fondo de comercio es la universalidad de bienes que permiten la explotación de la empresa (clientela, nombre, instalaciones).</div>
-                    </div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Autoevaluación</h3>
-                <div class="quiz-container" style="margin-top: 15px;">
-                    <div class="quiz-question" data-correct="B">
-                        <h4>Pregunta 5</h4>
-                        <div class="question-text">¿Cuáles son los auxiliares mercantiles dependientes?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Corredores y comisionistas</button>
-                            <button class="quiz-option" data-value="B">B. Factores, gerentes, viajantes y dependientes</button>
-                            <button class="quiz-option" data-value="C">C. Mediadores y árbitros</button>
-                            <button class="quiz-option" data-value="D">D. Peritos y contadores</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: B</strong> — Los auxiliares dependientes son factores, gerentes, viajantes y dependientes (art. 893 CCom).</div>
-                    </div>
-                    <div class="quiz-question" data-correct="C">
-                        <h4>Pregunta 6</h4>
-                        <div class="question-text">¿Qué tipo de sociedades tiene personalidad jurídica (art. 2 LGSM)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Solo las SA</button>
-                            <button class="quiz-option" data-value="B">B. Solo las sociedades inscritas en el Registro Mercantil</button>
-                            <button class="quiz-option" data-value="C">C. Todas las sociedades legalmente constituidas</button>
-                            <button class="quiz-option" data-value="D">D. Solo las sociedades de economía mixta</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: C</strong> — Todas las sociedades legalmente constituidas tienen personalidad jurídica (art. 2 LGSM).</div>
-                    </div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Autoevaluación</h3>
-                <div class="quiz-container" style="margin-top: 15px;">
-                    <div class="quiz-question" data-correct="C">
-                        <h4>Pregunta 7</h4>
-                        <div class="question-text">¿Cuál es el capital social mínimo para constituir una SA (art. 88 LGSM)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. $100.000</button>
-                            <button class="quiz-option" data-value="B">B. $10.000.000</button>
-                            <button class="quiz-option" data-value="C">C. $50.000.000</button>
-                            <button class="quiz-option" data-value="D">D. No existe mínimo</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: C</strong> — El capital social mínimo para SA es $50.000.000 (art. 88 LGSM).</div>
-                    </div>
-                    <div class="quiz-question" data-correct="B">
-                        <h4>Pregunta 8</h4>
-                        <div class="question-text">¿Cuántos socios mínimos requiere una SRL (art. 59 LGSM)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. 1</button>
-                            <button class="quiz-option" data-value="B">B. 2</button>
-                            <button class="quiz-option" data-value="C">C. 5</button>
-                            <button class="quiz-option" data-value="D">D. 10</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: B</strong> — La SRL requiere mínimo 2 socios (art. 59 LGSM).</div>
-                    </div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Autoevaluación</h3>
-                <div class="quiz-container" style="margin-top: 15px;">
-                    <div class="quiz-question" data-correct="C">
-                        <h4>Pregunta 9</h4>
-                        <div class="question-text">¿Qué ventaja ofrece la SAS respecto a la SA (arts. 260-261 LGSM)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Mayor capital mínimo</button>
-                            <button class="quiz-option" data-value="B">B. Más requisitos de publicidad</button>
-                            <button class="quiz-option" data-value="C">C. Constitución en línea y capital sin mínimo</button>
-                            <button class="quiz-option" data-value="D">D. Obligatoriedad de revisor fiscal</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: C</strong> — La SAS ofrece constitución en línea y capital social sin mínimo (arts. 260-261 LGSM).</div>
-                    </div>
-                    <div class="quiz-question" data-correct="B">
-                        <h4>Pregunta 10</h4>
-                        <div class="question-text">¿Cuál es la diferencia principal entre partes sociales y acciones (arts. 68, 146 LGSM)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Las partes sociales son para SA y acciones para SRL</button>
-                            <button class="quiz-option" data-value="B">B. Las partes sociales requieren consentimiento para transmitirse, las acciones son libres</button>
-                            <button class="quiz-option" data-value="C">C. Las partes sociales tienen mayor valor nominal</button>
-                            <button class="quiz-option" data-value="D">D. Las acciones no confieren derechos políticos</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: B</strong> — Las partes sociales requieren consentimiento para transmitirse, mientras que las acciones son libremente transmisibles (arts. 68, 146 LGSM).</div>
-                    </div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Autoevaluación</h3>
-                <div class="quiz-container" style="margin-top: 15px;">
-                    <div class="quiz-question" data-correct="B">
-                        <h4>Pregunta 11</h4>
-                        <div class="question-text">¿Cómo se determina la nacionalidad de una sociedad (art. 9 LGSM)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. Por la nacionalidad de sus socios</button>
-                            <button class="quiz-option" data-value="B">B. Por su domicilio social principal en México</button>
-                            <button class="quiz-option" data-value="C">C. Por el lugar de su constitución exclusivamente</button>
-                            <button class="quiz-option" data-value="D">D. Por el monto de su capital</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: B</strong> — La nacionalidad se determina por el domicilio social, no por la nacionalidad de los socios (art. 9 LGSM).</div>
-                    </div>
-                    <div class="quiz-question" data-correct="B">
-                        <h4>Pregunta 12</h4>
-                        <div class="question-text">En la liquidación, ¿cómo se distribuye primero el remanente (art. 246 LGSM)?</div>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-value="A">A. En dividendos a los accionistas</button>
-                            <button class="quiz-option" data-value="B">B. En devolución de los aportes de los socios</button>
-                            <button class="quiz-option" data-value="C">C. En multas a los administradores</button>
-                            <button class="quiz-option" data-value="D">D. En impuestos al Estado</button>
-                        </div>
-                        <div class="quiz-explanation"><strong>Respuesta: B</strong> — El remanente se distribuye primero para devolver los aportes, luego utilidades pendientes y finalmente proporcional a los aportes (art. 246 LGSM).</div>
-                    </div>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <!-- CASOS PRÁCTICOS -->
-            <section class="content-slide">
-                <h3>Caso Práctico 1: Comerciante Individual vs. Sociedad</h3>
-                <div class="case-box" style="margin-top: 15px;">
-                    <div class="case-header">📋 Carlos y su empresa de software</div>
-                    <div class="case-body">
-                        <div class="step"><div class="step-num">1</div><div class="step-content"><p><strong>Hechos:</strong> Carlos, ingeniero de sistemas, quiere emprender con $50.000.000. Duda si operar como comerciante individual o constituir una sociedad.</p></div></div>
-                        <div class="step"><div class="step-num">2</div><div class="step-content"><p><strong>Análisis:</strong> Como comerciante individual tendría <strong>responsabilidad ilimitada</strong>; la inscripción en el Registro Mercantil es requisito formal y debe llevar contabilidad completa.</p><p class="step-ref">Arts. 3, 8, 19 CCom</p></div></div>
-                        <div class="step"><div class="step-num">3</div><div class="step-content"><p><strong>Recomendación:</strong> Constituir una <strong>SAS</strong>: flexible, económica, capital sin mínimo y responsabilidad limitada al aporte.</p><p class="step-ref">Arts. 260-261 LGSM</p></div></div>
-                    </div>
-                </div>
-                <div class="highlight-box fragment" style="margin-top: 12px;">
-                    <p><strong>Conclusión:</strong> La SAS protege el patrimonio personal de Carlos y agiliza la constitución.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Caso Práctico 2: Transmisión de Partes Sociales</h3>
-                <div class="case-box" style="margin-top: 15px;">
-                    <div class="case-header">📋 María y su participación en la SRL</div>
-                    <div class="case-body">
-                        <div class="step"><div class="step-num">1</div><div class="step-content"><p><strong>Hechos:</strong> María es socia de una SRL con 30% de las partes sociales y quiere vender su participación a un tercero. Los otros socios no están de acuerdo.</p></div></div>
-                        <div class="step"><div class="step-num">2</div><div class="step-content"><p><strong>Análisis:</strong> La transmisión requiere consentimiento de la mayoría, comunicación previa y existe <strong>derecho de tanteo</strong> de los socios.</p><p class="step-ref">Art. 68 LGSM</p></div></div>
-                        <div class="step"><div class="step-num">3</div><div class="step-content"><p><strong>Opciones:</strong> Si no hay consentimiento, María puede vender a terceros en las mismas condiciones, respetando el tanteo de los socios.</p></div></div>
-                    </div>
-                </div>
-                <div class="highlight-box fragment" style="margin-top: 12px;">
-                    <p><strong>Conclusión:</strong> La SRL protege la confianza entre socios mediante restricciones a la libre transmisión.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Caso Práctico 3: Fusión de Sociedades</h3>
-                <div class="case-box" style="margin-top: 15px;">
-                    <div class="case-header">📋 Alfa SA + Beta SRL</div>
-                    <div class="case-body">
-                        <div class="step"><div class="step-num">1</div><div class="step-content"><p><strong>Hechos:</strong> Alfa SA ($1.000.000.000) y Beta SRL ($200.000.000) quieren fusionarse.</p></div></div>
-                        <div class="step"><div class="step-num">2</div><div class="step-content"><p><strong>Análisis:</strong> Deben seguir el procedimiento del art. 222 LGSM: proyecto, aprobación de asambleas, publicación y oposición de acreedores.</p><p class="step-ref">Art. 222 LGSM</p></div></div>
-                        <div class="step"><div class="step-num">3</div><div class="step-content"><p><strong>Tipo:</strong> <strong>Fusión por absorción</strong> (Alfa absorbe a Beta) o <strong>por creación</strong> (nueva sociedad). Se inscribe en el Registro Mercantil.</p></div></div>
-                    </div>
-                </div>
-                <div class="highlight-box fragment" style="margin-top: 12px;">
-                    <p><strong>Conclusión:</strong> La fusión requiere respetar el derecho de oposición de los acreedores y la publicidad registral.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section class="content-slide">
-                <h3>Caso Práctico 4: Disolución y Liquidación</h3>
-                <div class="case-box" style="margin-top: 15px;">
-                    <div class="case-header">📋 SA con pérdida de capital</div>
-                    <div class="case-body">
-                        <div class="step"><div class="step-num">1</div><div class="step-content"><p><strong>Hechos:</strong> Una SA perdió el 60% de su capital social. Los accionistas deciden disolverla.</p></div></div>
-                        <div class="step"><div class="step-num">2</div><div class="step-content"><p><strong>Análisis:</strong> La pérdida del capital social es <strong>causal de disolución forzosa</strong>.</p><p class="step-ref">Art. 244 LGSM</p></div></div>
-                        <div class="step"><div class="step-num">3</div><div class="step-content"><p><strong>Procedimiento:</strong> Designar liquidador, pagar deudas sociales y distribuir el remanente: devolución de aportes, utilidades pendientes y participación proporcional.</p><p class="step-ref">Arts. 245-246 LGSM</p></div></div>
-                    </div>
-                </div>
-                <div class="highlight-box fragment" style="margin-top: 12px;">
-                    <p><strong>Conclusión:</strong> La disolución no extingue de inmediato la personalidad; esta desaparece solo al concluir la liquidación.</p>
-                </div>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <!-- CIERRE -->
-            <section class="title-slide">
-                <div class="slide-icon">✅</div>
-                <h1>Unidad 3 Completada</h1>
+            <!-- Cierre -->
+            <section class="title-slide" id="indice">
+                <div class="slide-icon"><i class="fas fa-check-circle"></i></div>
+                <h1 style="font-size:2.2em;">Fin de la Unidad 3</h1>
                 <p class="subtitle">Derecho Mercantil y Sociedades</p>
-                <div class="unit-badge">FIN DE LA UNIDAD</div>
-                <div class="concept-box blue" style="max-width: 680px; text-align: left; margin-top: 20px;">
-                    <h4>📝 Temas cubiertos</h4>
-                    <ul>
-                        <li>3.1 Actos de comercio (arts. 1-10, 75-76 CCom)</li>
-                        <li>3.2 Comerciantes: requisitos, obligaciones y prohibiciones</li>
-                        <li>3.3 La empresa: concepto, fondo de comercio y elementos</li>
-                        <li>3.4 Auxiliares mercantiles: dependientes e independientes</li>
-                        <li>3.5 Sociedades mercantiles: personalidad y nacionalidad</li>
-                        <li>3.6 Sociedad Anónima (SA): constitución, órganos y acciones</li>
-                        <li>3.7 Sociedad de Responsabilidad Limitada (SRL): partes sociales</li>
-                        <li>3.8 Sociedad por Acciones Simplificada (SAS): en línea</li>
-                        <li>3.9 Fusión, escisión, disolución y liquidación</li>
-                    </ul>
-                </div>
-                <p class="professor" style="margin-top: 20px;">Mtro. Sergio Armando Cortina Ceballos</p>
-                <p class="institution">Universidad Cristóbal Colón · 2026</p>
-                <div class="jslides-logo">JSIDES</div>
-            </section>
-
-            <section data-background-color="#0f172a" id="material">
-                <h2 style="font-size: 1.6em;"><span style="margin-right: 8px;">📥</span> Material para Alumnos</h2>
-                <p style="color: #94a3b8; font-size: 0.85em;">Descarga el material de estudio de esta unidad</p>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px;">
-                    <a href="../Material Alumnos/Unidad 3/Unidad 3.pdf" download style="display: block; text-decoration: none;">
-                        <div style="background: rgba(30,41,59,0.6); border: 1px solid rgba(100,116,139,0.2); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; transition: all 0.2s;">
-                            <span style="font-size: 1.8em;">📄</span>
-                            <div><h4 style="color: #e2e8f0; margin: 0; font-size: 0.9em;">Unidad 3 — Contenido completo</h4><p style="font-size: 0.72em; margin: 4px 0 0; color: #64748b;">Derecho mercantil y sociedades</p></div>
-                            <i class="fas fa-download" style="margin-left: auto; color: #6366f1; font-size: 1.1em;"></i>
-                        </div>
-                    </a>
-                    <a href="../Material Alumnos/Unidad 3/Cuestionario.pdf" download style="display: block; text-decoration: none;">
-                        <div style="background: rgba(30,41,59,0.6); border: 1px solid rgba(100,116,139,0.2); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; transition: all 0.2s;">
-                            <span style="font-size: 1.8em;">❓</span>
-                            <div><h4 style="color: #e2e8f0; margin: 0; font-size: 0.9em;">Cuestionario de estudio</h4><p style="font-size: 0.72em; margin: 4px 0 0; color: #64748b;">Preguntas de repaso</p></div>
-                            <i class="fas fa-download" style="margin-left: auto; color: #22c55e; font-size: 1.1em;"></i>
-                        </div>
-                    </a>
-                    <a href="../Material Alumnos/Unidad 3/Evaluacion taller lecturas.pdf" download style="display: block; text-decoration: none;">
-                        <div style="background: rgba(30,41,59,0.6); border: 1px solid rgba(100,116,139,0.2); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; transition: all 0.2s;">
-                            <span style="font-size: 1.8em;">✅</span>
-                            <div><h4 style="color: #e2e8f0; margin: 0; font-size: 0.9em;">Evaluación, Taller y Lecturas</h4><p style="font-size: 0.72em; margin: 4px 0 0; color: #64748b;">Evaluación y material complementario</p></div>
-                            <i class="fas fa-download" style="margin-left: auto; color: #f59e0b; font-size: 1.1em;"></i>
-                        </div>
-                    </a>
-                </div>
-                <p style="font-size: 0.7em; color: #475569; text-align: center; margin-top: 14px;"><i class="fas fa-info-circle"></i> Toca cualquier tarjeta para descargar el PDF</p>
+                <p class="professor">Marco Jurídico de los Negocios</p>
+                <p class="institution">Universidad Cooperativa de Colombia</p>
             </section>
 
         </div><!-- /slides -->
