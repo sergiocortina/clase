@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>U2-01 Persona fisica vs persona moral</text></name>
+    <questiontext format="html"><text>La diferencia esencial entre persona física y persona moral es que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) La persona moral solo existe cuando tiene más de cien integrantes.</text></answer>
+    <answer fraction="100"><text>b) La persona física es el ser humano; la persona moral es una entidad a la que la ley reconoce personalidad propia, distinta de la de sus integrantes.</text></answer>
+    <answer fraction="0"><text>c) La persona moral no puede tener patrimonio propio.</text></answer>
+    <answer fraction="0"><text>d) Solo las personas morales pueden contratar.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-02 Capacidad de goce y de ejercicio</text></name>
+    <questiontext format="html"><text>Un menor de edad hereda un local comercial. Respecto de su capacidad:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) No tiene ninguna capacidad por ser menor de edad.</text></answer>
+    <answer fraction="0"><text>b) Tiene capacidad de ejercicio plena desde que recibe la herencia.</text></answer>
+    <answer fraction="100"><text>c) Tiene capacidad de goce (es titular del derecho), pero el ejercicio corresponde a sus representantes legales.</text></answer>
+    <answer fraction="0"><text>d) Pierde la herencia por falta de capacidad de ejercicio.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-03 Atributos de la persona fisica</text></name>
+    <questiontext format="html"><text>¿Cuál de los siguientes es un atributo de la persona física (no de la persona moral)?</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Denominación social</text></answer>
+    <answer fraction="0"><text>b) Objeto social</text></answer>
+    <answer fraction="0"><text>c) Razón social</text></answer>
+    <answer fraction="100"><text>d) Estado civil</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-04 Personalidad juridica propia</text></name>
+    <questiontext format="html"><text>«Tacos El Güero, S.A. de C.V.» queda debiendo dinero a un proveedor. ¿Contra quién puede cobrar el proveedor?</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Contra la empresa, porque tiene personalidad jurídica y patrimonio propios, distintos de los del dueño.</text></answer>
+    <answer fraction="0"><text>b) Siempre contra el dueño, en su patrimonio personal.</text></answer>
+    <answer fraction="0"><text>c) Contra los clientes de la taquería.</text></answer>
+    <answer fraction="0"><text>d) Contra nadie: las personas morales no pueden contraer deudas.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-05 Inmuebles vs muebles</text></name>
+    <questiontext format="html"><text>Al vender un inmueble frente a la venta de mercancía (bien mueble), una diferencia práctica es que el inmueble:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) No puede ser vendido nunca.</text></answer>
+    <answer fraction="100"><text>b) Requiere mayor formalidad (escritura pública y registro), mientras que el mueble puede transferirse incluso con la entrega de la cosa.</text></answer>
+    <answer fraction="0"><text>c) Se vende siempre sin contrato alguno.</text></answer>
+    <answer fraction="0"><text>d) Solo puede garantizarse con prenda.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-06 Bienes fungibles</text></name>
+    <questiontext format="html"><text>El dinero es el bien fungible por excelencia porque:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) No puede sustituirse por otro bien.</text></answer>
+    <answer fraction="0"><text>b) Solo sirve para constituir garantías.</text></answer>
+    <answer fraction="100"><text>c) Puede sustituirse por otro tanto de la misma especie, calidad y cantidad.</text></answer>
+    <answer fraction="0"><text>d) Es un inmueble por destinación.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-07 Inmueble por destinacion</text></name>
+    <questiontext format="html"><text>Las puertas y la tubería de un local comercial se consideran:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Bienes muebles ordinarios.</text></answer>
+    <answer fraction="100"><text>b) Inmuebles por destino: siendo muebles, están unidos de manera fija a un inmueble para su uso.</text></answer>
+    <answer fraction="0"><text>c) Bienes del dominio público.</text></answer>
+    <answer fraction="0"><text>d) Bienes fungibles.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-08 Dominio publico</text></name>
+    <questiontext format="html"><text>¿Por qué nadie puede vender la banqueta ni dar en garantía una plaza pública?</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Porque son bienes del dominio público, destinados al uso común y no susceptibles de apropiación privada.</text></answer>
+    <answer fraction="0"><text>b) Porque son bienes demasiado valiosos.</text></answer>
+    <answer fraction="0"><text>c) Porque pertenecen siempre a particulares.</text></answer>
+    <answer fraction="0"><text>d) Porque son bienes fungibles.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-09 Facultades de la propiedad</text></name>
+    <questiontext format="html"><text>Las tres facultades que integran el derecho de propiedad son:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Usar, gozar y disponer.</text></answer>
+    <answer fraction="0"><text>b) Comprar, vender y rentar.</text></answer>
+    <answer fraction="0"><text>c) Poseer, prescribir y heredar.</text></answer>
+    <answer fraction="0"><text>d) Dar, hacer y no hacer.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-10 Usufructo</text></name>
+    <questiontext format="html"><text>Don Ernesto dona su panadería a sus hijos pero se reserva el usufructo. Mientras viva, don Ernesto:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Pierde todo derecho sobre la panadería.</text></answer>
+    <answer fraction="100"><text>b) Puede usar la panadería y percibir sus frutos, mientras sus hijos conservan la propiedad como nudos propietarios.</text></answer>
+    <answer fraction="0"><text>c) Es copropietario en partes iguales con sus hijos.</text></answer>
+    <answer fraction="0"><text>d) Debe pagar renta a sus hijos por seguir operando el negocio.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-11 Copropiedad</text></name>
+    <questiontext format="html"><text>Tres hermanos heredan un local comercial en partes iguales. Cada hermano es dueño de:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Un pedazo físico delimitado del local.</text></answer>
+    <answer fraction="0"><text>b) El local completo, cada uno por su lado.</text></answer>
+    <answer fraction="100"><text>c) Una parte ideal (pro indiviso) de todo el bien.</text></answer>
+    <answer fraction="0"><text>d) Nada, hasta que todos lo autoricen por unanimidad.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-12 Posesion vs propiedad</text></name>
+    <questiontext format="html"><text>El arrendatario de un local comercial:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Posee el local (lo usa como si fuera suyo), pero la propiedad sigue siendo del arrendador.</text></answer>
+    <answer fraction="0"><text>b) Es propietario mientras pague puntualmente la renta.</text></answer>
+    <answer fraction="0"><text>c) No tiene derecho alguno sobre el local.</text></answer>
+    <answer fraction="0"><text>d) Adquiere la propiedad por el solo hecho de firmar el contrato.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-13 Prescripcion extintiva</text></name>
+    <questiontext format="html"><text>Respecto de la prescripción extintiva de un crédito, es correcto afirmar que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Opera automáticamente al vencer el plazo, sin que nadie la invoque.</text></answer>
+    <answer fraction="0"><text>b) La declara el juez de oficio en todo proceso.</text></answer>
+    <answer fraction="0"><text>c) Solo aplica a créditos fiscales.</text></answer>
+    <answer fraction="100"><text>d) Debe ser invocada por el deudor, y los créditos mercantiles prescriben en plazos más cortos que los civiles.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-14 Elementos de la obligacion</text></name>
+    <questiontext format="html"><text>Los elementos de la obligación son:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Oferta, aceptación y firma.</text></answer>
+    <answer fraction="100"><text>b) Sujetos (acreedor y deudor), objeto (la prestación de dar, hacer o no hacer) y vínculo jurídico.</text></answer>
+    <answer fraction="0"><text>c) Capacidad, licitud y forma.</text></answer>
+    <answer fraction="0"><text>d) Error, dolo y violencia.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-15 Enriquecimiento sin causa</text></name>
+    <questiontext format="html"><text>Un proveedor entrega por error mercancía a un negocio que no la pidió. El receptor:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Puede quedársela sin pagar nada.</text></answer>
+    <answer fraction="100"><text>b) Debe devolverla o pagarla: de lo contrario se enriquecería sin causa.</text></answer>
+    <answer fraction="0"><text>c) Debe venderla y quedarse con el producto.</text></answer>
+    <answer fraction="0"><text>d) No tiene relación jurídica alguna con el proveedor.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-16 Obligacion de no hacer</text></name>
+    <questiontext format="html"><text>La cláusula de un contrato en la que el vendedor se obliga a «no abrir una tienda competidora en la misma plaza» es una obligación de:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Dar.</text></answer>
+    <answer fraction="0"><text>b) Hacer.</text></answer>
+    <answer fraction="100"><text>c) No hacer.</text></answer>
+    <answer fraction="0"><text>d) Garantía.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-17 Mancomunada por defecto</text></name>
+    <questiontext format="html"><text>Dos amigos firman un crédito para su negocio y el contrato no dice nada sobre cómo responden. Se entiende que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Responden solidariamente por defecto.</text></answer>
+    <answer fraction="0"><text>b) No responden mientras no cumplan 30 años.</text></answer>
+    <answer fraction="0"><text>c) Responde solo quien recibió el dinero.</text></answer>
+    <answer fraction="100"><text>d) Responden mancomunadamente, cada uno solo por su parte: la solidaridad no se presume, requiere pacto expreso o ley.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-18 Dacion en pago</text></name>
+    <questiontext format="html"><text>Una constructora debe $500,000 y no tiene liquidez; entrega al acreedor un vehículo valuado en esa cantidad y el acreedor lo acepta. Esto es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Consignación.</text></answer>
+    <answer fraction="0"><text>b) Novación.</text></answer>
+    <answer fraction="0"><text>c) Remisión de deuda.</text></answer>
+    <answer fraction="100"><text>d) Dación en pago: el acreedor acepta una cosa distinta en lugar del pago original y la deuda se extingue.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-19 Consignacion</text></name>
+    <questiontext format="html"><text>Un inquilino ofrece la renta y el arrendador se niega a recibirla. Para no quedar en mora, el inquilino debe:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Dejar de pagar y esperar a que el arrendador reclame.</text></answer>
+    <answer fraction="100"><text>b) Consignar el importe: depositarlo a disposición de la autoridad.</text></answer>
+    <answer fraction="0"><text>c) Guardar el dinero en una caja de ahorros particular.</text></answer>
+    <answer fraction="0"><text>d) Renunciar automáticamente al contrato.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-20 Compensacion</text></name>
+    <questiontext format="html"><text>La empresa A debe $100,000 a B, y B debe $80,000 a A. Por compensación:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Las deudas se cancelan hasta donde alcanzan: B paga la diferencia de $20,000 y ambas quedan extinguidas.</text></answer>
+    <answer fraction="0"><text>b) Ambas deudas siguen cobrándose por separado.</text></answer>
+    <answer fraction="0"><text>c) Solo se cancela la deuda mayor.</text></answer>
+    <answer fraction="0"><text>d) A debe pagar los $100,000 completos y después reclamar a B.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-21 Novacion</text></name>
+    <questiontext format="html"><text>Una empresa adeuda $200,000 a 30 días; el proveedor acepta cambiar la deuda por un pagaré a 12 meses, extinguiéndose la obligación original. Esto es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Compensación.</text></answer>
+    <answer fraction="0"><text>b) Confusión.</text></answer>
+    <answer fraction="100"><text>c) Novación por cambio de objeto, que no se presume: requiere voluntad clara de extinguir la deuda anterior y crear una nueva.</text></answer>
+    <answer fraction="0"><text>d) Dación en pago.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-22 Existencia vs validez</text></name>
+    <questiontext format="html"><text>Un contrato celebrado por un menor de edad sin autorización de sus representantes:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) No existe jurídicamente.</text></answer>
+    <answer fraction="100"><text>b) Existe (hubo consentimiento y objeto), pero es anulable por falta de capacidad de ejercicio.</text></answer>
+    <answer fraction="0"><text>c) Es válido y exigible en todo caso.</text></answer>
+    <answer fraction="0"><text>d) Se convierte en válido con el simple transcurso del tiempo.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-23 Contratos atipicos</text></name>
+    <questiontext format="html"><text>Una empresa textil vende sus facturas (cuentas por cobrar a 90 días) a una empresa financiera que le paga anticipadamente su valor menos un descuento. El contrato celebrado es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Franquicia.</text></answer>
+    <answer fraction="0"><text>b) Leasing.</text></answer>
+    <answer fraction="100"><text>c) Factoraje financiero, contrato atípico típico del capital de trabajo.</text></answer>
+    <answer fraction="0"><text>d) Joint venture.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-24 Garantias prenda hipoteca fianza</text></name>
+    <questiontext format="html"><text>Para un crédito, el banco grava el inmueble del cliente (que sigue usándolo) y además exige la promesa de pago de un tercero. Las figuras utilizadas son:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Prenda y mutuo.</text></answer>
+    <answer fraction="100"><text>b) Hipoteca y fianza.</text></answer>
+    <answer fraction="0"><text>c) Fianza y prenda.</text></answer>
+    <answer fraction="0"><text>d) Hipoteca y factoraje.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P01 Articulo 73 facultades del Congreso</text></name>
+    <questiontext format="html"><text>El artículo 73 de la Constitución es central para los negocios porque:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Es el catálogo de facultades del Congreso de la Unión: ahí se apoya la Federación para legislar, por el principio de facultades expresas.</text></answer>
+    <answer fraction="0"><text>b) Regula los contratos de compraventa entre particulares.</text></answer>
+    <answer fraction="0"><text>c) Prohíbe toda actividad comercial en el país.</text></answer>
+    <answer fraction="0"><text>d) Es una ley secundaria del Código de Comercio.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P02 Tendencia de las reformas al 73</text></name>
+    <questiontext format="html"><text>En los últimos 10 años, las reformas al artículo 73 constitucional muestran que la esfera de atribuciones del gobierno federal:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Se ha recortado constantemente.</text></answer>
+    <answer fraction="100"><text>b) Se ha ampliado adicionando fracciones nuevas (vivienda, seguridad privada, bienestar animal, gobierno digital), sobre todo vía facultades concurrentes con leyes generales.</text></answer>
+    <answer fraction="0"><text>c) Ha desaparecido por completo.</text></answer>
+    <answer fraction="0"><text>d) Se ha transferido íntegramente a los municipios.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P03 Edades legales distintas</text></name>
+    <questiontext format="html"><text>Respecto de las edades legales, es correcto afirmar que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Todas las responsabilidades se adquieren exactamente a los 18 años.</text></answer>
+    <answer fraction="0"><text>b) El matrimonio puede celebrarse a cualquier edad con permiso de los padres.</text></answer>
+    <answer fraction="100"><text>c) El derecho gradúa la edad según la actividad: se puede trabajar antes de la mayoría de edad (con permiso y jornadas especiales), pero el matrimonio ya no admite excepciones.</text></answer>
+    <answer fraction="0"><text>d) La responsabilidad penal solo empieza a los 25 años.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P04 Por que edades distintas</text></name>
+    <questiontext format="html"><text>¿Por qué el derecho fija edades distintas según la actividad?</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Por capricho del legislador.</text></answer>
+    <answer fraction="100"><text>b) Porque valora el riesgo y la madurez que exige cada actividad: no es lo mismo operar una cuenta, casarse o responder penalmente.</text></answer>
+    <answer fraction="0"><text>c) Porque en la práctica todas las edades coinciden.</text></answer>
+    <answer fraction="0"><text>d) Porque la edad solo importa para votar.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P05 Hecho juridico natural</text></name>
+    <questiontext format="html"><text>Una granizada destruye el inventario de un almacén. Jurídicamente, el suceso es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Un acto jurídico.</text></answer>
+    <answer fraction="100"><text>b) Un hecho jurídico no voluntario (natural): produce consecuencias jurídicas aunque nadie lo quiso, como la extinción de obligaciones por caso fortuito.</text></answer>
+    <answer fraction="0"><text>c) Un delito.</text></answer>
+    <answer fraction="0"><text>d) Un contrato aleatorio.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P06 Hecho juridico ilicito</text></name>
+    <questiontext format="html"><text>Un repartidor distraído choca el vehículo contra la fachada de un negocio. Jurídicamente:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Nace su obligación de indemnizar el daño: es un hecho jurídico ilícito, aunque no quisiera producir ese efecto.</text></answer>
+    <answer fraction="0"><text>b) Se trata de un acto jurídico.</text></answer>
+    <answer fraction="0"><text>c) No se producen consecuencias jurídicas.</text></answer>
+    <answer fraction="0"><text>d) Es un hecho jurídico natural.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P07 Vicios del consentimiento</text></name>
+    <questiontext format="html"><text>Los vicios del consentimiento son cuatro y su efecto típico es que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Error, dolo, violencia y lesión; hacen el contrato anulable (o nulo, en el caso de la lesión) a petición del perjudicado.</text></answer>
+    <answer fraction="0"><text>b) Oferta, aceptación, objeto y forma; impiden que el contrato exista.</text></answer>
+    <answer fraction="0"><text>c) Pago, novación, compensación y remisión; extinguen el contrato.</text></answer>
+    <answer fraction="0"><text>d) Capacidad, licitud, forma y objeto; hacen el contrato inexistente.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P08 Caso dolo auto con deudas</text></name>
+    <questiontext format="html"><text>Ana compra un auto usado; el vendedor alteró el odómetro y le aseguró que no había multas ni adeudos. Tras el traspaso, Ana descubre deudas ocultas y un motor mucho más usado. El vendedor incurrió en:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Error: se equivocó de buena fe.</text></answer>
+    <answer fraction="100"><text>b) Dolo: provocó deliberadamente el error de Ana, que puede pedir la anulación del contrato y la devolución del dinero.</text></answer>
+    <answer fraction="0"><text>c) Lesión.</text></answer>
+    <answer fraction="0"><text>d) Confusión.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P09 Caso violencia pagare</text></name>
+    <questiontext format="html"><text>Beto firma un pagaré por el doble de lo que debe porque Carlos lo amenaza con denunciarlo por un delito que no cometió. El pagaré:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Es válido porque está firmado.</text></answer>
+    <answer fraction="0"><text>b) Configura un caso de lesión.</text></answer>
+    <answer fraction="100"><text>c) Está viciado por violencia (temor fundado de un mal grave e injusto): Beto puede pedir judicialmente que se declare sin efecto.</text></answer>
+    <answer fraction="0"><text>d) No existe jurídicamente.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P10 Caso lesion laptop</text></name>
+    <questiontext format="html"><text>Diana, apurada por una emergencia, vende su laptop de gama alta (30 mil pesos) en 2 mil pesos, y el comprador sabía del apuro y de la desproporción brutal entre precio y valor. Esto configura:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Lesión: desproporción marcada entre las prestaciones aprovechada sin justificación; Diana puede intentar la acción de nulidad.</text></answer>
+    <answer fraction="0"><text>b) Dolo del vendedor.</text></answer>
+    <answer fraction="0"><text>c) Un contrato plenamente válido e inatacable.</text></answer>
+    <answer fraction="0"><text>d) Novación.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P11 Articulo 124 regla de oro</text></name>
+    <questiontext format="html"><text>La regla del artículo 124 constitucional significa que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Los estados no pueden legislar en materia alguna.</text></answer>
+    <answer fraction="100"><text>b) Las facultades que no están expresamente concedidas por la Constitución a los funcionarios federales se entienden reservadas a los estados.</text></answer>
+    <answer fraction="0"><text>c) La Federación puede hacer todo lo que decida.</text></answer>
+    <answer fraction="0"><text>d) Los municipios absorben las competencias federales.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P12 Competencia local vs federal</text></name>
+    <questiontext format="html"><text>Un negocio vende refrescos dentro de un solo estado e importa el concentrado del extranjero. En cuanto a competencias:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Todo el negocio es materia federal.</text></answer>
+    <answer fraction="0"><text>b) Todo el negocio es materia local.</text></answer>
+    <answer fraction="100"><text>c) La venta dentro del estado toca al comercio local (materia estatal) y la importación entra al comercio exterior, que es federal: el mismo acto económico puede tocar dos competencias.</text></answer>
+    <answer fraction="0"><text>d) Ninguna autoridad es competente.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P13 Mancomunada vs solidaria</text></name>
+    <questiontext format="html"><text>La diferencia clave entre obligación mancomunada y obligación solidaria es que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) En la mancomunada cada deudor debe solo su parte; en la solidaria cada deudor responde por el total y el acreedor puede cobrarlo íntegro a cualquiera.</text></answer>
+    <answer fraction="0"><text>b) Son sinónimos.</text></answer>
+    <answer fraction="0"><text>c) La solidaria siempre se divide entre los deudores.</text></answer>
+    <answer fraction="0"><text>d) La mancomunada solo existe en materia fiscal.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P14 Codeudores solidarios</text></name>
+    <questiontext format="html"><text>Dos socios firman un crédito bancario de $500,000 como «deudores solidarios». Uno de ellos quiebra. El banco puede:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Cobrar solo la mitad al socio solvente.</text></answer>
+    <answer fraction="100"><text>b) Demandar al socio solvente por los $500,000 completos; quien pague en exceso de su parte podrá repetir contra su codeudor.</text></answer>
+    <answer fraction="0"><text>c) Perdonar la deuda, porque la ley lo ordena.</text></answer>
+    <answer fraction="0"><text>d) Cobrar únicamente a la sociedad, nunca a los socios.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P15 Bezos sin capitulaciones</text></name>
+    <questiontext format="html"><text>Jeff y MacKenzie Bezos no celebraron capitulaciones matrimoniales. Al divorciarse en 2019:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) No había nada que repartir.</text></answer>
+    <answer fraction="0"><text>b) Ella perdió todo por no existir contrato previo.</text></answer>
+    <answer fraction="0"><text>c) El reparto quedó a la libre decisión del juez, sin regla alguna.</text></answer>
+    <answer fraction="100"><text>d) Se aplicó el régimen legal supletorio: los bienes adquiridos durante el matrimonio pertenecen a ambos; ella recibió el 25% de las acciones comunes (cerca de 38 mil millones de dólares).</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P16 Leccion del caso Bezos</text></name>
+    <questiontext format="html"><text>La lección práctica del caso Bezos para quien va a emprender un negocio es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Poner por escrito el régimen económico del matrimonio (capitulaciones) y separar el patrimonio personal del societario antes de emprender.</text></answer>
+    <answer fraction="0"><text>b) Fundar la empresa antes de casarse, siempre.</text></answer>
+    <answer fraction="0"><text>c) No registrar nunca la empresa.</text></answer>
+    <answer fraction="0"><text>d) Poner los bienes del negocio a nombre de los empleados.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P17 Compraventa civil vs mercantil</text></name>
+    <questiontext format="html"><text>Una persona compra un refrigerador para su casa; un restaurante compra el mismo modelo para su cocina. Las compraventas son, respectivamente:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Mercantil y civil.</text></answer>
+    <answer fraction="100"><text>b) Civil y mercantil: cambia el destino del bien y la calidad de las partes.</text></answer>
+    <answer fraction="0"><text>c) Ambas civiles en todo caso.</text></answer>
+    <answer fraction="0"><text>d) Ambas mercantiles en todo caso.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P18 NIV numero de serie</text></name>
+    <questiontext format="html"><text>En un contrato de compraventa de vehículo usado, el dato que identifica inequívocamente al vehículo y debe coincidir con la factura original es:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) El color del vehículo.</text></answer>
+    <answer fraction="0"><text>b) El kilometraje aproximado.</text></answer>
+    <answer fraction="100"><text>c) El NIV / número de serie (17 caracteres).</text></answer>
+    <answer fraction="0"><text>d) La marca de las llantas.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P19 Como se ve y en la forma en que se recibe</text></name>
+    <questiontext format="html"><text>En la compraventa de vehículo, la cláusula «se entrega como se ve y en la forma en que se recibe» significa que:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) El vendedor responde por cualquier defecto que aparezca después.</text></answer>
+    <answer fraction="100"><text>b) El comprador ha examinado y acepta el vehículo en su estado actual, sin reclamaciones posteriores por su estado visible.</text></answer>
+    <answer fraction="0"><text>c) El contrato es nulo.</text></answer>
+    <answer fraction="0"><text>d) El vendedor debe reparar todo antes de la entrega.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P20 Traspaso ante la autoridad</text></name>
+    <questiontext format="html"><text>Firmado el contrato privado de compraventa de vehículo, el traspaso (cambio de propietario) ante la autoridad vehicular:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Es opcional y puede omitirse indefinidamente.</text></answer>
+    <answer fraction="0"><text>b) Lo realiza automáticamente el notario.</text></answer>
+    <answer fraction="0"><text>c) Sustituye al contrato privado.</text></answer>
+    <answer fraction="100"><text>d) Es obligación del comprador dentro del plazo pactado; mientras no se haga, frente a terceros y autoridades el vehículo sigue apareciendo a nombre del vendedor.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P21 Multas antes y despues de la entrega</text></name>
+    <questiontext format="html"><text>En el contrato de compraventa de vehículo, ¿quién responde por las multas e infracciones?</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0"><text>a) Todas, las paga el comprador.</text></answer>
+    <answer fraction="0"><text>b) Todas, las paga el vendedor.</text></answer>
+    <answer fraction="0"><text>c) Las paga el testigo del contrato.</text></answer>
+    <answer fraction="100"><text>d) Las generadas antes de la entrega, el vendedor; las generadas a partir de la fecha de entrega, el comprador.</text></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>U2-P22 Verificaciones antes de firmar</text></name>
+    <questiontext format="html"><text>Antes de firmar la compraventa de un vehículo usado, el comprador debería, entre otras verificaciones:</text></questiontext>
+    <defaultgrade>1</defaultgrade>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>a) Consultar el REPUVE para descartar reporte de robo, revisar que la factura original esté a nombre del vendedor (o con cadena de endosos completa) y pedir constancia de ausencia de multas y tenencias.</text></answer>
+    <answer fraction="0"><text>b) Confiar solo en la palabra del vendedor.</text></answer>
+    <answer fraction="0"><text>c) Firmar de inmediato para no perder la oferta.</text></answer>
+    <answer fraction="0"><text>d) Recibir únicamente las llaves, sin documento alguno.</text></answer>
+  </question>
+</quiz>

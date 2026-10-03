@@ -1,7 +1,32 @@
 # AVANCES — Presentaciones Marco Jurídico de los Negocios
 
-> **Última sesión:** 6 de septiembre de 2026
+> **Última sesión:** 25 de septiembre de 2026
 > **Asistente:** Buffy (Codebuff/Freebuff)
+
+---
+
+## RESUMEN DE LA SESIÓN (25 sep 2026)
+
+Se creó el examen de la Unidad 2 para Moodle: `clase/Material Alumnos/Unidad 2/examen_unidad2.xml`, 46 reactivos en formato Moodle XML (multichoice, 4 opciones, 1 punto, opciones barajadas), mismo formato del examen de la Unidad 1.
+
+**Composición:** 24 preguntas de la Unidad 2 del libro (U2-01 a U2-24: personas, bienes, derechos reales, obligaciones, extinción, contratos y garantías) + 22 preguntas del portafolio de evidencias (U2-P01 a U2-P22).
+
+**Preguntas del portafolio por evidencia:**
+- E1 (art. 73) y E5 (art. 124): 4 (P01-P02, P11-P12)
+- E2 (edades legales): 2 (P03-P04)
+- E3 (actos/hechos jurídicos): 2 (P05-P06)
+- E4 (vicios del consentimiento): 4 (P07-P10, con los 3 casos del portafolio: dolo auto, violencia pagaré, lesión laptop)
+- E6 (mancomunadas/solidarias): 2 (P13-P14)
+- E7 (Bezos/capitulaciones): 2 (P15-P16)
+- **E8 (compraventa de vehículo): 6 (P17-P22)** — el peso mayor, según instrucción del autor. Incluye NIV, cláusula "como se ve y en la forma en que se recibe", traspaso, multas antes/después de la entrega y verificaciones REPUVE
+
+**Nota:** por instrucción del autor, NO incluye preguntas de la Unidad 1 (esas ya tienen su propio examen). Alineado con la convención del libro: sin números de artículos en las respuestas.
+
+**Pendiente del autor:** importar el XML en Moodle (Banco de preguntas → Importar → Formato XML de Moodle, categoría Unidad 2).
+
+---
+
+## SESIÓN ANTERIOR (6 sep 2026)
 
 ---
 
