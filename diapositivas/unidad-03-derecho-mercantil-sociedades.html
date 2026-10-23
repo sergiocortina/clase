@@ -325,15 +325,15 @@
             </section>
 
             <!-- ¿QUÉ VEREMOS? -->
-            <section>
+            <section id="indice">
                 <h3>¿Qué veremos hoy?</h3>
                 <div class="timeline">
-                    <div class="timeline-item"><strong>1. Actos de comercio</strong><p>Enumeración, absolutos, relativos y fuentes del derecho mercantil.</p></div>
-                    <div class="timeline-item"><strong>2. Comerciantes</strong><p>Quién es sujeto de derecho mercantil, sus requisitos, obligaciones y prohibiciones.</p></div>
-                    <div class="timeline-item"><strong>3. La empresa</strong><p>Concepto económico y jurídico, fondo de comercio, clientela y propiedad industrial.</p></div>
-                    <div class="timeline-item"><strong>4. Auxiliares mercantiles</strong><p>Los dependientes (factor, gerente) y los independientes (corredor, comisionista).</p></div>
-                    <div class="timeline-item"><strong>5. Sociedades mercantiles</strong><p>SA, SRL y SAS: constitución, órganos, capital y transmisión.</p></div>
-                    <div class="timeline-item"><strong>6. Ciclo de vida societario</strong><p>Fusión, escisión, disolución y liquidación.</p></div>
+                    <div class="timeline-item"><strong><a onclick="var s=document.getElementById('seccion-3-1');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-blue);">1. Actos de comercio</a></strong><p>Enumeración, absolutos, relativos y fuentes del derecho mercantil.</p></div>
+                    <div class="timeline-item"><strong><a onclick="var s=document.getElementById('seccion-3-2');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-purple);">2. Comerciantes</a></strong><p>Quién es sujeto de derecho mercantil, sus requisitos, obligaciones y prohibiciones.</p></div>
+                    <div class="timeline-item"><strong><a onclick="var s=document.getElementById('seccion-3-3');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-pink);">3. La empresa</a></strong><p>Concepto económico y jurídico, fondo de comercio, clientela y propiedad industrial.</p></div>
+                    <div class="timeline-item"><strong><a onclick="var s=document.getElementById('seccion-3-4');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-green);">4. Auxiliares mercantiles</a></strong><p>Los dependientes (factor, gerente) y los independientes (corredor, comisionista).</p></div>
+                    <div class="timeline-item"><strong><a onclick="var s=document.getElementById('seccion-3-5');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-orange);">5. Sociedades mercantiles</a></strong><p>SA, SRL y SAS: constitución, órganos, capital y transmisión.</p></div>
+                    <div class="timeline-item"><strong><a onclick="var s=document.getElementById('seccion-3-9');if(s){var i=Reveal.getIndices(s);Reveal.slide(i.h,i.v,i.f);}" style="color:#fff; cursor:pointer; text-decoration:none; border-bottom:1px dashed var(--accent-red);">6. Ciclo de vida societario</a></strong><p>Fusión, escisión, disolución y liquidación.</p></div>
                 </div>
             </section>
             <!-- ==================== SECCION 3.1: ACTOS DE COMERCIO ==================== -->
@@ -831,6 +831,28 @@
                     </tbody>
                 </table>
             </section>
+
+            <!-- Comparación A.C. vs Sociedad Civil -->
+            <section>
+                <h3>A.C. vs. Sociedad Civil: ¿son mercantiles?</h3>
+                <table class="comparison-table">
+                    <thead><tr><th>Criterio</th><th>Asociación Civil (A.C.)</th><th>Sociedad Civil (S.C.)</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>Naturaleza del fin</strong></td><td>Fin común <strong>no preponderantemente económico</strong> (cultural, deportivo, benéfico, gremial) — art. 2670 CCF</td><td>Fin común <strong>preponderantemente económico</strong>, sin ser especulación comercial — art. 2688 CCF</td></tr>
+                        <tr><td><strong>Miembros</strong></td><td>Asociados</td><td>Socios</td></tr>
+                        <tr><td><strong>Aportes</strong></td><td>Cuotas de sostenimiento; no hay capital para reparto</td><td>Capital social: dinero, bienes o industria — art. 2689 CCF</td></tr>
+                        <tr><td><strong>Reparto de utilidades</strong></td><td>No se reparten (finalidad no lucrativa)</td><td>Sí se reparten entre los socios según estatutos</td></tr>
+                        <tr><td><strong>Órganos</strong></td><td>Asamblea general + dirección — art. 2674 CCF</td><td>Asamblea de socios + administración</td></tr>
+                        <tr><td><strong>Contrato y registro</strong></td><td>Por escrito; estatutos inscritos en el Registro Público — arts. 2671 y 2673 CCF</td><td>Por escrito; inscripción en el Registro de Sociedades Civiles — arts. 2690 y 2694 CCF</td></tr>
+                        <tr><td><strong>Denominación</strong></td><td>Termina en "A.C."</td><td>Razón social + "Sociedad Civil" — art. 2699 CCF</td></tr>
+                        <tr><td><strong>Ejercicio de comercio</strong></td><td>No es su objeto</td><td>Prohibida la especulación comercial; si adopta forma mercantil se sujeta al Código de Comercio — art. 2695 CCF</td></tr>
+                        <tr><td><strong>Ejemplo</strong></td><td>Club deportivo, colegio, asociación vecinal</td><td>Despacho de abogados o ingenieros</td></tr>
+                    </tbody>
+                </table>
+                <div class="highlight-box" style="margin-top: 12px;">
+                    <p><strong>Punto clave:</strong> Ninguna de las dos es sociedad mercantil: no se rigen por la LGSM. La A.C. persigue fines no patrimoniales; la S.C. reparte utilidades, pero no puede dedicarse habitualmente al comercio.</p>
+                </div>
+            </section>
             <!-- ==================== SECCION 3.6: SA ==================== -->
             <section class="section-header" id="seccion-3-6">
                 <div class="section-number">Sección 3.6</div>
@@ -1251,7 +1273,7 @@
             </section>
 
             <!-- Cierre -->
-            <section class="title-slide" id="indice">
+            <section class="title-slide">
                 <div class="slide-icon"><i class="fas fa-check-circle"></i></div>
                 <h1 style="font-size:2.2em;">Fin de la Unidad 3</h1>
                 <p class="subtitle">Derecho Mercantil y Sociedades</p>
